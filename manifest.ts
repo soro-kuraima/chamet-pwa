@@ -37,7 +37,7 @@ export const manifestForPlugIn : Partial<VitePWAOptions> = {
     background_color: '#ffffff',
     display: 'standalone',
     scope: '/',
-    start_url: 'https://neon-monstera-896f5e.netlify.app/',
+    start_url: '/',
     orientation: 'portrait',
   },
 };
