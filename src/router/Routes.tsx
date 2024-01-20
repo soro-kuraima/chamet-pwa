@@ -26,7 +26,7 @@ export const routes = createBrowserRouter([
     path: '',
     element: (
       <RequireAuth>
-        <Navigate to="/app" />
+        <Navigate to="/app/home/" />
       </RequireAuth>
     ),
   },

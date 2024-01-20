@@ -32,7 +32,6 @@ export function Discover() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
             />
-
           </ScrollArea>
         </div>
         <Button

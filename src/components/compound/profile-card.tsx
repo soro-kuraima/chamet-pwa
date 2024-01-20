@@ -11,12 +11,24 @@ type profileCardProps = {
 };
 
 const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
-  ({ userName, userImage }, ref) => (
+  ({ userName, userImage, userLocationIcon, userLocationName }, ref) => (
     <div
       ref={ref}
       className="flex h-full w-full flex-col items-center justify-center space-y-2">
       <img src={userImage} alt={userName} className="h-20 w-20 rounded-full" />
-      <h1 className="text-xl font-semibold">{userName}</h1>
+      <div className="user-info">
+        <h3 className="py-2 text-xl font-medium text-white">{userName}</h3>
+        <p className="user-info-location flex items-center gap-2">
+          <img
+            className="location-icon"
+            src={userLocationIcon}
+            alt={userLocationName}
+          />
+          <span className="loaction-name text-lg font-medium text-white">
+            {userLocationName}
+          </span>
+        </p>
+      </div>
     </div>
   )
 );
@@ -33,15 +45,27 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
       <img src={userImage} alt={userName} className="h-full w-full" />
       <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-4">
         <div className="user-info">
-          <h3 className="py-2 text-xl text-white font-medium">{userName}</h3>
+          <h3 className="py-2 text-xl font-medium text-white">{userName}</h3>
           <p className="user-info-location flex items-center gap-2">
-            <img className="location-icon" src={userLocationIcon} alt={userLocationName} />
-            <span className="loaction-name text-lg text-white font-medium">{userLocationName}</span>
+            <img
+              className="location-icon"
+              src={userLocationIcon}
+              alt={userLocationName}
+            />
+            <span className="loaction-name text-lg font-medium text-white">
+              {userLocationName}
+            </span>
           </p>
         </div>
         <div className="action-buttons flex flex-col gap-8">
-          <Button size="icon"> <CallIcon className="h-8 w-8" /> </Button>
-          <Button size="icon"> <VideoCameraActiveIcon className="h-8 w-8 stroke-accent stroke-2 fill-primary" /> </Button>
+          <Button size="icon">
+            {' '}
+            <CallIcon className="h-8 w-8" />{' '}
+          </Button>
+          <Button size="icon">
+            {' '}
+            <VideoCameraActiveIcon className="h-8 w-8 fill-primary stroke-accent stroke-2" />{' '}
+          </Button>
         </div>
       </div>
     </div>

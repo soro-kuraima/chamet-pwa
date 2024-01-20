@@ -1,7 +1,7 @@
 import { VitePWAOptions } from 'vite-plugin-pwa';
 
 export const manifestForPlugIn: Partial<VitePWAOptions> = {
-  registerType: 'prompt',
+  registerType: 'autoUpdate',
   includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
   manifest: {
     name: 'CHAMET',
