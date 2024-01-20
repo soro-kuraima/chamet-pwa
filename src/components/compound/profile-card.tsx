@@ -14,20 +14,32 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
   ({ userName, userImage, userLocationIcon, userLocationName }, ref) => (
     <div
       ref={ref}
-      className="flex h-full w-full flex-col items-center justify-center space-y-2">
-      <img src={userImage} alt={userName} className="h-20 w-20 rounded-full" />
-      <div className="user-info">
-        <h3 className="py-2 text-xl font-medium text-white">{userName}</h3>
-        <p className="user-info-location flex items-center gap-2">
-          <img
-            className="location-icon"
-            src={userLocationIcon}
-            alt={userLocationName}
-          />
-          <span className="loaction-name text-lg font-medium text-white">
-            {userLocationName}
-          </span>
-        </p>
+      className="profile-card h-72 w-full relative flex flex-col items-center justify-center drop-shadow-xl">
+      <div className="live-lable absolute left-2 top-2 flex items-center justify-center">
+        <VideoCameraActiveIcon className="h-6 w-6" />
+        <span className="text-md px-1 font-semibold text-primary">Live</span>
+      </div>
+      <img src={userImage} alt={userName} className="h-full w-full rounded-md" />
+      <div className="profile-card-footer w-full px-2 absolute bottom-2 flex items-end justify-between">
+        <div className="user-info">
+          <h3 className="py-2 text-lg font-medium text-white">{userName}</h3>
+          <p className="user-info-location flex items-center gap-2">
+            <img
+              className="location-icon h-6"
+              src={userLocationIcon}
+              alt={userLocationName}
+            />
+            <span className="loaction-name text-md font-medium text-white">
+              {userLocationName}
+            </span>
+          </p>
+        </div>
+        <div className="action-buttons flex flex-col">
+          <Button size="icon">
+            {' '}
+            <CallIcon className="h-4 w-4 stroke-2" />{' '}
+          </Button>
+        </div>
       </div>
     </div>
   )

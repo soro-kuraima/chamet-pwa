@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import { Squares2X2Icon } from '@heroicons/react/24/outline';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+
+import { MenuIcon } from '@/components/ui/icons';
 
 export function LiveFeedsScreen() {
   return (
     <div className="live-feeds">
       <LiveFeedsMenu />
-      <div className="container">
+      <div className="container relative p-0">
         <Outlet />
       </div>
     </div>
@@ -53,7 +54,7 @@ function LiveFeedsMenu() {
         </li>
       </ul>
       <Link to="/app/account">
-        <Squares2X2Icon className="h-8 w-8" />
+        <MenuIcon className="h-8 w-8" />
       </Link>
     </nav>
   );
