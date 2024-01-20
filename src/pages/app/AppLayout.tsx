@@ -5,12 +5,9 @@ import { RequireAuth } from '@/components/functional/require-auth';
 export function AppLayout() {
   return (
     <RequireAuth>
-      <div className="App min-h-screen bg-background-dark">
-        <header className="h-20 text-background-contrastText">
-          this is a header
-        </header>
+      <div className="App min-h-screen bg-background-light">
         <div className="flex-start flex overflow-hidden">
-          <div className="container">
+          <div className="container px-0 py-0">
             <Outlet />
           </div>
         </div>

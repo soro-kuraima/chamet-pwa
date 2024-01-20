@@ -22,9 +22,9 @@
      the abbreviated format.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="localhost_4173.twa"
-    android:versionCode="1"
-    android:versionName="1" >
+    package="app.netlify.neon_monstera_896f5e.twa"
+    android:versionCode="2"
+    android:versionName="2" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -43,7 +43,7 @@
     </queries>
 
     <application
-        android:name="localhost_4173.twa.Application"
+        android:name="app.netlify.neon_monstera_896f5e.twa.Application"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
@@ -67,7 +67,7 @@
                 android:value="@string/launchUrl" />
         </activity>
         <activity
-            android:name="localhost_4173.twa.LauncherActivity"
+            android:name="app.netlify.neon_monstera_896f5e.twa.LauncherActivity"
             android:alwaysRetainTaskState="true"
             android:exported="true"
             android:label="@string/launcherName" >
@@ -111,9 +111,6 @@
                 android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
                 android:value="@string/fallbackType" />
             <meta-data
-                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
-                android:value="immersive" />
-            <meta-data
                 android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
                 android:value="@string/orientation" />
 
@@ -149,7 +146,7 @@
         </provider>
 
         <service
-            android:name="localhost_4173.twa.DelegationService"
+            android:name="app.netlify.neon_monstera_896f5e.twa.DelegationService"
             android:enabled="@bool/enableNotification"
             android:exported="@bool/enableNotification" >
             <meta-data

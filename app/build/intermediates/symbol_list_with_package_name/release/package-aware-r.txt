@@ -1,4 +1,4 @@
-localhost_4173.twa
+app.netlify.neon_monstera_896f5e.twa
 attr alpha
 attr font
 attr fontProviderAuthority

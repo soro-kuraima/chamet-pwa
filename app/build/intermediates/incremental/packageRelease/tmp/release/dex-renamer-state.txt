@@ -1,4 +1,4 @@
-#Fri Jan 19 16:00:40 IST 2024
+#Fri Jan 19 16:31:50 IST 2024
 base.0=/home/soro-kuraima/Development/chamet-pwa/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

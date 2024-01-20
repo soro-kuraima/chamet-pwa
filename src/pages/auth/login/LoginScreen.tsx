@@ -1,10 +1,15 @@
+import { useNavigate } from 'react-router-dom';
+
 // eslint-disable-next-line import/extensions
 import logo from '@/assets/chamet-logo.svg';
 // eslint-disable-next-line import/extensions
 import loginBg from '@/assets/login-bg.jpeg';
 import { Button } from '@/components/ui/button';
+import { setAccessToken } from '@/lib/token';
 
 export function LoginScreen() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div
@@ -31,6 +36,10 @@ export function LoginScreen() {
               <Button
                 size="lg"
                 className="custom-box-shadow py-6 w-full bg-red-600 hover:bg-red-600/90 shadow-lg bg-opacity-90 text-white rounded-full"
+                onClick={() => {
+                  setAccessToken(crypto.randomUUID());
+                  navigate('/app/home');
+                }}
               >
                 {' '}
                 Gmail{' '}

@@ -22,9 +22,9 @@
 22     the abbreviated format.
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-25    package="localhost_4173.twa"
-26    android:versionCode="1"
-27    android:versionName="1" >
+25    package="app.netlify.neon_monstera_896f5e.twa"
+26    android:versionCode="2"
+27    android:versionName="2" >
 28
 29    <uses-sdk
 30        android:minSdkVersion="19"
@@ -41,22 +41,22 @@
 36        <intent>
 36-->[com.google.androidbrowserhelper:androidbrowserhelper:2.5.0] /home/soro-kuraima/.gradle/caches/transforms-2/files-2.1/816850808f9de9e670a4838cd1f96218/androidbrowserhelper-2.5.0/AndroidManifest.xml:27:9-33:18
 37            <action android:name="android.intent.action.VIEW" />
-37-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:17-68
-37-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:25-66
+37-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:137:17-68
+37-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:137:25-66
 38
 39            <category android:name="android.intent.category.BROWSABLE" />
-39-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:142:17-77
-39-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:142:27-75
+39-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:139:17-77
+39-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:139:27-75
 40
 41            <data android:scheme="https" />
-41-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:143:17-144:54
-41-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:143:23-45
+41-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:17-141:54
+41-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:23-45
 42        </intent>
 43    </queries>
 44
 45    <application
-45-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:35:5-187:19
-46        android:name="localhost_4173.twa.Application"
+45-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:35:5-184:19
+46        android:name="app.netlify.neon_monstera_896f5e.twa.Application"
 46-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:36:9-35
 47        android:allowBackup="true"
 47-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:37:9-35
@@ -102,8 +102,8 @@
 67-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:68:17-50
 68        </activity>
 69        <activity
-69-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:72:9-148:20
-70            android:name="localhost_4173.twa.LauncherActivity"
+69-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:72:9-145:20
+70            android:name="app.netlify.neon_monstera_896f5e.twa.LauncherActivity"
 70-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:72:19-50
 71            android:alwaysRetainTaskState="true"
 71-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:73:13-49
@@ -190,108 +190,102 @@
 112                android:value="@string/fallbackType" />
 112-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:118:17-53
 113            <meta-data
-113-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:123:13-124:45
-114                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
-114-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:123:24-86
-115                android:value="immersive" />
-115-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:124:17-42
-116            <meta-data
-116-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:127:13-128:54
-117                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
-117-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:127:24-92
-118                android:value="@string/orientation" />
-118-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:128:17-52
+113-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:124:13-125:54
+114                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+114-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:124:24-92
+115                android:value="@string/orientation" />
+115-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:125:17-52
+116
+117            <intent-filter>
+117-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:131:13-134:29
+118                <action android:name="android.intent.action.MAIN" />
+118-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:132:17-69
+118-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:132:25-66
 119
-120            <intent-filter>
-120-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:134:13-137:29
-121                <action android:name="android.intent.action.MAIN" />
-121-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:135:17-69
-121-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:135:25-66
-122
-123                <category android:name="android.intent.category.LAUNCHER" />
-123-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:136:17-77
-123-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:136:27-74
-124            </intent-filter>
-125            <intent-filter android:autoVerify="true" >
-125-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:139:13-145:29
-125-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:139:28-53
-126                <action android:name="android.intent.action.VIEW" />
-126-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:17-68
-126-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:25-66
+120                <category android:name="android.intent.category.LAUNCHER" />
+120-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:133:17-77
+120-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:133:27-74
+121            </intent-filter>
+122            <intent-filter android:autoVerify="true" >
+122-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:136:13-142:29
+122-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:136:28-53
+123                <action android:name="android.intent.action.VIEW" />
+123-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:137:17-68
+123-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:137:25-66
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:138:17-76
+125-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:138:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:139:17-77
+126-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:139:27-75
 127
-128                <category android:name="android.intent.category.DEFAULT" />
-128-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:141:17-76
-128-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:141:27-73
-129                <category android:name="android.intent.category.BROWSABLE" />
-129-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:142:17-77
-129-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:142:27-75
-130
-131                <data
-131-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:143:17-144:54
-132                    android:host="@string/hostName"
-132-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:144:21-52
-133                    android:scheme="https" />
-133-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:143:23-45
-134            </intent-filter>
-135        </activity>
-136        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
-136-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:150:9-90
-136-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:150:19-87
-137        <activity
-137-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:152:9-153:62
-138            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
-138-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:152:19-97
-139            android:configChanges="orientation|screenSize" />
-139-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:153:13-59
-140
-141        <provider
-141-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:155:9-163:20
-142            android:name="androidx.core.content.FileProvider"
-142-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:156:13-62
-143            android:authorities="@string/providerAuthority"
-143-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:157:13-60
-144            android:exported="false"
-144-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:159:13-37
-145            android:grantUriPermissions="true" >
-145-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:158:13-47
-146            <meta-data
-146-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:160:13-162:53
-147                android:name="android.support.FILE_PROVIDER_PATHS"
-147-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:161:17-67
-148                android:resource="@xml/filepaths" />
-148-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:162:17-50
-149        </provider>
-150
-151        <service
-151-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:165:9-180:19
-152            android:name="localhost_4173.twa.DelegationService"
-152-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:166:13-46
-153            android:enabled="@bool/enableNotification"
-153-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:167:13-55
-154            android:exported="@bool/enableNotification" >
-154-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:168:13-56
-155            <meta-data
-155-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:171:17-173:73
-156                android:name="android.support.customtabs.trusted.SMALL_ICON"
-156-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:172:21-81
-157                android:resource="@drawable/ic_notification_icon" />
-157-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:173:21-70
+128                <data
+128-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:17-141:54
+129                    android:host="@string/hostName"
+129-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:141:21-52
+130                    android:scheme="https" />
+130-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:140:23-45
+131            </intent-filter>
+132        </activity>
+133        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+133-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:147:9-90
+133-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:147:19-87
+134        <activity
+134-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:149:9-150:62
+135            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+135-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:149:19-97
+136            android:configChanges="orientation|screenSize" />
+136-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:150:13-59
+137
+138        <provider
+138-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:152:9-160:20
+139            android:name="androidx.core.content.FileProvider"
+139-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:153:13-62
+140            android:authorities="@string/providerAuthority"
+140-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:154:13-60
+141            android:exported="false"
+141-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:156:13-37
+142            android:grantUriPermissions="true" >
+142-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:155:13-47
+143            <meta-data
+143-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:157:13-159:53
+144                android:name="android.support.FILE_PROVIDER_PATHS"
+144-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:158:17-67
+145                android:resource="@xml/filepaths" />
+145-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:159:17-50
+146        </provider>
+147
+148        <service
+148-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:162:9-177:19
+149            android:name="app.netlify.neon_monstera_896f5e.twa.DelegationService"
+149-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:163:13-46
+150            android:enabled="@bool/enableNotification"
+150-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:164:13-55
+151            android:exported="@bool/enableNotification" >
+151-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:165:13-56
+152            <meta-data
+152-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:168:17-170:73
+153                android:name="android.support.customtabs.trusted.SMALL_ICON"
+153-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:169:21-81
+154                android:resource="@drawable/ic_notification_icon" />
+154-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:170:21-70
+155
+156            <intent-filter>
+156-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:173:13-176:29
+157                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+157-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:174:17-105
+157-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:174:25-103
 158
-159            <intent-filter>
-159-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:176:13-179:29
-160                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
-160-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:177:17-105
-160-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:177:25-103
-161
-162                <category android:name="android.intent.category.DEFAULT" />
-162-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:141:17-76
-162-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:141:27-73
-163            </intent-filter>
-164        </service>
+159                <category android:name="android.intent.category.DEFAULT" />
+159-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:138:17-76
+159-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:138:27-73
+160            </intent-filter>
+161        </service>
+162
+163        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+163-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:180:13-118
+163-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:180:23-115
+164    </application>
 165
-166        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
-166-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:183:13-118
-166-->/home/soro-kuraima/Development/chamet-pwa/app/src/main/AndroidManifest.xml:183:23-115
-167    </application>
-168
-169</manifest>
+166</manifest>

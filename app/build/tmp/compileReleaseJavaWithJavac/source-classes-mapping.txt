@@ -1,8 +1,8 @@
-localhost_4173/twa/Application.java
- localhost_4173.twa.Application
-localhost_4173/twa/DelegationService.java
- localhost_4173.twa.DelegationService
-localhost_4173/twa/BuildConfig.java
- localhost_4173.twa.BuildConfig
-localhost_4173/twa/LauncherActivity.java
- localhost_4173.twa.LauncherActivity
+app/netlify/neon_monstera_896f5e/twa/DelegationService.java
+ app.netlify.neon_monstera_896f5e.twa.DelegationService
+app/netlify/neon_monstera_896f5e/twa/LauncherActivity.java
+ app.netlify.neon_monstera_896f5e.twa.LauncherActivity
+app/netlify/neon_monstera_896f5e/twa/BuildConfig.java
+ app.netlify.neon_monstera_896f5e.twa.BuildConfig
+app/netlify/neon_monstera_896f5e/twa/Application.java
+ app.netlify.neon_monstera_896f5e.twa.Application

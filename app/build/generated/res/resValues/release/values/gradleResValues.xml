@@ -18,13 +18,13 @@
     <!-- Value from default config. -->
     <string name="fallbackType" translatable="false">customtabs</string>
     <!-- Value from default config. -->
-    <string name="fullScopeUrl" translatable="false">http://localhost:4173/</string>
+    <string name="fullScopeUrl" translatable="false">https://neon-monstera-896f5e.netlify.app/</string>
     <!-- Value from default config. -->
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
     <!-- Value from default config. -->
-    <string name="hostName" translatable="false">y</string>
+    <string name="hostName" translatable="false">neon-monstera-896f5e.netlify.app</string>
     <!-- Value from default config. -->
-    <string name="launchUrl" translatable="false">https://y/</string>
+    <string name="launchUrl" translatable="false">https://neon-monstera-896f5e.netlify.app/</string>
     <!-- Value from default config. -->
     <string name="launcherName" translatable="false">chamet</string>
     <!-- Value from default config. -->
@@ -38,10 +38,10 @@
     <!-- Value from default config. -->
     <string name="orientation" translatable="false">portrait</string>
     <!-- Value from default config. -->
-    <string name="providerAuthority" translatable="false">localhost_4173.twa.fileprovider</string>
+    <string name="providerAuthority" translatable="false">app.netlify.neon_monstera_896f5e.twa.fileprovider</string>
     <!-- Value from default config. -->
     <integer name="splashScreenFadeOutDuration">300</integer>
     <!-- Value from default config. -->
-    <string name="webManifestUrl" translatable="false">http://localhost:4173/manifest.webmanifest</string>
+    <string name="webManifestUrl" translatable="false">https://neon-monstera-896f5e.netlify.app/manifest.webmanifest</string>
 
 </resources>
