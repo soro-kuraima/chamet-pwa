@@ -5,7 +5,7 @@ import { MenuIcon } from '@/components/ui/icons';
 
 export function LiveFeedsScreen() {
   return (
-    <div className="live-feeds">
+    <div className="live-feeds pb-16">
       <LiveFeedsMenu />
       <div className="container relative p-0">
         <Outlet />
