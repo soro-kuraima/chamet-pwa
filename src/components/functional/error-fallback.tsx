@@ -11,8 +11,7 @@ export function ErrorFallbackComponent({ error }: Props) {
         type="submit"
         onClick={() => {
           window.location.href = '/';
-        }}
-      >
+        }}>
         Click here to reload the app
       </button>
     </div>

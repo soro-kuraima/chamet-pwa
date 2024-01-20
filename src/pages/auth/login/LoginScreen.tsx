@@ -13,64 +13,58 @@ export function LoginScreen() {
   return (
     <div>
       <div
-        className="login-screen min-h-screen bg-[#3087ec] bg-blend-darken bg-cover bg-center flex flex-col justify-between items-center"
+        className="login-screen flex min-h-screen flex-col items-center justify-between bg-[#3087ec] bg-cover bg-center bg-blend-darken"
         style={{
           backgroundImage: `url(${loginBg})`,
-        }}
-      >
+        }}>
         <div className="logo-container">
-          <img src={logo} className="py-24 mx-auto" alt="Chamet Logo" />
+          <img src={logo} className="mx-auto py-24" alt="Chamet Logo" />
         </div>
-        <div className="flex flex-col w-full justify-end px-8 py-8">
-          <div className="action-buttons min-h-full flex flex-col justify-end items-center">
-            <div className="py-2 w-11/12">
+        <div className="flex w-full flex-col justify-end px-8 py-8">
+          <div className="action-buttons flex min-h-full flex-col items-center justify-end">
+            <div className="w-11/12 py-2">
               <Button
                 size="lg"
-                className="custom-box-shadow py-6 w-full bg-gray-400 hover:bg-gray-400/90 shadow-2xl bg-opacity-90 rounded-full"
-              >
+                className="w-full rounded-full bg-gray-400 bg-opacity-90 py-6 shadow-2xl drop-shadow-xl hover:bg-gray-400/90">
                 {' '}
                 Start{' '}
               </Button>
             </div>
-            <div className="py-2 w-11/12">
+            <div className="w-11/12 py-2">
               <Button
                 size="lg"
-                className="custom-box-shadow py-6 w-full bg-red-600 hover:bg-red-600/90 shadow-lg bg-opacity-90 text-white rounded-full"
+                className="w-full rounded-full bg-red-600 bg-opacity-90 py-6 text-white shadow-lg drop-shadow-xl hover:bg-red-600/90"
                 onClick={() => {
                   setAccessToken(crypto.randomUUID());
                   navigate('/app/home');
-                }}
-              >
+                }}>
                 {' '}
                 Gmail{' '}
               </Button>
             </div>
-            <div className="py-2 w-11/12">
+            <div className="w-11/12 py-2">
               <Button
                 size="lg"
-                className="custom-box-shadow py-6 w-full bg-indigo-700 hover:bg-indigo-700/90 shadow-lg bg-opacity-90 rounded-full"
-              >
+                className="w-full rounded-full bg-indigo-700 bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-indigo-700/90">
                 {' '}
                 Phone{' '}
               </Button>
             </div>
           </div>
           <div className="footnote mt-16">
-            <p className="py-0 text-white text-center text-lg font-medium">
+            <p className="py-0 text-center text-lg font-medium text-white">
               By Signing in, you agree to the
             </p>
-            <div className="py-0 links flex justify-center items-end">
+            <div className="links flex items-end justify-center py-0">
               <Button
                 variant="link"
-                className="px-2 py-1 text-white text-center text-lg font-medium underline"
-              >
+                className="px-2 py-1 text-center text-lg font-medium text-white underline">
                 User Agreement
               </Button>
-              <span className="text-white px-0 py-1">{' & '}</span>
+              <span className="px-0 py-1 text-white">{' & '}</span>
               <Button
                 variant="link"
-                className="px-2 py-1 text-white text-center text-lg font-medium underline"
-              >
+                className="px-2 py-1 text-center text-lg font-medium text-white underline">
                 Privacy Policy
               </Button>
             </div>

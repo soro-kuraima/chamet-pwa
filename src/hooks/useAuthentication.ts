@@ -10,6 +10,6 @@ export const useAuthentication = () => {
     () => ({
       isLoggedIn,
     }),
-    [isLoggedIn],
+    [isLoggedIn]
   );
 };

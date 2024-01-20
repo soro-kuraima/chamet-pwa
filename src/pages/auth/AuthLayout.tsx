@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 export function AuthLayout() {
   return (
-    <div className="auth-wrapper flex flex-col min-h-screen bg-background-light">
+    <div className="auth-wrapper bg-background-light flex min-h-screen flex-col">
       <Outlet />
     </div>
   );

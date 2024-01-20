@@ -180,7 +180,7 @@ export const routes = createBrowserRouter([
             <ProfileScreen />
           </Page>
         ),
-      }
+      },
     ],
   },
 ]);

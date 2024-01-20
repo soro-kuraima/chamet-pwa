@@ -1,12 +1,12 @@
-const validMutationHooks = ["useMutationWithToast", "useMutation"];
-const validQueryHooks = ["useQuery"];
+const validMutationHooks = ['useMutationWithToast', 'useMutation'];
+const validQueryHooks = ['useQuery'];
 
 module.exports = {
   meta: {
-    type: "problem",
+    type: 'problem',
     docs: {
       description:
-        "This rule adds enforcement for variable declaration to be in valid format.",
+        'This rule adds enforcement for variable declaration to be in valid format.',
       recommended: false,
     },
     fixable: null, // Or `code` or `whitespace`
@@ -20,7 +20,7 @@ module.exports = {
         if (
           validMutationHooks.includes(node.declarations[0].init?.callee?.name)
         ) {
-          if (!node.declarations[0].id?.name?.endsWith("Mutation")) {
+          if (!node.declarations[0].id?.name?.endsWith('Mutation')) {
             context.report({
               node: node.declarations[0].id,
               message: "Identifier name must end with 'Mutation'",
@@ -28,7 +28,7 @@ module.exports = {
           }
         }
         if (validQueryHooks.includes(node.declarations[0].init?.callee?.name)) {
-          if (!node.declarations[0].id?.name?.endsWith("Query")) {
+          if (!node.declarations[0].id?.name?.endsWith('Query')) {
             context.report({
               node: node.declarations[0].id,
               message: "Identifier name must end with 'Query'",
