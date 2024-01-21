@@ -70,6 +70,11 @@
   * {
     @apply border-border;
   }
+  html {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
   body {
     @apply bg-background text-foreground;
   }

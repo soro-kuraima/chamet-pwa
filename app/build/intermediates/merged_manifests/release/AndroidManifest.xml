@@ -23,8 +23,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.netlify.neon_monstera_896f5e.twa"
-    android:versionCode="2"
-    android:versionName="2" >
+    android:versionCode="1"
+    android:versionName="1" >
 
     <uses-sdk
         android:minSdkVersion="19"

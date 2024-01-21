@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import { Button } from '@/components/ui/button';
 import { VideoCameraActiveIcon, CallIcon } from '@/components/ui/icons';
@@ -14,13 +14,17 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
   ({ userName, userImage, userLocationIcon, userLocationName }, ref) => (
     <div
       ref={ref}
-      className="profile-card h-72 w-full relative flex flex-col items-center justify-center drop-shadow-xl">
+      className="profile-card relative flex h-72 w-full flex-col items-center justify-center drop-shadow-xl">
       <div className="live-lable absolute left-2 top-2 flex items-center justify-center">
         <VideoCameraActiveIcon className="h-6 w-6" />
         <span className="text-md px-1 font-semibold text-primary">Live</span>
       </div>
-      <img src={userImage} alt={userName} className="h-full w-full rounded-md" />
-      <div className="profile-card-footer w-full px-2 absolute bottom-2 flex items-end justify-between">
+      <img
+        src={userImage}
+        alt={userName}
+        className="h-full w-full rounded-md"
+      />
+      <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-2">
         <div className="user-info">
           <h3 className="py-2 text-lg font-medium text-white">{userName}</h3>
           <p className="user-info-location flex items-center gap-2">
