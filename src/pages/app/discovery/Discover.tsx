@@ -1,8 +1,11 @@
 import { ProfileCardLarge } from '@/components/compound/profile-card';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useCallCardStore } from '@/stores/call-card-store';
 
 export function Discover() {
+  const { toggleCallCardVisibility } = useCallCardStore();
+
   return (
     <div className="discover">
       <div className="go-live-button flex items-center justify-center p-0">
@@ -13,24 +16,28 @@ export function Discover() {
               userImage="/images/woman-profile.png"
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
+              onCallActionTap={toggleCallCardVisibility}
             />
             <ProfileCardLarge
               userName="UserName"
               userImage="/images/man-profile.png"
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
+              onCallActionTap={toggleCallCardVisibility}
             />
             <ProfileCardLarge
               userName="UserName"
               userImage="/images/woman-profile.png"
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
+              onCallActionTap={toggleCallCardVisibility}
             />
             <ProfileCardLarge
               userName="UserName"
               userImage="/images/man-profile.png"
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
+              onCallActionTap={toggleCallCardVisibility}
             />
           </ScrollArea>
         </div>

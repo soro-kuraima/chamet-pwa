@@ -8,10 +8,20 @@ type profileCardProps = {
   userImage: string;
   userLocationIcon: string;
   userLocationName: string;
+  onCallActionTap: () => void;
 };
 
 const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
-  ({ userName, userImage, userLocationIcon, userLocationName }, ref) => (
+  (
+    {
+      userName,
+      userImage,
+      userLocationIcon,
+      userLocationName,
+      onCallActionTap,
+    },
+    ref
+  ) => (
     <div
       ref={ref}
       className="profile-card relative flex h-72 w-full flex-col items-center justify-center drop-shadow-xl">
@@ -39,7 +49,7 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
           </p>
         </div>
         <div className="action-buttons flex flex-col">
-          <Button size="icon">
+          <Button size="icon" onClick={onCallActionTap}>
             {' '}
             <CallIcon className="h-4 w-4 stroke-2" />{' '}
           </Button>
@@ -50,7 +60,16 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
 );
 
 const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
-  ({ userName, userImage, userLocationIcon, userLocationName }, ref) => (
+  (
+    {
+      userName,
+      userImage,
+      userLocationIcon,
+      userLocationName,
+      onCallActionTap,
+    },
+    ref
+  ) => (
     <div
       ref={ref}
       className="profile-card-large relative mb-4 flex h-full w-full flex-col items-center justify-center drop-shadow-xl">
@@ -74,11 +93,11 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
           </p>
         </div>
         <div className="action-buttons flex flex-col gap-8">
-          <Button size="icon">
+          <Button size="icon" onClick={onCallActionTap}>
             {' '}
             <CallIcon className="h-8 w-8" />{' '}
           </Button>
-          <Button size="icon">
+          <Button size="icon" onClick={onCallActionTap}>
             {' '}
             <VideoCameraActiveIcon className="h-8 w-8 fill-primary stroke-accent stroke-2" />{' '}
           </Button>

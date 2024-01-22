@@ -12,13 +12,7 @@ type RecentChatsCardProps = {
 
 const RecentChatsCard = React.forwardRef<HTMLDivElement, RecentChatsCardProps>(
   (
-    {
-      userName,
-      userImage,
-      lastMessage,
-      lastMessageTime,
-      unreadMessageCount,
-    },
+    { userName, userImage, lastMessage, lastMessageTime, unreadMessageCount },
     ref
   ) => (
     <div
@@ -29,7 +23,7 @@ const RecentChatsCard = React.forwardRef<HTMLDivElement, RecentChatsCardProps>(
           <AvatarImage src={userImage} alt={userName} />
           <AvatarFallback>{userName}</AvatarFallback>
         </Avatar>
-        <div className="absolute right-2 bottom-3 ring-1 ring-offset-2 ring-white h-2 w-2 rounded-full bg-green-400" />
+        <div className="absolute bottom-3 right-2 h-2 w-2 rounded-full bg-green-400 ring-1 ring-white ring-offset-2" />
       </div>
       <div className="message flex flex-col gap-4">
         <span className="text-md font-semibold text-black">{userName}</span>

@@ -1,7 +1,10 @@
 import { ProfileCard } from '@/components/compound/profile-card';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useCallCardStore } from '@/stores/call-card-store';
 
 export function Nearby() {
+  const { toggleCallCardVisibility } = useCallCardStore();
+
   return (
     <div className="discover-nearby">
       <div className="w-fullflex h-full items-center justify-center p-0">
@@ -13,72 +16,84 @@ export function Nearby() {
                 userImage="/images/woman-profile.png"
                 userLocationIcon="/images/flag-india.png"
                 userLocationName="IND"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/man-profile.png"
                 userLocationIcon="/images/flag-usa.png"
                 userLocationName="USA"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/woman-profile.png"
                 userLocationIcon="/images/flag-india.png"
                 userLocationName="IND"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/man-profile.png"
                 userLocationIcon="/images/flag-usa.png"
                 userLocationName="USA"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/woman-profile.png"
                 userLocationIcon="/images/flag-india.png"
                 userLocationName="IND"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/man-profile.png"
                 userLocationIcon="/images/flag-usa.png"
                 userLocationName="USA"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/woman-profile.png"
                 userLocationIcon="/images/flag-india.png"
                 userLocationName="IND"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/man-profile.png"
                 userLocationIcon="/images/flag-usa.png"
                 userLocationName="USA"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/woman-profile.png"
                 userLocationIcon="/images/flag-india.png"
                 userLocationName="IND"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/man-profile.png"
                 userLocationIcon="/images/flag-usa.png"
                 userLocationName="USA"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/woman-profile.png"
                 userLocationIcon="/images/flag-india.png"
                 userLocationName="IND"
+                onCallActionTap={toggleCallCardVisibility}
               />
               <ProfileCard
                 userName="UserName"
                 userImage="/images/man-profile.png"
                 userLocationIcon="/images/flag-usa.png"
                 userLocationName="USA"
+                onCallActionTap={toggleCallCardVisibility}
               />
             </div>
           </ScrollArea>
