@@ -8,16 +8,32 @@ type RecentChatsCardProps = {
   lastMessage: string;
   lastMessageTime: string;
   unreadMessageCount: number;
+  onTap: () => void;
 };
 
 const RecentChatsCard = React.forwardRef<HTMLDivElement, RecentChatsCardProps>(
   (
-    { userName, userImage, lastMessage, lastMessageTime, unreadMessageCount },
+    {
+      userName,
+      userImage,
+      lastMessage,
+      lastMessageTime,
+      unreadMessageCount,
+      onTap,
+    },
     ref
   ) => (
     <div
       ref={ref}
-      className="recent-chats-card my-2 flex items-center justify-between rounded-md bg-[#cce3ff] px-2">
+      className="recent-chats-card my-2 flex items-center justify-between rounded-md bg-[#cce3ff] px-2"
+      role="button"
+      tabIndex={0}
+      onClick={onTap}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          onTap();
+        }
+      }}>
       <div className="user-info relative p-1">
         <Avatar className="h-16 w-16">
           <AvatarImage src={userImage} alt={userName} />

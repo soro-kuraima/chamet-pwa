@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 import { RecentChatsCard } from '@/components/compound/recent-chats-card';
 import { SearchInput } from '@/components/compound/search-input';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 export function RecentChats() {
+  const navigate = useNavigate();
+
   return (
     <div className="recent-chats">
       <div className="search-box-container px-2">
@@ -23,6 +27,7 @@ export function RecentChats() {
               lastMessage="Please take a look at the image"
               lastMessageTime="18:00"
               unreadMessageCount={5}
+              onTap={() => navigate('/app/recent-chat')}
             />
             <RecentChatsCard
               userName="Lorem Ipsum"
@@ -30,6 +35,7 @@ export function RecentChats() {
               lastMessage="Please take a look at the image"
               lastMessageTime="16:00"
               unreadMessageCount={5}
+              onTap={() => navigate('/app/recent-chat')}
             />
             <RecentChatsCard
               userName="Lorem Ipsum"
@@ -37,6 +43,7 @@ export function RecentChats() {
               lastMessage="Please take a look at the image"
               lastMessageTime="10:00"
               unreadMessageCount={5}
+              onTap={() => navigate('/app/recent-chat')}
             />
           </ScrollArea>
         </div>

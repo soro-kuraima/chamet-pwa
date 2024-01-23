@@ -17,7 +17,10 @@ export function HomeScreen() {
       <Menu />
       {callCardVisibility &&
         createPortal(
-          <Overlay> <CallCard onCardClose={toggleCallCardVisibility} /></Overlay>,
+          <Overlay>
+            {' '}
+            <CallCard onCardClose={toggleCallCardVisibility} />
+          </Overlay>,
           document.body
         )}
     </div>

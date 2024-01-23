@@ -16,6 +16,7 @@ import { LiveFeeds } from '@/pages/app/live-feeds/LiveFeeds';
 import { LiveFeedsScreen } from '@/pages/app/live-feeds/LiveFeedsScreen';
 import { Page404 } from '@/pages/app/misc/Page404';
 import { ProfileScreen } from '@/pages/app/profile/ProfileScreen';
+import { RecentChatScreen } from '@/pages/app/recent-chat/RecentChatScreen';
 import { RecentChatsScreen } from '@/pages/app/recent-chats/RecentChatsScreen';
 import { AuthLayout } from '@/pages/auth/AuthLayout';
 import { LoginScreen } from '@/pages/auth/login/LoginScreen';
@@ -178,6 +179,14 @@ export const routes = createBrowserRouter([
         element: (
           <Page title="Profile">
             <ProfileScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'recent-chat',
+        element: (
+          <Page title="Recent Chat">
+            <RecentChatScreen />
           </Page>
         ),
       },
