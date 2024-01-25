@@ -8,9 +8,6 @@ import {
   UserCircleIcon,
 } from '@heroicons/react/24/solid';
 
-import ellipseBg1 from '@/assets/ellipse-bg-1.svg';
-import ellipseBg2 from '@/assets/ellipse-bg-2.svg';
-import ellipseBg3 from '@/assets/ellipse-bg-3.svg';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { VideoCameraActiveIcon } from '@/components/ui/icons';
@@ -22,19 +19,19 @@ export function AccountScreen() {
       <div
         className="absolute top-0 z-[-10] h-32 w-full bg-cover bg-bottom overflow-hidden md:w-[90vw]"
         style={{
-          backgroundImage: `url(${ellipseBg1})`,
+          backgroundImage: 'url(\'/images/ellipse-bg-1.svg\')',
         }}
       />
       <div
         className="absolute top-0 z-[-20] h-48 w-full bg-cover bg-bottom overflow-hidden md:w-[90vw]"
         style={{
-          backgroundImage: `url(${ellipseBg2})`,
+          backgroundImage: 'url(\'/images/ellipse-bg-2.svg\')',
         }}
       />
       <div
         className="absolute top-0 z-[-30] h-64 w-full bg-cover bg-bottom overflow-hidden md:w-[90vw]"
         style={{
-          backgroundImage: `url(${ellipseBg3})`,
+          backgroundImage: 'url(\'/images/ellipse-bg-3.svg\')',
         }}
       />
       <ScrollArea>
