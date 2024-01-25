@@ -6,7 +6,7 @@ export function Feeds() {
     <div className="discover">
       <div className="flex items-center justify-center p-0">
         <div className="posts-scroll-container h-full w-full p-0">
-          <ScrollArea className="h-full w-full">
+          <ScrollArea className="h-full w-full md:w-[40vw]">
             <PostCard
               userName="Lorem Ipsum"
               userImage="/images/woman-post.png"

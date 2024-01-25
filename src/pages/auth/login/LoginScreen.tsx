@@ -13,16 +13,16 @@ export function LoginScreen() {
   return (
     <div>
       <div
-        className="login-screen flex min-h-screen flex-col items-center justify-between bg-[#3087ec] bg-cover bg-center bg-blend-darken"
+        className="login-screen flex min-h-screen flex-col items-center justify-between bg-[#3087ec] bg-cover bg-center bg-blend-darken md:bg-contain md:bg-no-repeat"
         style={{
           backgroundImage: `url(${loginBg})`,
         }}>
         <div className="logo-container">
           <img src={logo} className="mx-auto py-24" alt="Chamet Logo" />
         </div>
-        <div className="flex w-full flex-col justify-end px-8 py-8">
+        <div className="flex w-full flex-col justify-end px-8 py-8 md:w-1/2">
           <div className="action-buttons flex min-h-full flex-col items-center justify-end">
-            <div className="w-11/12 py-2">
+            <div className="w-11/12 py-2 md:w-1/2">
               <Button
                 size="lg"
                 className="w-full rounded-full bg-gray-400 bg-opacity-90 py-6 shadow-2xl drop-shadow-xl hover:bg-gray-400/90">
@@ -30,7 +30,7 @@ export function LoginScreen() {
                 Start{' '}
               </Button>
             </div>
-            <div className="w-11/12 py-2">
+            <div className="w-11/12 py-2 md:w-1/2">
               <Button
                 size="lg"
                 className="w-full rounded-full bg-red-600 bg-opacity-90 py-6 text-white shadow-lg drop-shadow-xl hover:bg-red-600/90"
@@ -42,7 +42,7 @@ export function LoginScreen() {
                 Gmail{' '}
               </Button>
             </div>
-            <div className="w-11/12 py-2">
+            <div className="w-11/12 py-2 md:w-1/2">
               <Button
                 size="lg"
                 className="w-full rounded-full bg-indigo-700 bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-indigo-700/90">

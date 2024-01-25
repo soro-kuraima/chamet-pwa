@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom';
 
 import { VideoCameraIcon, VideoCameraActiveIcon } from '@/components/ui/icons';
 
-export function Menu() {
+export function MobileMenu() {
   return (
     <nav className="fixed bottom-0 left-0 z-[100] min-w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl">
       <ul className="mx-auto flex items-center justify-between px-4 py-2">

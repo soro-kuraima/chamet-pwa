@@ -8,7 +8,7 @@ import { TypingIndicator } from '@/components/ui/typing-indicator';
 
 export function RecentChat() {
   return (
-    <div className="recent-chat">
+    <div className="recent-chat md:w-[40vw]">
       <div className="chat-title flex items-center justify-between px-4">
         <div className="user-info flex items-center gap-6">
           <Avatar className="h-16 w-16">
@@ -66,7 +66,7 @@ export function RecentChat() {
           </div>
         </div>
       </ScrollArea>
-      <div className="chat-input fixed bottom-0 left-0 z-[100] min-w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl">
+      <div className="chat-input fixed bottom-0 left-0 z-[100] w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl md:w-[40vw] md:left-[20%] md:border-rounded-md md:bg-primary/10">
         <ChatInput />
       </div>
     </div>

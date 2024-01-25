@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 
 import { RecentChatsCard } from '@/components/compound/recent-chats-card';
@@ -8,9 +9,13 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 export function RecentChats() {
   const navigate = useNavigate();
 
+  const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
+  const navigationPath = isDesktop ? '/app/home/recent-chat' : '/app/recent-chat';
+
   return (
-    <div className="recent-chats">
-      <div className="search-box-container px-2">
+    <div className="recent-chats md:ml-2">
+      <div className="search-box-container px-2 md:w-full">
         <SearchInput placeholder="Recent Chats" />
       </div>
       <div className="search-filter-buttons flex items-center gap-4 px-4 py-4">
@@ -27,7 +32,7 @@ export function RecentChats() {
               lastMessage="Please take a look at the image"
               lastMessageTime="18:00"
               unreadMessageCount={5}
-              onTap={() => navigate('/app/recent-chat')}
+              onTap={() => navigate(navigationPath)}
             />
             <RecentChatsCard
               userName="Lorem Ipsum"
@@ -35,7 +40,7 @@ export function RecentChats() {
               lastMessage="Please take a look at the image"
               lastMessageTime="16:00"
               unreadMessageCount={5}
-              onTap={() => navigate('/app/recent-chat')}
+              onTap={() => navigate(navigationPath)}
             />
             <RecentChatsCard
               userName="Lorem Ipsum"
@@ -43,7 +48,7 @@ export function RecentChats() {
               lastMessage="Please take a look at the image"
               lastMessageTime="10:00"
               unreadMessageCount={5}
-              onTap={() => navigate('/app/recent-chat')}
+              onTap={() => navigate(navigationPath)}
             />
           </ScrollArea>
         </div>

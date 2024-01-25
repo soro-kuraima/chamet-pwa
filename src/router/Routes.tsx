@@ -140,6 +140,14 @@ export const routes = createBrowserRouter([
               </Page>
             ),
           },
+          {
+            path: 'recent-chat',
+            element: (
+              <Page title="Recent Chat">
+                <RecentChatScreen />
+              </Page>
+            ),
+          }
         ],
       },
       {

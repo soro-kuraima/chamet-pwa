@@ -24,7 +24,7 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
   ) => (
     <div
       ref={ref}
-      className="profile-card relative flex h-72 w-full flex-col items-center justify-center drop-shadow-xl">
+      className="profile-card relative flex h-72 w-full flex-col items-center justify-center drop-shadow-xl ">
       <div className="live-lable absolute left-2 top-2 flex items-center justify-center">
         <VideoCameraActiveIcon className="h-6 w-6" />
         <span className="text-md px-1 font-semibold text-primary">Live</span>
@@ -32,7 +32,7 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
       <img
         src={userImage}
         alt={userName}
-        className="h-full w-full rounded-md"
+        className="h-full w-full rounded-md object-cover object-top"
       />
       <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-2">
         <div className="user-info">
@@ -72,12 +72,12 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
   ) => (
     <div
       ref={ref}
-      className="profile-card-large relative mb-4 flex h-full w-full flex-col items-center justify-center drop-shadow-xl">
+      className="profile-card-large relative mb-4 flex h-full w-full flex-col items-center justify-center drop-shadow-xl md:h-[85vh] md:w-[40vw]">
       <div className="live-lable absolute left-2 top-2 flex items-center justify-center">
         <VideoCameraActiveIcon className="h-6 w-6" />
         <span className="text-md px-1 font-semibold text-primary">Live</span>
       </div>
-      <img src={userImage} alt={userName} className="h-full w-full" />
+      <img src={userImage} alt={userName} className="h-full w-full object-cover rounded-md" />
       <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-4">
         <div className="user-info">
           <h3 className="py-2 text-xl font-medium text-white">{userName}</h3>

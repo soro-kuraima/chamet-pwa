@@ -7,7 +7,7 @@ export function RecentChatScreen() {
   return (
     <div className="live-feeds pb-16">
       <RecentChatMenu />
-      <div className="container relative px-1 py-4">
+      <div className="container relative px-1 py-4 md:bg-primary/10">
         <RecentChat />
       </div>
     </div>
