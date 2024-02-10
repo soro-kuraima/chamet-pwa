@@ -3,11 +3,8 @@
 import { Button } from '@/components/ui/button';
 import { MenuIcon } from '@/components/ui/icons/menu';
 import { Input } from '@/components/ui/input';
-import { Feeds } from '@/pages/app/feeds/Feeds';
-import { FeedsMenu } from '@/pages/app/feeds/feeds-menu';
 import { ChevronLeftIcon, DocumentTextIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import PlusCircleIcon from '@heroicons/react/24/solid/PlusCircleIcon';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function AddPostScreen() {
     const navigate = useNavigate();

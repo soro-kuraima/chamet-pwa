@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 // eslint-disable-next-line import/extensions
 import logo from '@/assets/chamet-logo.svg';
@@ -8,7 +8,6 @@ import loginBgDesktop from '@/assets/login-bg-desktop.png';
 import loginBg from '@/assets/login-bg.jpeg';
 
 export function PhoneLoginScreen() {
-  const navigate = useNavigate();
 
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
