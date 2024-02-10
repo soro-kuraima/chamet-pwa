@@ -17,21 +17,21 @@ export function AccountScreen() {
   return (
     <div className="account">
       <div
-        className="absolute top-0 left-0 z-[-10] h-32 w-full bg-cover bg-bottom overflow-hidden md:w-[100vw] md:h-48"
+        className="absolute left-0 top-0 z-[-10] h-32 w-full overflow-hidden bg-cover bg-bottom md:h-48 md:w-[100vw]"
         style={{
-          backgroundImage: 'url(\'/images/ellipse-bg-1.svg\')',
+          backgroundImage: "url('/images/ellipse-bg-1.svg')",
         }}
       />
       <div
-        className="absolute top-0 left-0 z-[-20] h-48 w-full bg-cover bg-bottom overflow-hidden md:w-[100vw] md:h-64"
+        className="absolute left-0 top-0 z-[-20] h-48 w-full overflow-hidden bg-cover bg-bottom md:h-64 md:w-[100vw]"
         style={{
-          backgroundImage: 'url(\'/images/ellipse-bg-2.svg\')',
+          backgroundImage: "url('/images/ellipse-bg-2.svg')",
         }}
       />
       <div
-        className="absolute top-0 left-0 z-[-30] h-64 w-full bg-cover bg-bottom overflow-hidden md:w-[100vw] md:h-80"
+        className="absolute left-0 top-0 z-[-30] h-64 w-full overflow-hidden bg-cover bg-bottom md:h-80 md:w-[100vw]"
         style={{
-          backgroundImage: 'url(\'/images/ellipse-bg-3.svg\')',
+          backgroundImage: "url('/images/ellipse-bg-3.svg')",
         }}
       />
       <ScrollArea>

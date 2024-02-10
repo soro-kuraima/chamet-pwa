@@ -3,15 +3,12 @@ import { Outlet } from 'react-router-dom';
 
 import { DiscoveryMenu } from '@/pages/app/discovery/discovery-menu';
 
-
 export function DiscoveryScreen() {
   return (
-    <div className="discovery pb-16 h-full w-full">
+    <div className="discovery h-full w-full pb-16">
       <DiscoveryMenu />
       <div className="container relative p-0">
-        
-          <Outlet />
-        
+        <Outlet />
       </div>
     </div>
   );

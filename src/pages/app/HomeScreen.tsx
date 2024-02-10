@@ -19,11 +19,7 @@ export function HomeScreen() {
       <div className="h-screen w-screen overflow-auto md:flex md:w-1/2">
         <Outlet />
       </div>
-      {
-          isDesktop && (
-            <RecentChatsScreen />
-          )
-        }
+      {isDesktop && <RecentChatsScreen />}
       {isDesktop ? <DesktopMenu /> : <MobileMenu />}
       {callCardVisibility &&
         createPortal(

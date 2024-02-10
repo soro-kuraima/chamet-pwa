@@ -1,8 +1,5 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import {
-  SparklesIcon,
-  BoltIcon,
-} from '@heroicons/react/24/outline';
+import { SparklesIcon, BoltIcon } from '@heroicons/react/24/outline';
 import {
   SparklesIcon as SparklesSolidIcon,
   BoltIcon as BoltSolidIcon,
@@ -13,7 +10,7 @@ import { VideoCameraIcon, VideoCameraActiveIcon } from '@/components/ui/icons';
 
 export function DesktopMenu() {
   return (
-    <nav className="fixed top-0 left-0 z-[100] min-h-full border-r-2 border-accent bg-background p-1 drop-shadow-2xl">
+    <nav className="fixed left-0 top-0 z-[100] min-h-full border-r-2 border-accent bg-background p-1 drop-shadow-2xl">
       <ul className="mx-auto flex flex-col items-center gap-12 px-4 py-16">
         <li>
           <NavLink to="/app/home/discovery">

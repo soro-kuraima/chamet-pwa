@@ -21,6 +21,9 @@ import { RecentChatsScreen } from '@/pages/app/recent-chats/RecentChatsScreen';
 import { AuthLayout } from '@/pages/auth/AuthLayout';
 import { LoginScreen } from '@/pages/auth/login/LoginScreen';
 import { OnboardScreen } from '@/pages/auth/onboard/OnboardScreen';
+import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
+import { Phone } from '@/pages/auth/phone-login/Phone';
+import { EnterOtp } from '@/pages/auth/phone-login/EnterOtp';
 
 export const routes = createBrowserRouter([
   {
@@ -47,6 +50,28 @@ export const routes = createBrowserRouter([
             <LoginScreen />
           </Page>
         ),
+      },
+      {
+        path: 'login-using-phone',
+        element: (
+          <Page title="Login using phone">
+            <PhoneLoginScreen />
+          </Page>
+        ),
+        children: [
+          {
+            index: true,
+            element: <Navigate to="/auth/login-using-phone/enter-phone" />,
+          },
+          {
+            path: 'enter-phone',
+            element: <Phone />,
+          },
+          {
+            path: 'enter-otp',
+            element: <EnterOtp />,
+          },
+        ],
       },
       {
         path: 'onboarding',
@@ -147,7 +172,7 @@ export const routes = createBrowserRouter([
                 <RecentChatScreen />
               </Page>
             ),
-          }
+          },
         ],
       },
       {

@@ -77,7 +77,11 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
         <VideoCameraActiveIcon className="h-6 w-6" />
         <span className="text-md px-1 font-semibold text-primary">Live</span>
       </div>
-      <img src={userImage} alt={userName} className="h-full w-full object-cover rounded-md" />
+      <img
+        src={userImage}
+        alt={userName}
+        className="h-full w-full rounded-md object-cover"
+      />
       <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-4">
         <div className="user-info">
           <h3 className="py-2 text-xl font-medium text-white">{userName}</h3>

@@ -8,12 +8,14 @@ import { DiscoverDesktop } from './DiscoverDesktop';
 export function Discover() {
   const { toggleCallCardVisibility } = useCallCardStore();
 
-  const isDesktop = useMediaQuery({query: '(min-width: 768px)'})
+  const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
-  if(isDesktop) {
-    return (<div className="discover">
-      <DiscoverDesktop />
-    </div>);
+  if (isDesktop) {
+    return (
+      <div className="discover">
+        <DiscoverDesktop />
+      </div>
+    );
   }
 
   return (

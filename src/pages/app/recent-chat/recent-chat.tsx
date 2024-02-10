@@ -66,7 +66,7 @@ export function RecentChat() {
           </div>
         </div>
       </ScrollArea>
-      <div className="chat-input fixed bottom-0 left-0 z-[100] w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl md:w-[40vw] md:border-rounded-md md:bg-primary/10 md:left-auto">
+      <div className="chat-input md:border-rounded-md fixed bottom-0 left-0 z-[100] w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl md:left-auto md:w-[40vw] md:bg-primary/10">
         <ChatInput />
       </div>
     </div>

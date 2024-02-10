@@ -11,7 +11,9 @@ export function RecentChats() {
 
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
-  const navigationPath = isDesktop ? '/app/home/recent-chat' : '/app/recent-chat';
+  const navigationPath = isDesktop
+    ? '/app/home/recent-chat'
+    : '/app/recent-chat';
 
   return (
     <div className="recent-chats md:ml-2">
