@@ -11,7 +11,7 @@ export function RecentChatsScreen() {
 return (
   <div className="recent-chats pb-16 md:h-screen md:w-1/4">
     {!isDesktop && <RecentChatsMenu /> }
-    <div className="container relative px-1 py-4">
+    <div className="container relative px-1 py-4 md:px-8">
       <RecentChats />
     </div>
   </div>

@@ -26,7 +26,7 @@ export function RecentChat() {
         </div>
       </div>
       <ScrollArea className="h-full w-full">
-        <div className="chat-messages w-full px-4 py-6">
+        <div className="chat-messages w-full px-4 py-6 md:py-2">
           <div className="message">
             <div className="received-message rounded-md bg-accent/20 px-4 py-2">
               <p className="text-orange-400">Username</p>
@@ -66,7 +66,7 @@ export function RecentChat() {
           </div>
         </div>
       </ScrollArea>
-      <div className="chat-input fixed bottom-0 left-0 z-[100] w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl md:w-[40vw] md:left-[20%] md:border-rounded-md md:bg-primary/10">
+      <div className="chat-input fixed bottom-0 left-0 z-[100] w-full border-t-2 border-accent bg-background p-1 drop-shadow-2xl md:w-[40vw] md:border-rounded-md md:bg-primary/10 md:left-auto">
         <ChatInput />
       </div>
     </div>
