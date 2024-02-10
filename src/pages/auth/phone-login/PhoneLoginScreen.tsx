@@ -8,7 +8,6 @@ import loginBgDesktop from '@/assets/login-bg-desktop.png';
 import loginBg from '@/assets/login-bg.jpeg';
 
 export function PhoneLoginScreen() {
-
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   const bgUrl = isDesktop ? loginBgDesktop : loginBg;

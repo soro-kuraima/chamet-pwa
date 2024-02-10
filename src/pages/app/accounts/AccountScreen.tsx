@@ -7,15 +7,16 @@ import {
   AdjustmentsHorizontalIcon,
   UserCircleIcon,
 } from '@heroicons/react/24/solid';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { VideoCameraActiveIcon } from '@/components/ui/icons';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { useNavigate } from 'react-router-dom';
 
 export function AccountScreen() {
   const navigate = useNavigate();
+
   return (
     <div className="account">
       <div
@@ -120,15 +121,17 @@ export function AccountScreen() {
                     <ChevronRightIcon className="h-8 w-8 stroke-black/60" />
                   </div>
                 </div>
-                <div className="account-menu-item flex w-full items-center justify-between">
-                  <div className="flex items-center">
-                    <UserCircleIcon className="inline-flex h-8 w-8" />
-                    <span className="px-8 text-lg font-medium text-black">
-                      Profile
-                    </span>
+                <Link to="/app/my-profile">
+                  <div className="account-menu-item flex w-full items-center justify-between">
+                    <div className="flex items-center">
+                      <UserCircleIcon className="inline-flex h-8 w-8" />
+                      <span className="px-8 text-lg font-medium text-black">
+                        Profile
+                      </span>
+                    </div>
+                    <ChevronRightIcon className="h-6 w-6 stroke-black/60" />
                   </div>
-                  <ChevronRightIcon className="h-6 w-6 stroke-black/60" />
-                </div>
+                </Link>
                 <div className="account-menu-item flex w-full items-center justify-between">
                   <div className="flex items-center">
                     <AdjustmentsHorizontalIcon className="inline-flex h-8 w-8" />

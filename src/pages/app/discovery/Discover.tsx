@@ -1,4 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from 'react-router-dom';
 
 import { DiscoverDesktop } from './DiscoverDesktop';
 
@@ -11,6 +12,8 @@ export function Discover() {
   const { toggleCallCardVisibility } = useCallCardStore();
 
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
+  const navigate = useNavigate();
 
   if (isDesktop) {
     return (
@@ -31,6 +34,7 @@ export function Discover() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCardLarge
               userName="UserName"
@@ -38,6 +42,7 @@ export function Discover() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCardLarge
               userName="UserName"
@@ -45,6 +50,7 @@ export function Discover() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCardLarge
               userName="UserName"
@@ -52,6 +58,7 @@ export function Discover() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
           </ScrollArea>
         </div>

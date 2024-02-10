@@ -10,6 +10,7 @@ import { Discover } from '@/pages/app/discovery/Discover';
 import { DiscoveryScreen } from '@/pages/app/discovery/DiscoveryScreen';
 import { Nearby } from '@/pages/app/discovery/Nearby';
 import { Popular } from '@/pages/app/discovery/Popular';
+import { AddPostScreen } from '@/pages/app/feeds/AddPostScreen';
 import { FeedsScreen } from '@/pages/app/feeds/FeedsScreen';
 import { HomeScreen } from '@/pages/app/HomeScreen';
 import { LiveFeeds } from '@/pages/app/live-feeds/LiveFeeds';
@@ -24,7 +25,6 @@ import { OnboardScreen } from '@/pages/auth/onboard/OnboardScreen';
 import { EnterOtp } from '@/pages/auth/phone-login/EnterOtp';
 import { Phone } from '@/pages/auth/phone-login/Phone';
 import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
-import { AddPostScreen } from '@/pages/app/feeds/AddPostScreen';
 
 export const routes = createBrowserRouter([
   {
@@ -161,10 +161,10 @@ export const routes = createBrowserRouter([
           {
             path: 'add-post',
             element: (
-              <Page title='Add Post'>
+              <Page title="Add Post">
                 <AddPostScreen />
               </Page>
-            )
+            ),
           },
           {
             path: 'recent-chats',

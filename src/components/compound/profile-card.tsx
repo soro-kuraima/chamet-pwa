@@ -8,6 +8,7 @@ type profileCardProps = {
   userImage: string;
   userLocationIcon: string;
   userLocationName: string;
+  onUserNameTap: () => void;
   onCallActionTap: () => void;
 };
 
@@ -19,6 +20,7 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
       userLocationIcon,
       userLocationName,
       onCallActionTap,
+      onUserNameTap,
     },
     ref
   ) => (
@@ -36,7 +38,11 @@ const ProfileCard = React.forwardRef<HTMLDivElement, profileCardProps>(
       />
       <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-2">
         <div className="user-info">
-          <h3 className="py-2 text-lg font-medium text-white">{userName}</h3>
+          <Button variant="link" onClick={onUserNameTap} className="p-0">
+            <span className="py-2 text-lg font-medium text-white">
+              {userName}
+            </span>
+          </Button>
           <p className="user-info-location flex items-center gap-2">
             <img
               className="location-icon h-6"
@@ -67,6 +73,7 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
       userLocationIcon,
       userLocationName,
       onCallActionTap,
+      onUserNameTap,
     },
     ref
   ) => (
@@ -84,7 +91,11 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
       />
       <div className="profile-card-footer absolute bottom-2 flex w-full items-end justify-between px-4">
         <div className="user-info">
-          <h3 className="py-2 text-xl font-medium text-white">{userName}</h3>
+          <Button variant="link" className="p-0" onClick={onUserNameTap}>
+            <span className="py-2 text-xl font-medium text-white">
+              {userName}
+            </span>
+          </Button>
           <p className="user-info-location flex items-center gap-2">
             <img
               className="location-icon"

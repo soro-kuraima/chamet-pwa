@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 import { ProfileCard } from '@/components/compound/profile-card';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useCallCardStore } from '@/stores/call-card-store';
 
 export function DiscoverDesktop() {
   const { toggleCallCardVisibility } = useCallCardStore();
+
+  const navigate = useNavigate();
 
   return (
     <div className="w-fullflex h-full items-center justify-center p-0">
@@ -16,6 +20,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -23,6 +28,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -30,6 +36,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -37,6 +44,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -44,6 +52,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -51,6 +60,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -58,6 +68,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -65,6 +76,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -72,6 +84,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -79,6 +92,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -86,6 +100,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-india.png"
               userLocationName="IND"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
             <ProfileCard
               userName="UserName"
@@ -93,6 +108,7 @@ export function DiscoverDesktop() {
               userLocationIcon="/images/flag-usa.png"
               userLocationName="USA"
               onCallActionTap={toggleCallCardVisibility}
+              onUserNameTap={() => navigate('/app/profile')}
             />
           </div>
         </ScrollArea>
