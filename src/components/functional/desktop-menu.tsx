@@ -16,7 +16,7 @@ export function DesktopMenu() {
     <nav className="fixed top-0 left-0 z-[100] min-h-full border-r-2 border-accent bg-background p-1 drop-shadow-2xl">
       <ul className="mx-auto flex flex-col items-center gap-12 px-4 py-16">
         <li>
-          <NavLink to="/app/home/discovery/discover">
+          <NavLink to="/app/home/discovery">
             {({ isActive }) => (
               <>
                 {isActive ? (
