@@ -17,19 +17,19 @@ export function AccountScreen() {
   return (
     <div className="account">
       <div
-        className="absolute top-0 z-[-10] h-32 w-full bg-cover bg-bottom overflow-hidden md:w-[90vw]"
+        className="absolute top-0 left-0 z-[-10] h-32 w-full bg-cover bg-bottom overflow-hidden md:w-[100vw] md:h-48"
         style={{
           backgroundImage: 'url(\'/images/ellipse-bg-1.svg\')',
         }}
       />
       <div
-        className="absolute top-0 z-[-20] h-48 w-full bg-cover bg-bottom overflow-hidden md:w-[90vw]"
+        className="absolute top-0 left-0 z-[-20] h-48 w-full bg-cover bg-bottom overflow-hidden md:w-[100vw] md:h-64"
         style={{
           backgroundImage: 'url(\'/images/ellipse-bg-2.svg\')',
         }}
       />
       <div
-        className="absolute top-0 z-[-30] h-64 w-full bg-cover bg-bottom overflow-hidden md:w-[90vw]"
+        className="absolute top-0 left-0 z-[-30] h-64 w-full bg-cover bg-bottom overflow-hidden md:w-[100vw] md:h-80"
         style={{
           backgroundImage: 'url(\'/images/ellipse-bg-3.svg\')',
         }}
