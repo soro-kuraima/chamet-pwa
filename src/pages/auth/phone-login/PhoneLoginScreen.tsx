@@ -4,9 +4,8 @@ import { Outlet, useNavigate } from 'react-router-dom';
 // eslint-disable-next-line import/extensions
 import logo from '@/assets/chamet-logo.svg';
 // eslint-disable-next-line import/extensions
-import loginBg from '@/assets/login-bg.jpeg';
 import loginBgDesktop from '@/assets/login-bg-desktop.png';
-import { Button } from '@/components/ui/button';
+import loginBg from '@/assets/login-bg.jpeg';
 
 export function PhoneLoginScreen() {
   const navigate = useNavigate();
@@ -29,7 +28,7 @@ export function PhoneLoginScreen() {
             alt="Chamet Logo"
           />
         </div>
-        <div className="flex w-full flex-col justify-end rounded-t-3xl bg-white px-0 py-8 md:rounded-xl md:w-1/3 md:items-center">
+        <div className="flex w-full flex-col justify-end rounded-t-3xl bg-white px-0 py-8 md:w-1/3 md:items-center md:rounded-xl">
           <Outlet />
         </div>
       </div>

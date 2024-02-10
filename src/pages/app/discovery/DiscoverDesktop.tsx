@@ -4,6 +4,7 @@ import { useCallCardStore } from '@/stores/call-card-store';
 
 export function DiscoverDesktop() {
   const { toggleCallCardVisibility } = useCallCardStore();
+
   return (
     <div className="w-fullflex h-full items-center justify-center p-0">
       <div className="profiles-scroll-container h-full w-full p-0">

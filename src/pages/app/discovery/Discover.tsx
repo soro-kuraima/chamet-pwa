@@ -1,9 +1,11 @@
+import { useMediaQuery } from 'react-responsive';
+
+import { DiscoverDesktop } from './DiscoverDesktop';
+
 import { ProfileCardLarge } from '@/components/compound/profile-card';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { useCallCardStore } from '@/stores/call-card-store';
-import { useMediaQuery } from 'react-responsive';
-import { DiscoverDesktop } from './DiscoverDesktop';
 
 export function Discover() {
   const { toggleCallCardVisibility } = useCallCardStore();

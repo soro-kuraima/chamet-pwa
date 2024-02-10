@@ -21,9 +21,10 @@ import { RecentChatsScreen } from '@/pages/app/recent-chats/RecentChatsScreen';
 import { AuthLayout } from '@/pages/auth/AuthLayout';
 import { LoginScreen } from '@/pages/auth/login/LoginScreen';
 import { OnboardScreen } from '@/pages/auth/onboard/OnboardScreen';
-import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
-import { Phone } from '@/pages/auth/phone-login/Phone';
 import { EnterOtp } from '@/pages/auth/phone-login/EnterOtp';
+import { Phone } from '@/pages/auth/phone-login/Phone';
+import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
+import { AddPostScreen } from '@/pages/app/feeds/AddPostScreen';
 
 export const routes = createBrowserRouter([
   {
@@ -156,6 +157,14 @@ export const routes = createBrowserRouter([
                 <FeedsScreen />
               </Page>
             ),
+          },
+          {
+            path: 'add-post',
+            element: (
+              <Page title='Add Post'>
+                <AddPostScreen />
+              </Page>
+            )
           },
           {
             path: 'recent-chats',

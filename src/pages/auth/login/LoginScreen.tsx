@@ -1,12 +1,12 @@
+import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 
 // eslint-disable-next-line import/extensions
 import logo from '@/assets/chamet-logo.svg';
 // eslint-disable-next-line import/extensions
-import loginBg from '@/assets/login-bg.jpeg';
 import loginBgDesktop from '@/assets/login-bg-desktop.png';
+import loginBg from '@/assets/login-bg.jpeg';
 import { Button } from '@/components/ui/button';
-import { useMediaQuery } from 'react-responsive';
 
 export function LoginScreen() {
   const navigate = useNavigate();

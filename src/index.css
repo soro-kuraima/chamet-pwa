@@ -87,6 +87,8 @@ section {
   -ms-overflow-style: none;
 }
 
-#phone-input:focus, #phone-input:focus-visible, #phone-input:focus-within {
+#phone-input:focus,
+#phone-input:focus-visible,
+#phone-input:focus-within {
   outline: none;
 }

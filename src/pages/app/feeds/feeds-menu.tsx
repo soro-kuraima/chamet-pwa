@@ -26,12 +26,12 @@ export function FeedsMenu() {
       </ul>
       <ul className="flex items-center gap-6">
         <li>
-          <Link to="/app/account">
+          <Link to="/app/home/add-post">
             <PlusCircleIcon className="h-10 w-10 fill-black" />
           </Link>
         </li>
         <li>
-          <Link to="/app/home/feeds">
+          <Link to="/app/account">
             <MenuIcon className="h-8 w-8" />
           </Link>
         </li>

@@ -12,8 +12,10 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { VideoCameraActiveIcon } from '@/components/ui/icons';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useNavigate } from 'react-router-dom';
 
 export function AccountScreen() {
+  const navigate = useNavigate();
   return (
     <div className="account">
       <div
@@ -39,8 +41,8 @@ export function AccountScreen() {
           <div className="top">
             <div className="account-menu flex items-center justify-between px-2 py-4">
               <div className="back-button">
-                <Button variant="link">
-                  <ChevronLeftIcon className="h-8 w-8 stroke-black" />
+                <Button variant="link" onClick={() => navigate(-1)}>
+                  <ChevronLeftIcon className="h-8  w-8 stroke-black" />
                 </Button>
                 <div className="h-8" />
               </div>
