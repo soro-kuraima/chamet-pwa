@@ -1,6 +1,4 @@
 import {
-  ArrowLeftStartOnRectangleIcon,
-  ChevronDownIcon,
   ChevronLeftIcon,
   DocumentDuplicateIcon,
 } from '@heroicons/react/24/outline';
