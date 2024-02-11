@@ -18,7 +18,7 @@ export function AccountScreen() {
   const navigate = useNavigate();
 
   return (
-    <div className="account">
+    <div className="settings">
       <div
         className="absolute left-0 top-0 z-[-10] h-32 w-full overflow-hidden bg-cover bg-bottom md:h-48 md:w-[100vw]"
         style={{
@@ -132,15 +132,17 @@ export function AccountScreen() {
                     <ChevronRightIcon className="h-6 w-6 stroke-black/60" />
                   </div>
                 </Link>
-                <div className="account-menu-item flex w-full items-center justify-between">
-                  <div className="flex items-center">
-                    <AdjustmentsHorizontalIcon className="inline-flex h-8 w-8" />
-                    <span className="px-8 text-lg font-medium text-black">
-                      Settings
-                    </span>
+                <Link to="/app/settings">
+                  <div className="account-menu-item flex w-full items-center justify-between">
+                    <div className="flex items-center">
+                      <AdjustmentsHorizontalIcon className="inline-flex h-8 w-8" />
+                      <span className="px-8 text-lg font-medium text-black">
+                        Settings
+                      </span>
+                    </div>
+                    <ChevronRightIcon className="h-6 w-6 stroke-black/60" />
                   </div>
-                  <ChevronRightIcon className="h-6 w-6 stroke-black/60" />
-                </div>
+                </Link>
               </div>
               <div className="refer-link mt-8">
                 <div className="flex items-center gap-10 bg-gradient-to-b from-[#3087ec]/30 to-[#3830d7]/30 px-6 py-1">

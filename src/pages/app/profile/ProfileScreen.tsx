@@ -27,7 +27,7 @@ export function ProfileScreen() {
           <ChevronLeftIcon className="h-10 w-10 stroke-white" />
         </Button>
       </div>
-      <div className="login-screen flex min-h-screen flex-col justify-between bg-cover bg-center md:items-center md:justify-center md:gap-8 md:bg-cover md:bg-no-repeat">
+      <div className="flex h-[90vh] flex-col justify-end bg-cover bg-center md:h-[100vh] md:items-center md:justify-center md:gap-8 md:bg-cover md:bg-no-repeat">
         <div className="flex w-full flex-col items-center justify-end rounded-t-3xl bg-white px-8 py-4 md:w-1/3 md:justify-center md:rounded-xl md:bg-white/20 md:py-16">
           {!isDesktop && (
             <div className="horizontal-separator h-[2px] w-24 bg-black" />

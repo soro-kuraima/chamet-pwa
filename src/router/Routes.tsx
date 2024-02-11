@@ -1,9 +1,12 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import { RequireAuth, Page } from '@/components/functional';
+import { AboutUsScreen } from '@/pages/app/accounts/AboutUsScreen';
 import { AccountScreen } from '@/pages/app/accounts/AccountScreen';
 import { MyProfileScreen } from '@/pages/app/accounts/MyProfileScreen';
+import { PrivacyPolicyScreen } from '@/pages/app/accounts/PrivacyPolicyScreen';
 import { SettingsScreen } from '@/pages/app/accounts/SettingsScreen';
+import { UserAgreementScreen } from '@/pages/app/accounts/UserAgreementScreen';
 import { WalletScreen } from '@/pages/app/accounts/WalletScreen';
 import { AppLayout } from '@/pages/app/AppLayout';
 import { Discover } from '@/pages/app/discovery/Discover';
@@ -221,6 +224,30 @@ export const routes = createBrowserRouter([
         element: (
           <Page title="Profile">
             <ProfileScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'privacy-policy',
+        element: (
+          <Page title="Privacy Policy">
+            <PrivacyPolicyScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'user-agreement',
+        element: (
+          <Page title="User Agreement">
+            <UserAgreementScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'about-us',
+        element: (
+          <Page title="About Us">
+            <AboutUsScreen />
           </Page>
         ),
       },
