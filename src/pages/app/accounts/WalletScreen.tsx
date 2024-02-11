@@ -30,46 +30,64 @@ export function WalletScreen() {
           <li className="h-1 w-1/4" />
         </ul>
       </nav>
-     <div className="money-section py-12 flex flex-col items-center gap-8">
-        <img src='/images/rupee.png' className='h-20 w-20 object-contain' />
-        <p className='text-black font-semibold text-xl'>Balance: Rs. 500</p>
-        <Button variant={"link"} onClick={() => togglePaymentOptions(prev => !prev)}>
-          <span className='text-red-600 text-lg font-medium'>Add Money</span>
-          <ChevronRightIcon className='h-4 w-4 stroke-red-600' />
+      <div className="money-section flex flex-col items-center gap-8 py-12">
+        <img src="/images/rupee.png" className="h-20 w-20 object-contain" />
+        <p className="text-xl font-semibold text-black">Balance: Rs. 500</p>
+        <Button
+          variant={'link'}
+          onClick={() => togglePaymentOptions((prev) => !prev)}>
+          <span className="text-lg font-medium text-red-600">Add Money</span>
+          <ChevronRightIcon className="h-4 w-4 stroke-red-600" />
         </Button>
-     </div>
-     {
-      showPaymentOptions && 
-      <Overlay>
-        <div className="payment-options h-full w-full flex flex-col justify-end md:justify-center md:items-center">
-        <div className="flex w-full flex-col justify-end rounded-t-3xl bg-white px-0 py-8 md:w-1/3 md:items-center md:rounded-xl">
-          <div className="options px-6">
-          
-              <RadioGroup defaultValue='upi' defaultChecked className='text-black'>
-                <div className="option flex items-center gap-4 py-4">
-                  <RadioGroupItem value='upi' id='r1' className='border-black text-white p-2 focus:ring-offset-1 focus:ring-2 focus:ring-black focus:border-none focus:bg-primary' />
-                  <Label htmlFor='r1'>UPI</Label>
-                </div>
-                <div className="option flex items-center gap-4 py-4">
-                  <RadioGroupItem value='card' id='r2' className='border-black text-white p-2 border-black text-white p-2 focus:ring-offset-1 focus:ring-2 focus:ring-black focus:border-none focus:bg-primary' />
-                  <Label htmlFor='r2'>Credit or Debit Card (VISA / MasterCard / MIR) </Label>
-                </div>
-              </RadioGroup>
-            
-          </div>
-          <div className="action-buttons flex justify-end gap-10 py-6 px-6">
-            <Button size={"sm"} onClick={() => togglePaymentOptions(prev => !prev)} className='bg-secondary px-6 font-bold'>
-              Cancel 
-            </Button>
+      </div>
+      {showPaymentOptions && (
+        <Overlay>
+          <div className="payment-options flex h-full w-full flex-col justify-end md:items-center md:justify-center">
+            <div className="flex w-full flex-col justify-end rounded-t-3xl bg-white px-0 py-8 md:w-1/3 md:items-center md:rounded-xl">
+              <div className="options px-6">
+                <RadioGroup
+                  defaultValue="upi"
+                  defaultChecked
+                  className="text-black">
+                  <div className="option flex items-center gap-4 py-4">
+                    <RadioGroupItem
+                      value="upi"
+                      id="r1"
+                      className="border-black p-2 text-white focus:border-none focus:bg-primary focus:ring-2 focus:ring-black focus:ring-offset-1"
+                    />
+                    <Label htmlFor="r1">UPI</Label>
+                  </div>
+                  <div className="option flex items-center gap-4 py-4">
+                    <RadioGroupItem
+                      value="card"
+                      id="r2"
+                      className="border-black border-black p-2 p-2 text-white text-white focus:border-none focus:bg-primary focus:ring-2 focus:ring-black focus:ring-offset-1"
+                    />
+                    <Label htmlFor="r2">
+                      Credit or Debit Card (VISA / MasterCard / MIR){' '}
+                    </Label>
+                  </div>
+                </RadioGroup>
+              </div>
+              <div className="action-buttons flex justify-end gap-10 px-6 py-6">
+                <Button
+                  size={'sm'}
+                  onClick={() => togglePaymentOptions((prev) => !prev)}
+                  className="bg-secondary px-6 font-bold">
+                  Cancel
+                </Button>
 
-            <Button size={"sm"} onClick={() => togglePaymentOptions(prev => !prev)} className='bg-primary px-6 font-bold'>
-              Continue
-            </Button>
+                <Button
+                  size={'sm'}
+                  onClick={() => togglePaymentOptions((prev) => !prev)}
+                  className="bg-primary px-6 font-bold">
+                  Continue
+                </Button>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-      </Overlay>
-     }
+        </Overlay>
+      )}
     </div>
   );
 }

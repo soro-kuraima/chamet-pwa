@@ -29,6 +29,8 @@ import { EnterOtp } from '@/pages/auth/phone-login/EnterOtp';
 import { Phone } from '@/pages/auth/phone-login/Phone';
 import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
 import { InviteFriendsScreen } from '@/pages/app/accounts/InviteFriendsScreen';
+import { AudioCallScreen } from '@/pages/app/call/AudioCallScreen';
+import { VideoCallScreen } from '@/pages/app/call/VideoCallScreen';
 
 export const routes = createBrowserRouter([
   {
@@ -257,6 +259,23 @@ export const routes = createBrowserRouter([
         element: (
           <Page title="Invite Friends">
             <InviteFriendsScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'audio-call',
+        element: (
+          <Page title="Audio call">
+            <AudioCallScreen />
+          </Page>
+        ),
+      },
+
+      {
+        path: 'video-call',
+        element: (
+          <Page title="Video call">
+            <VideoCallScreen />
           </Page>
         ),
       },
