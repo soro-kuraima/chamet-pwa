@@ -100,7 +100,8 @@ export function AccountScreen() {
                     </span>
                   </div>
                 </div>
-                <div className="account-menu-item flex w-full items-center justify-between">
+               <Link to='/app/wallet'>
+               <div className="account-menu-item flex w-full items-center justify-between">
                   <div className="flex items-center">
                     <img
                       src="/images/rupee.png"
@@ -121,6 +122,7 @@ export function AccountScreen() {
                     <ChevronRightIcon className="h-8 w-8 stroke-black/60" />
                   </div>
                 </div>
+               </Link>
                 <Link to="/app/my-profile">
                   <div className="account-menu-item flex w-full items-center justify-between">
                     <div className="flex items-center">
