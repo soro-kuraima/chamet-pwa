@@ -28,6 +28,7 @@ import { OnboardScreen } from '@/pages/auth/onboard/OnboardScreen';
 import { EnterOtp } from '@/pages/auth/phone-login/EnterOtp';
 import { Phone } from '@/pages/auth/phone-login/Phone';
 import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
+import { InviteFriendsScreen } from '@/pages/app/accounts/InviteFriendsScreen';
 
 export const routes = createBrowserRouter([
   {
@@ -248,6 +249,14 @@ export const routes = createBrowserRouter([
         element: (
           <Page title="About Us">
             <AboutUsScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'invite-friends',
+        element: (
+          <Page title="Invite Friends">
+            <InviteFriendsScreen />
           </Page>
         ),
       },
