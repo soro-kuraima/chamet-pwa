@@ -3,12 +3,15 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { RequireAuth, Page } from '@/components/functional';
 import { AboutUsScreen } from '@/pages/app/accounts/AboutUsScreen';
 import { AccountScreen } from '@/pages/app/accounts/AccountScreen';
+import { InviteFriendsScreen } from '@/pages/app/accounts/InviteFriendsScreen';
 import { MyProfileScreen } from '@/pages/app/accounts/MyProfileScreen';
 import { PrivacyPolicyScreen } from '@/pages/app/accounts/PrivacyPolicyScreen';
 import { SettingsScreen } from '@/pages/app/accounts/SettingsScreen';
 import { UserAgreementScreen } from '@/pages/app/accounts/UserAgreementScreen';
 import { WalletScreen } from '@/pages/app/accounts/WalletScreen';
 import { AppLayout } from '@/pages/app/AppLayout';
+import { AudioCallScreen } from '@/pages/app/call/AudioCallScreen';
+import { VideoCallScreen } from '@/pages/app/call/VideoCallScreen';
 import { Discover } from '@/pages/app/discovery/Discover';
 import { DiscoveryScreen } from '@/pages/app/discovery/DiscoveryScreen';
 import { Nearby } from '@/pages/app/discovery/Nearby';
@@ -28,9 +31,6 @@ import { OnboardScreen } from '@/pages/auth/onboard/OnboardScreen';
 import { EnterOtp } from '@/pages/auth/phone-login/EnterOtp';
 import { Phone } from '@/pages/auth/phone-login/Phone';
 import { PhoneLoginScreen } from '@/pages/auth/phone-login/PhoneLoginScreen';
-import { InviteFriendsScreen } from '@/pages/app/accounts/InviteFriendsScreen';
-import { AudioCallScreen } from '@/pages/app/call/AudioCallScreen';
-import { VideoCallScreen } from '@/pages/app/call/VideoCallScreen';
 
 export const routes = createBrowserRouter([
   {

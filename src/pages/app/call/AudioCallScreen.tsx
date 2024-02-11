@@ -1,12 +1,13 @@
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
-import { BluetoothIcon } from '@/components/ui/icons/bluetooth';
 import {
   MicrophoneIcon,
   PauseCircleIcon,
   SpeakerWaveIcon,
 } from '@heroicons/react/24/outline';
 import { PhoneIcon } from '@heroicons/react/24/solid';
+
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import { BluetoothIcon } from '@/components/ui/icons/bluetooth';
 
 export function AudioCallScreen() {
   return (
@@ -38,7 +39,7 @@ export function AudioCallScreen() {
       </div>
       <div className="action-buttons-II flex w-full items-center justify-end gap-20 px-8 py-16">
         <div className="action-item">
-          <Button size={'icon'} className="bg-white">
+          <Button size="icon" className="bg-white">
             <PhoneIcon className="h-12 w-12 fill-red-600" />
           </Button>
         </div>

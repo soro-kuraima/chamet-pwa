@@ -1,12 +1,13 @@
+import { useState } from 'react';
+
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { ChevronRightIcon } from '@radix-ui/react-icons';
 import { useNavigate } from 'react-router-dom';
 
-import { Button } from '@/components/ui/button';
-import { ChevronRightIcon } from '@radix-ui/react-icons';
-import { useState } from 'react';
 import { Overlay } from '@/components/compound/overlay';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
 export function WalletScreen() {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ export function WalletScreen() {
         <img src="/images/rupee.png" className="h-20 w-20 object-contain" />
         <p className="text-xl font-semibold text-black">Balance: Rs. 500</p>
         <Button
-          variant={'link'}
+          variant="link"
           onClick={() => togglePaymentOptions((prev) => !prev)}>
           <span className="text-lg font-medium text-red-600">Add Money</span>
           <ChevronRightIcon className="h-4 w-4 stroke-red-600" />
@@ -71,14 +72,14 @@ export function WalletScreen() {
               </div>
               <div className="action-buttons flex justify-end gap-10 px-6 py-6">
                 <Button
-                  size={'sm'}
+                  size="sm"
                   onClick={() => togglePaymentOptions((prev) => !prev)}
                   className="bg-secondary px-6 font-bold">
                   Cancel
                 </Button>
 
                 <Button
-                  size={'sm'}
+                  size="sm"
                   onClick={() => togglePaymentOptions((prev) => !prev)}
                   className="bg-primary px-6 font-bold">
                   Continue

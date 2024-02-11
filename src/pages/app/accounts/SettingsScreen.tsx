@@ -80,7 +80,7 @@ export function SettingsScreen() {
                   <span>v 1.0.0</span>
                 </div>
               </div>
-              <Link to={'/app/invite-friends'} className="refer-link mt-8">
+              <Link to="/app/invite-friends" className="refer-link mt-8">
                 <div className="flex items-center gap-10 bg-gradient-to-b from-[#3087ec]/30 to-[#3830d7]/30 px-6 py-1">
                   <img
                     src="/images/gift-box.png"
