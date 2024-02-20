@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import { Link, NavLink } from 'react-router-dom';
 
-import { MenuIcon } from '@/components/ui/icons';
+import { MenuIcon } from '@/components/ui/icons/svg-icons';
 
 export function DiscoveryMenu() {
   return (

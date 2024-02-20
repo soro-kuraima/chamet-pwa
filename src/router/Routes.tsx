@@ -96,6 +96,10 @@ export const routes = createBrowserRouter([
     errorElement: <Page404 />,
     children: [
       {
+        index: true,
+        element: <Navigate to="/app/home" />,
+      },
+      {
         path: 'home',
         element: (
           <Page title="Home">

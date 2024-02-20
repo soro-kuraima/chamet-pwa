@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { SearchIcon } from '@/components/ui/icons/svg-icons';
 
 type SearchInputProps = {
   placeholder?: string;
@@ -19,7 +18,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
         placeholder={placeholder}
       />
       <Button variant="link" className="absolute right-2">
-        <MagnifyingGlassIcon className="h-6 w-6 text-black" />
+        <SearchIcon className="h-6 w-6 text-black" />
       </Button>
     </div>
   )

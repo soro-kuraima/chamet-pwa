@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { FaceSmileIcon, PaperClipIcon } from '@heroicons/react/24/outline';
-import { MicrophoneIcon } from '@heroicons/react/24/solid';
+import { FaceSmileIcon, PaperClipIcon } from '@/components/ui/icons/svg-icons';
 
 import { Button } from '@/components/ui/button';
+import { MicIcon } from '@/components/ui/icons/svg-icons';
 import { Input } from '@/components/ui/input';
 
 const ChatInput = React.forwardRef<HTMLDivElement>(
@@ -20,10 +20,10 @@ const ChatInput = React.forwardRef<HTMLDivElement>(
         placeholder="Type a message..."
       />
       <Button variant="link">
-        <PaperClipIcon className="h-6 w-6 -rotate-45 text-black" />
+        <PaperClipIcon className="h-6 w-6 text-black" />
       </Button>
       <Button size="icon" className="p-2">
-        <MicrophoneIcon className="h-6 w-6" />
+        <MicIcon className="h-6 w-6" />
       </Button>
     </div>
   )

@@ -1,14 +1,13 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-
-import {
-  ChevronLeftIcon,
-  DocumentTextIcon,
-  MapPinIcon,
-} from '@heroicons/react/24/outline';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
-import { MenuIcon } from '@/components/ui/icons/menu';
+import {
+  ChevronLeftIcon,
+  LocationIcon,
+  MenuIcon,
+  NotesIcon,
+} from '@/components/ui/icons/svg-icons';
 import { Input } from '@/components/ui/input';
 
 export function AddPostScreen() {
@@ -20,7 +19,7 @@ export function AddPostScreen() {
         <ul className="flex items-center justify-between gap-2">
           <li>
             <Button variant="link" onClick={() => navigate(-1)}>
-              <ChevronLeftIcon className="h-8  w-8 stroke-black" />
+              <ChevronLeftIcon className="h-5  w-5 " />
             </Button>
           </li>
           <li>
@@ -42,7 +41,7 @@ export function AddPostScreen() {
           </div>
           <div className="post-inputs px-4 py-6">
             <div className=" flex items-center gap-2 py-4">
-              <MapPinIcon className="h-8 w-8" />
+              <LocationIcon className="h-8 w-8" />
               <Input
                 placeholder="Add Location"
                 className="rounded-none  border-0 border-b border-black focus:border-0 focus:outline-0 focus:ring-0"
@@ -50,7 +49,7 @@ export function AddPostScreen() {
               />
             </div>
             <div className="flex items-center gap-2 py-4">
-              <DocumentTextIcon className="h-8 w-8" />
+              <NotesIcon className="h-8 w-8" />
               <Input
                 placeholder="Add Description"
                 className="rounded-none  border-0 border-b border-black"

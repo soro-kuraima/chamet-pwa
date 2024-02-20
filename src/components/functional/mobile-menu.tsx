@@ -1,17 +1,15 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import {
-  SparklesIcon,
-  ChatBubbleLeftIcon,
-  BoltIcon,
-} from '@heroicons/react/24/outline';
-import {
-  SparklesIcon as SparklesSolidIcon,
-  ChatBubbleLeftIcon as ChatBubbleLeftSolidIcon,
-  BoltIcon as BoltSolidIcon,
-} from '@heroicons/react/24/solid';
 import { NavLink } from 'react-router-dom';
-
-import { VideoCameraIcon, VideoCameraActiveIcon } from '@/components/ui/icons';
+import {
+  VideoHomeActiveIcon,
+  VideoHomeIcon,
+  LiveStream1Icon,
+  LiveStream1ActiveIcon,
+} from '@/components/ui/icons/svg-icons';
+import LiveStream2Icon from '@/assets/live-stream-2.png';
+import LiveStream2ActiveIcon from '@/assets/live-stream2-active.png';
+import ChatBubble1Icon from '@/assets/chat-bubble1.png';
+import ChatBubble1ActiveIcon from '@/assets/chat-bubble1-active.png';
 
 export function MobileMenu() {
   return (
@@ -22,9 +20,9 @@ export function MobileMenu() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <VideoCameraActiveIcon className="h-10 w-10" />
+                  <VideoHomeActiveIcon className="h-8 w-8" />
                 ) : (
-                  <VideoCameraIcon className="h-10 w-10" />
+                  <VideoHomeIcon className="h-8 w-8" />
                 )}
               </>
             )}
@@ -35,9 +33,9 @@ export function MobileMenu() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <BoltSolidIcon className="h-10 w-10" />
+                  <LiveStream1ActiveIcon className="h-8 w-8" />
                 ) : (
-                  <BoltIcon className="h-10 w-10 stroke-accent" />
+                  <LiveStream1Icon className="h-8 w-8" />
                 )}
               </>
             )}
@@ -48,9 +46,9 @@ export function MobileMenu() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <SparklesSolidIcon className="h-10 w-10" />
+                  <img src={LiveStream2ActiveIcon} />
                 ) : (
-                  <SparklesIcon className="h-10 w-10 stroke-accent" />
+                  <img src={LiveStream2Icon} />
                 )}
               </>
             )}
@@ -61,9 +59,9 @@ export function MobileMenu() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <ChatBubbleLeftSolidIcon className="h-10 w-10" />
+                  <img src={ChatBubble1ActiveIcon} />
                 ) : (
-                  <ChatBubbleLeftIcon className="h-10 w-10 stroke-accent" />
+                  <img src={ChatBubble1Icon} />
                 )}
               </>
             )}

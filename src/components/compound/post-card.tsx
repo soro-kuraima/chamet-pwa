@@ -1,13 +1,12 @@
 import * as React from 'react';
 
-import {
-  EllipsisVerticalIcon,
-  ChatBubbleOvalLeftIcon,
-} from '@heroicons/react/24/outline';
-import { HeartIcon } from '@heroicons/react/24/solid';
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+import {
+  ChatBubbleRightIcon,
+  HeartFilledIcon,
+  ThreeDotsIcon,
+} from '@/components/ui/icons/svg-icons';
 
 type PostCardProps = {
   userName: string;
@@ -47,7 +46,7 @@ const PostCard = React.forwardRef<HTMLDivElement, PostCardProps>(
           </div>
         </div>
         <div className="post-action-button">
-          <EllipsisVerticalIcon className="h-8 w-8 fill-accent stroke-accent" />
+          <ThreeDotsIcon className="h-5 w-5" />
         </div>
       </div>
       <div className="post-image p-0">
@@ -60,13 +59,13 @@ const PostCard = React.forwardRef<HTMLDivElement, PostCardProps>(
       <div className="post-buttons flex gap-4 px-4">
         <div className="likes flex flex-col items-center justify-center">
           <Button variant="link" className="p-0">
-            <HeartIcon className="h-8 w-8 fill-red-500" />
+            <HeartFilledIcon className="h-6 w-6 fill-red-500" />
           </Button>
           <span className="text-md font-medium text-black">{postLikes}</span>
         </div>
         <div className="comments flex flex-col items-center justify-center">
           <Button variant="link" className="p-0">
-            <ChatBubbleOvalLeftIcon className="h-8 w-8 stroke-black" />
+            <ChatBubbleRightIcon className="h-6 w-6 " />
           </Button>
           <span className="text-md font-medium text-black">{postComments}</span>
         </div>

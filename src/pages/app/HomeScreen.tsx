@@ -15,12 +15,15 @@ export function HomeScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="home-screen flex min-h-screen items-center justify-center md:w-screen">
-      <div className="h-screen w-screen overflow-auto md:flex md:w-1/2">
-        <Outlet />
-      </div>
-      {isDesktop && <RecentChatsScreen />}
+    <div className="home-screen flex min-h-screen items-center justify-center md:w-screen md:items-start">
       {isDesktop ? <DesktopMenu /> : <MobileMenu />}
+      <div className="h-screen w-screen overflow-auto md:flex">
+        
+          <Outlet />
+        
+        {isDesktop && <RecentChatsScreen />}
+      </div>
+
       {callCardVisibility &&
         createPortal(
           <Overlay>

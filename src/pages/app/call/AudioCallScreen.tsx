@@ -1,13 +1,12 @@
-import {
-  MicrophoneIcon,
-  PauseCircleIcon,
-  SpeakerWaveIcon,
-} from '@heroicons/react/24/outline';
-import { PhoneIcon } from '@heroicons/react/24/solid';
-
 import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { BluetoothIcon } from '@/components/ui/icons/bluetooth';
+import {
+  AudioCallRedIcon,
+  BluetoothIcon,
+  HoldIcon,
+  MicIcon,
+  SpeakerIcon,
+} from '@/components/ui/icons/svg-icons';
 
 export function AudioCallScreen() {
   return (
@@ -25,7 +24,7 @@ export function AudioCallScreen() {
       </div>
       <div className="action-buttons-I flex w-full items-center justify-between px-8">
         <div className="action-item flex flex-col items-center gap-2">
-          <MicrophoneIcon className="h-12 w-12 stroke-white" />
+          <MicIcon className="h-12 w-12 stroke-white" />
           <span className="text-white">Mute</span>
         </div>
         <div className="action-item flex flex-col items-center gap-2">
@@ -33,18 +32,18 @@ export function AudioCallScreen() {
           <span className="text-white">Bluetooth</span>
         </div>
         <div className="action-item flex flex-col items-center gap-2">
-          <PauseCircleIcon className="h-12 w-12 stroke-white" />
+          <HoldIcon className="h-12 w-12 stroke-white" />
           <span className="text-white">Hold</span>
         </div>
       </div>
       <div className="action-buttons-II flex w-full items-center justify-end gap-20 px-8 py-16">
         <div className="action-item">
           <Button size="icon" className="bg-white">
-            <PhoneIcon className="h-12 w-12 fill-red-600" />
+            <AudioCallRedIcon className="h-12 w-12" />
           </Button>
         </div>
         <div className="action-item">
-          <SpeakerWaveIcon className="h-12 w-12 stroke-white" />
+          <SpeakerIcon className="h-12 w-12 stroke-white" />
         </div>
       </div>
     </div>

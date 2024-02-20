@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import { PlusCircleIcon } from '@heroicons/react/24/solid';
 import { Link, NavLink } from 'react-router-dom';
 
-import { MenuIcon } from '@/components/ui/icons';
+import { MenuIcon } from '@/components/ui/icons/svg-icons';
+import AddBlackIcon from '@/assets/add.png';
 
 export function FeedsMenu() {
   return (
@@ -27,7 +27,7 @@ export function FeedsMenu() {
       <ul className="flex items-center gap-6">
         <li>
           <Link to="/app/home/add-post">
-            <PlusCircleIcon className="h-10 w-10 fill-black" />
+            <img src={AddBlackIcon} className="h-10 w-10 fill-black" />
           </Link>
         </li>
         <li>

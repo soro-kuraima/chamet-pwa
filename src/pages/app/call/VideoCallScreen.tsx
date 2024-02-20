@@ -1,13 +1,12 @@
 // eslint-disable-next-line import/extensions
-import {
-  ArrowPathRoundedSquareIcon,
-  MicrophoneIcon,
-  SunIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/solid';
-
 import womanProfile from '@/assets/woman-profile.png';
 import { Button } from '@/components/ui/button';
+import {
+  MicIcon,
+  SunshineIcon,
+  SwitchCameraIcon,
+  CloseIcon,
+} from '@/components/ui/icons/svg-icons';
 
 export function VideoCallScreen() {
   return (
@@ -34,28 +33,28 @@ export function VideoCallScreen() {
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-secondary/30">
                 {' '}
-                <SunIcon className="h-12 w-12 fill-white" />
+                <SunshineIcon className="h-12 w-12 fill-white" />
               </Button>
               <span className="text-white">Effects</span>
             </div>
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-secondary/30">
                 {' '}
-                <MicrophoneIcon className="h-12 w-12 fill-white" />{' '}
+                <MicIcon className="h-12 w-12 fill-white" />{' '}
               </Button>
               <span className="text-white">Mute</span>
             </div>
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-secondary/30">
                 {' '}
-                <ArrowPathRoundedSquareIcon className="h-12 w-12 fill-white" />{' '}
+                <SwitchCameraIcon className="h-12 w-12 fill-white" />{' '}
               </Button>
               <span className="text-white">Flip</span>
             </div>
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-red-600">
                 {' '}
-                <XMarkIcon className="h-12 w-12 fill-white" />{' '}
+                <CloseIcon className="h-12 w-12 fill-white" />{' '}
               </Button>
               <span className="text-white">Cancel</span>
             </div>

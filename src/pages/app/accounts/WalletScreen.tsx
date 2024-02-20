@@ -1,13 +1,14 @@
 import { useState } from 'react';
-
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
-import { ChevronRightIcon } from '@radix-ui/react-icons';
 import { useNavigate } from 'react-router-dom';
 
 import { Overlay } from '@/components/compound/overlay';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from '@/components/ui/icons/svg-icons';
 
 export function WalletScreen() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export function WalletScreen() {
         <ul className="flex w-full items-center justify-between">
           <li>
             <Button variant="link" onClick={() => navigate(-1)}>
-              <ChevronLeftIcon className="h-10 w-10 text-black" />
+              <ChevronLeftIcon className="h-5 w-5 text-black" />
             </Button>
           </li>
           <li>

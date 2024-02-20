@@ -1,8 +1,9 @@
-import { EllipsisVerticalIcon } from '@heroicons/react/24/outline';
-
 import { ChatInput } from '@/components/compound/chat-input';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { VideoCameraActiveIcon } from '@/components/ui/icons';
+import {
+  ThreeDotsIcon,
+  VideoHomeActiveIcon,
+} from '@/components/ui/icons/svg-icons';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { TypingIndicator } from '@/components/ui/typing-indicator';
 
@@ -21,8 +22,8 @@ export function RecentChat() {
           </div>
         </div>
         <div className="action-buttons flex items-center gap-6">
-          <VideoCameraActiveIcon className="h-8 w-8 fill-primary stroke-accent stroke-2" />{' '}
-          <EllipsisVerticalIcon className="h-8 w-8 fill-accent stroke-accent" />
+          <VideoHomeActiveIcon className="h-5 w-5 fill-primary stroke-accent stroke-2" />{' '}
+          <ThreeDotsIcon className="h-5 w-5 fill-accent stroke-accent" />
         </div>
       </div>
       <ScrollArea className="h-full w-full">

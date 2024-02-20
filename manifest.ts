@@ -27,7 +27,7 @@ export const manifestForPlugIn: Partial<VitePWAOptions> = {
         purpose: 'apple touch icon',
       },
       {
-        src: '/app-icons/maskable/maskable-xxxhdpi.png',
+        src: '/app-icons/maskable/maskable.png',
         sizes: '512x512',
         type: 'image/png',
         purpose: 'any maskable',

@@ -1,8 +1,8 @@
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { ChevronLeftIcon } from '@/components/ui/icons/svg-icons';
 
 export function AboutUsScreen() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ export function AboutUsScreen() {
         <ul className="flex w-full items-center justify-between">
           <li>
             <Button variant="link" onClick={() => navigate(-1)}>
-              <ChevronLeftIcon className="h-10 w-10 text-black" />
+              <ChevronLeftIcon className="h-5 w-5" />
             </Button>
           </li>
           <li>
@@ -41,7 +41,7 @@ export function AboutUsScreen() {
             </p>
           </div>
           <div className="bottom flex flex-col items-center justify-center">
-            <img src="/chamet-logo.svg" alt="Chamet Logo" />
+            <img src="/funclub-logo.png" alt="Chamet Logo" />
             <p className="pt-8 text-black">
               Copyright © Company Name. All rights reserved.
             </p>

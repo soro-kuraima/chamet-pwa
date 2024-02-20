@@ -1,5 +1,3 @@
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
-import { PlusCircleIcon } from '@heroicons/react/24/solid';
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,6 +7,7 @@ import profile from '@/assets/woman-profile.png';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { AddWhiteIcon, ChevronLeftIcon } from '@/components/ui/icons/svg-icons';
 
 export function MyProfileScreen() {
   const navigate = useNavigate();
@@ -23,7 +22,7 @@ export function MyProfileScreen() {
       className="bg-cover bg-center md:bg-no-repeat">
       <div className="back-button py-4">
         <Button variant="link" onClick={() => navigate(-1)}>
-          <ChevronLeftIcon className="h-10 w-10 stroke-white" />
+          <ChevronLeftIcon className="h-5 w-5 stroke-white" />
         </Button>
       </div>
       <div className="flex h-[90vh] flex-col justify-end bg-cover bg-center md:h-[100vh] md:items-center md:justify-center md:gap-8 md:bg-cover md:bg-no-repeat">
@@ -41,7 +40,9 @@ export function MyProfileScreen() {
                 <h3 className="text-lg font-medium text-black">Username</h3>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <PlusCircleIcon className="h-10 w-10 fill-primary" />
+                <Button size={'icon'}>
+                  <AddWhiteIcon className="h-8 w-8" />
+                </Button>
                 <span>Follow</span>
               </div>
             </div>
