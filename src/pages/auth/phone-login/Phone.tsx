@@ -12,7 +12,7 @@ export function Phone() {
   const phoneNumberRef = useRef<HTMLInputElement>(null);
 
   return (
-    <div className="phone px-6 w-11/12">
+    <div className="phone px-6 md:w-11/12">
       <h1 className="heading text-2xl font-semibold text-black">Welcome</h1>
       <div className="phone py-4">
         <p className="my-4 text-xl font-medium text-black">

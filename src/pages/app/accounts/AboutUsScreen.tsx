@@ -18,7 +18,7 @@ export function AboutUsScreen() {
           </li>
           <li>
             <h1 className="text-center text-xl font-medium text-black">
-              Privacy Policy
+              About Us
             </h1>
           </li>
           <li className="h-1 w-1/4" />
@@ -42,7 +42,7 @@ export function AboutUsScreen() {
           </div>
           <div className="bottom flex flex-col items-center justify-center">
             <img src="/funclub-logo.png" alt="Chamet Logo" />
-            <p className="pt-8 text-black">
+            <p className="pt-8 px-4 text-black">
               Copyright © Company Name. All rights reserved.
             </p>
           </div>
