@@ -86,14 +86,14 @@ export function ProfileScreen() {
               View Profile
             </Button>
           </div>
-          <div className="action-buttons flex items-center justify-center gap-8 pt-24 md:py-12">
+          <div className="action-buttons flex items-center justify-center gap-8 pt-24 md:py-12 md:flex-wrap">
             <Button
               variant="outline"
               onClick={() => {}}
               className="rounded-full px-6 py-6">
               {' '}
               <span className="flex items-center gap-6">
-                <AudioCallIcon className="h-6 w-6 " />{' '}
+                <AudioCallIcon className="h-5 w-5 stroke-accent" />{' '}
                 <span className="flex flex-col">
                   <span>Voice Call</span>
                   <span className="text-black/60">
@@ -110,7 +110,7 @@ export function ProfileScreen() {
             <Button onClick={() => {}} className="rounded-full px-6 py-6">
               {' '}
               <span className="flex items-center gap-6">
-                <VideoHomeActiveIcon className="h-8 w-8 fill-primary stroke-accent stroke-2" />{' '}
+                <VideoHomeActiveIcon className="h-5 w-5 fill-primary stroke-accent" />{' '}
                 <span className="flex flex-col">
                   <span>Video Call</span>
                   <span className="text-white">
