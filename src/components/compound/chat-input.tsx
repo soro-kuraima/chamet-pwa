@@ -1,9 +1,11 @@
 import * as React from 'react';
 
-import { FaceSmileIcon, PaperClipIcon } from '@/components/ui/icons/svg-icons';
-
 import { Button } from '@/components/ui/button';
-import { MicIcon } from '@/components/ui/icons/svg-icons';
+import {
+  FaceSmileIcon,
+  PaperClipIcon,
+  MicIcon,
+} from '@/components/ui/icons/svg-icons';
 import { Input } from '@/components/ui/input';
 
 const ChatInput = React.forwardRef<HTMLDivElement>(

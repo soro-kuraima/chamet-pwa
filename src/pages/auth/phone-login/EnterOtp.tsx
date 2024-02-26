@@ -1,13 +1,14 @@
 import { useRef } from 'react';
+
 import { format } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
+import { PencilIcon } from '@/components/ui/icons/misc-icons';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
 import { useTimer } from '@/hooks/useTimer';
 import { setAccessToken } from '@/lib/token';
-import { PencilIcon } from '@/components/ui/icons/misc-icons';
 
 export function EnterOtp() {
   const navigate = useNavigate();

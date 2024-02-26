@@ -5,6 +5,9 @@ import { AboutUsScreen } from '@/pages/app/accounts/AboutUsScreen';
 import { AccountScreen } from '@/pages/app/accounts/AccountScreen';
 import { InviteFriendsScreen } from '@/pages/app/accounts/InviteFriendsScreen';
 import { MyProfileScreen } from '@/pages/app/accounts/MyProfileScreen';
+import { MyProfileScreenDetailed } from '@/pages/app/accounts/MyProfileScreenDetailed';
+import { NotificationSettingsScreen } from '@/pages/app/accounts/NotificationSettingsScreen';
+import { NotificationsScreen } from '@/pages/app/accounts/NotificationsScreen';
 import { PrivacyPolicyScreen } from '@/pages/app/accounts/PrivacyPolicyScreen';
 import { SettingsScreen } from '@/pages/app/accounts/SettingsScreen';
 import { UserAgreementScreen } from '@/pages/app/accounts/UserAgreementScreen';
@@ -23,6 +26,7 @@ import { LiveFeeds } from '@/pages/app/live-feeds/LiveFeeds';
 import { LiveFeedsScreen } from '@/pages/app/live-feeds/LiveFeedsScreen';
 import { Page404 } from '@/pages/app/misc/Page404';
 import { ProfileScreen } from '@/pages/app/profile/ProfileScreen';
+import { ProfileScreenDetailed } from '@/pages/app/profile/ProfileScreenDetailed';
 import { RecentChatScreen } from '@/pages/app/recent-chat/RecentChatScreen';
 import { RecentChatsScreen } from '@/pages/app/recent-chats/RecentChatsScreen';
 import { AuthLayout } from '@/pages/auth/AuthLayout';
@@ -192,6 +196,98 @@ export const routes = createBrowserRouter([
               </Page>
             ),
           },
+          {
+            path: 'audio-call',
+            element: (
+              <Page title="Audio call">
+                <AudioCallScreen />
+              </Page>
+            ),
+          },
+          {
+            path: 'my-profile-detailed',
+            element: (
+              <Page title="Profile">
+                <MyProfileScreenDetailed />
+              </Page>
+            ),
+          },
+          {
+            path: 'profile-detailed',
+            element: (
+              <Page title="Profile">
+                <ProfileScreenDetailed />
+              </Page>
+            ),
+          },
+          {
+            path: 'wallet',
+            element: (
+              <Page title="Wallet">
+                <WalletScreen />
+              </Page>
+            ),
+          },
+          {
+            path: 'settings',
+            element: (
+              <Page title="Settings">
+                <SettingsScreen />
+              </Page>
+            ),
+            children: [
+              {
+                path: 'privacy-policy',
+                element: (
+                  <Page title="Privacy Policy">
+                    <PrivacyPolicyScreen />
+                  </Page>
+                ),
+              },
+              {
+                path: 'user-agreement',
+                element: (
+                  <Page title="User Agreement">
+                    <UserAgreementScreen />
+                  </Page>
+                ),
+              },
+              {
+                path: 'about-us',
+                element: (
+                  <Page title="About Us">
+                    <AboutUsScreen />
+                  </Page>
+                ),
+              },
+              {
+                path: 'invite-friends',
+                element: (
+                  <Page title="Invite Friends">
+                    <InviteFriendsScreen />
+                  </Page>
+                ),
+              },
+            ],
+          },
+          {
+            path: 'notifications',
+            element: (
+              <Page title="notifications">
+                <NotificationsScreen />
+              </Page>
+            ),
+            children: [
+              {
+                path: 'notification-settings',
+                element: (
+                  <Page title="Notification Settings">
+                    <NotificationSettingsScreen />
+                  </Page>
+                ),
+              },
+            ],
+          },
         ],
       },
       {
@@ -219,6 +315,14 @@ export const routes = createBrowserRouter([
         ),
       },
       {
+        path: 'my-profile-detailed',
+        element: (
+          <Page title="Profile">
+            <MyProfileScreenDetailed />
+          </Page>
+        ),
+      },
+      {
         path: 'settings',
         element: (
           <Page title="Settings">
@@ -231,6 +335,14 @@ export const routes = createBrowserRouter([
         element: (
           <Page title="Profile">
             <ProfileScreen />
+          </Page>
+        ),
+      },
+      {
+        path: 'profile-detailed',
+        element: (
+          <Page title="Profile">
+            <ProfileScreenDetailed />
           </Page>
         ),
       },

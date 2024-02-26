@@ -37,7 +37,7 @@ export function AddPostScreen() {
       <div className="container relative p-0">
         <div className="h-full w-full md:w-[40vw]">
           <div className="image-placeholder flex h-[50vh] items-center justify-center bg-secondary">
-            <img src="/images/image-placeholder.png" />
+            <img src="/images/image-placeholder.png" alt="placeholder" />
           </div>
           <div className="post-inputs px-4 py-6">
             <div className=" flex items-center gap-2 py-4">

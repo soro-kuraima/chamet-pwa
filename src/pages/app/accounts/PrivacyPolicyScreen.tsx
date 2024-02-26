@@ -1,14 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { ChevronLeftIcon } from '@/components/ui/icons/svg-icons';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 export function PrivacyPolicyScreen() {
   const navigate = useNavigate();
 
   return (
-    <div className="privacy policy">
+    <div className="privacy policy md:w-2/3">
       <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
         <ul className="flex w-full items-center justify-between">
           <li>
@@ -28,7 +28,7 @@ export function PrivacyPolicyScreen() {
         <div className="content flex h-[90vh] flex-col justify-between">
           <p className="px-4 py-10 text-justify font-medium text-black">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
             only five centuries, but also the leap into electronic typesetting,

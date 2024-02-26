@@ -10,7 +10,7 @@ import {
 
 export function AudioCallScreen() {
   return (
-    <div className="audio-call flex h-screen w-full flex-col items-center justify-between bg-primary ">
+    <div className="audio-call flex h-screen w-full flex-col items-center justify-between bg-primary md:w-[50vw]">
       <div className="mt-8">
         <p className="text-xl font-medium text-white">Dialing...</p>
       </div>
@@ -36,7 +36,7 @@ export function AudioCallScreen() {
           <span className="text-white">Hold</span>
         </div>
       </div>
-      <div className="action-buttons-II flex w-full items-center justify-end gap-20 px-8 py-16">
+      <div className="action-buttons-II flex w-full items-center justify-end gap-20 px-8 py-16 md:gap-72">
         <div className="action-item">
           <Button size="icon" className="bg-white">
             <AudioCallRedIcon className="h-12 w-12" />

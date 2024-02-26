@@ -1,10 +1,11 @@
 import { useRef } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
+import { ChevronDownIcon } from '@/components/ui/icons/svg-icons';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { ChevronDownIcon } from '@/components/ui/icons/svg-icons';
 
 export function Phone() {
   const navigate = useNavigate();

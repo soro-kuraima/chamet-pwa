@@ -1,14 +1,15 @@
 import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 import { Overlay } from '@/components/compound/overlay';
 import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from '@/components/ui/icons/svg-icons';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
 export function WalletScreen() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export function WalletScreen() {
   const [showPaymentOptions, togglePaymentOptions] = useState<boolean>(false);
 
   return (
-    <div className="wallet-screen">
+    <div className="wallet-screen md:w-[30vw]">
       <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
         <ul className="flex w-full items-center justify-between">
           <li>
@@ -33,7 +34,11 @@ export function WalletScreen() {
         </ul>
       </nav>
       <div className="money-section flex flex-col items-center gap-8 py-12">
-        <img src="/images/rupee.png" className="h-20 w-20 object-contain" />
+        <img
+          src="/images/rupee.png"
+          className="h-20 w-20 object-contain"
+          alt="rupee"
+        />
         <p className="text-xl font-semibold text-black">Balance: Rs. 500</p>
         <Button
           variant="link"

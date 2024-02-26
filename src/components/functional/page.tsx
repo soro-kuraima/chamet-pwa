@@ -4,14 +4,19 @@ import { Helmet } from 'react-helmet';
 
 type PageProps = {
   title?: string;
+  className?: string;
 };
-export function Page({ children, title }: PropsWithChildren<PageProps>) {
+export function Page({
+  children,
+  title,
+  className,
+}: PropsWithChildren<PageProps>) {
   return (
     <>
       <Helmet>
         <title>{title ? `${title} | Chamet` : 'Chamet'}</title>
       </Helmet>
-      <div>{children}</div>
+      <div className={className}>{children}</div>
     </>
   );
 }

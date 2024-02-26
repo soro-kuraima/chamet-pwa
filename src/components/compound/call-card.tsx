@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
@@ -24,9 +25,13 @@ const CallCard = React.forwardRef<HTMLDivElement, CallCardProps>(
   ({ onCardClose }, ref) => {
     const navigate = useNavigate();
 
+    const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
     return (
-      <div ref={ref} className="call-card rounded-md bg-white px-2 pt-2">
-        <Card className="w-full p-0">
+      <div
+        ref={ref}
+        className="call-card rounded-md border-0 bg-white px-2 pt-2">
+        <Card className="w-full border-0 p-0">
           <CardHeader className="p-0">
             <CardTitle>
               <div className="flex items-center justify-end">
@@ -34,7 +39,7 @@ const CallCard = React.forwardRef<HTMLDivElement, CallCardProps>(
                   Choose how you would like to connect
                 </h4>
                 <Button variant="link" onClick={onCardClose}>
-                  <CloseIcon className="h-8 w-8" />
+                  <CloseIcon className="h-8 w-8 fill-black stroke-black text-black" />
                 </Button>
               </div>
             </CardTitle>
@@ -60,7 +65,14 @@ const CallCard = React.forwardRef<HTMLDivElement, CallCardProps>(
           <CardContent className="p-0 py-1">
             <div className="flex items-center justify-center gap-20 py-4">
               <div className="audio flex flex-col items-center justify-center">
-                <Button size="icon" onClick={() => navigate('/app/audio-call')}>
+                <Button
+                  size="icon"
+                  onClick={() => {
+                    onCardClose();
+                    navigate(
+                      `/app/${isDesktop ? 'home/audio-call' : 'audio-call'}`
+                    );
+                  }}>
                   {' '}
                   <AudioCallIcon className="h-8 w-8" />{' '}
                 </Button>

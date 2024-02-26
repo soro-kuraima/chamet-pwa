@@ -6,8 +6,8 @@ export function AppLayout() {
   return (
     <RequireAuth>
       <div className="App bg-background-light min-h-screen">
-        <div className="flex-start flex overflow-hidden">
-          <div className="container px-0 py-0">
+        <div className="flex-start flex">
+          <div className="container px-0 py-0 md:w-full">
             <Outlet />
           </div>
         </div>

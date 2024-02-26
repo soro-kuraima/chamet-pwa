@@ -40,7 +40,7 @@ export function MyProfileScreen() {
                 <h3 className="text-lg font-medium text-black">Username</h3>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <Button size={'icon'}>
+                <Button size="icon">
                   <AddWhiteIcon className="h-8 w-8" />
                 </Button>
                 <span>Follow</span>

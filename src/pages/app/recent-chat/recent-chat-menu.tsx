@@ -7,7 +7,7 @@ export function RecentChatMenu() {
   const navigate = useNavigate();
 
   return (
-    <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
+    <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4 md:w-[30vw]">
       <ul className="flex w-full items-center justify-between">
         <li>
           <Button variant="link" onClick={() => navigate(-1)}>

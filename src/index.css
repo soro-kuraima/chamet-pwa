@@ -13,23 +13,23 @@
     --popover: 0 0% 100%;
     --popover-foreground: 243 68% 52%;
 
-    --primary: 240 69% 54%;
+    --primary: 200 89% 48%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 257 10% 73%;
-    --secondary-foreground: 240 69% 54%;
+    --secondary: 166 58% 70%;
+    --secondary-foreground: 200 89% 48%;
 
-    --muted: 257 10% 73%;
+    --muted: 26 92% 53%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 257 10% 73%;
-    --accent-foreground: 240 69% 54%;
+    --accent: 26 92% 53%;
+    --accent-foreground: 200 89% 48%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --border: 302 95% 40%;
+    --input: 302 95% 40%;
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
@@ -106,5 +106,5 @@ input[type='number'] {
 }
 
 .custom-border {
-  border-radius: 100% 0% 0% 100% / 0% 100% 0% 100% ;
+  border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
 }

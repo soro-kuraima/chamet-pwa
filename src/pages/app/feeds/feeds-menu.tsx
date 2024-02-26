@@ -1,8 +1,9 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import { Link, NavLink } from 'react-router-dom';
 
-import { MenuIcon } from '@/components/ui/icons/svg-icons';
+// eslint-disable-next-line import/extensions
 import AddBlackIcon from '@/assets/add.png';
+import { MenuIcon } from '@/components/ui/icons/svg-icons';
 
 export function FeedsMenu() {
   return (
@@ -27,7 +28,11 @@ export function FeedsMenu() {
       <ul className="flex items-center gap-6">
         <li>
           <Link to="/app/home/add-post">
-            <img src={AddBlackIcon} className="h-10 w-10 fill-black" />
+            <img
+              src={AddBlackIcon}
+              className="h-10 w-10 fill-black"
+              alt="add icon"
+            />
           </Link>
         </li>
         <li>

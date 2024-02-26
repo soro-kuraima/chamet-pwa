@@ -2,6 +2,9 @@
 
 import { useMediaQuery } from 'react-responsive';
 
+import { RecentChatScreen } from '../recent-chat/RecentChatScreen';
+
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { RecentChats } from '@/pages/app/recent-chats/recent-chats';
 import { RecentChatsMenu } from '@/pages/app/recent-chats/recent-chats-menu';
 
@@ -9,11 +12,20 @@ export function RecentChatsScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="recent-chats pb-16 md:h-screen md:w-1/4">
-      {!isDesktop && <RecentChatsMenu />}
-      <div className="container relative px-1 py-4 md:px-8">
-        <RecentChats />
+    <div className="overflow-hidden md:flex md:h-screen md:gap-8">
+      <div className="recent-chats overflow-auto pb-16">
+        {!isDesktop && <RecentChatsMenu />}
+        <div className="container relative px-1 py-4">
+          <ScrollArea className="h-full w-full">
+            <RecentChats />
+          </ScrollArea>
+        </div>
       </div>
+      {isDesktop && (
+        <div className="overflow-auto">
+          <RecentChatScreen />
+        </div>
+      )}
     </div>
   );
 }

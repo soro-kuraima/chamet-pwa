@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { SearchIcon } from '@/components/ui/icons/svg-icons';
+import { Input } from '@/components/ui/input';
 
 type SearchInputProps = {
   placeholder?: string;

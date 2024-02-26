@@ -1,15 +1,16 @@
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-no-useless-fragment */
+import { ImageIcon } from '@radix-ui/react-icons';
 import { NavLink } from 'react-router-dom';
+
+import ChatBubble1ActiveIcon from '@/assets/chat-bubble1-active.png';
+import ChatBubble1Icon from '@/assets/chat-bubble1.png';
 import {
   VideoHomeActiveIcon,
   VideoHomeIcon,
   LiveStream1Icon,
   LiveStream1ActiveIcon,
 } from '@/components/ui/icons/svg-icons';
-import LiveStream2Icon from '@/assets/live-stream-2.png';
-import LiveStream2ActiveIcon from '@/assets/live-stream2-active.png';
-import ChatBubble1Icon from '@/assets/chat-bubble1.png';
-import ChatBubble1ActiveIcon from '@/assets/chat-bubble1-active.png';
 
 export function MobileMenu() {
   return (
@@ -46,9 +47,9 @@ export function MobileMenu() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <img src={LiveStream2ActiveIcon} />
+                  <ImageIcon className="h-8 w-8" />
                 ) : (
-                  <img src={LiveStream2Icon} />
+                  <ImageIcon className="h-8 w-8 text-secondary" />
                 )}
               </>
             )}
@@ -59,9 +60,17 @@ export function MobileMenu() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <img src={ChatBubble1ActiveIcon} />
+                  <img
+                    src={ChatBubble1ActiveIcon}
+                    alt="chat-bubble-active"
+                    className="h-8 w-8"
+                  />
                 ) : (
-                  <img src={ChatBubble1Icon} />
+                  <img
+                    src={ChatBubble1Icon}
+                    alt="chat-bubble-active"
+                    className="h-8 w-8"
+                  />
                 )}
               </>
             )}

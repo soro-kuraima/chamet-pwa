@@ -1,13 +1,14 @@
 // eslint-disable-next-line import/extensions
-import loginBg from '@/assets/login-bg.jpeg';
 import { ReactNode } from 'react';
 
+// eslint-disable-next-line import/extensions
+import loginBg from '@/assets/login-bg.jpeg';
+
 type MobileLoginScreenProps = {
-  children: ReactNode
-}
+  children: ReactNode;
+};
 
 export function LoginScreenMobile({ children }: MobileLoginScreenProps) {
-
   return (
     <div>
       <div

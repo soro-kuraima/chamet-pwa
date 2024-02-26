@@ -1,24 +1,18 @@
+/* eslint-disable import/extensions */
 /* eslint-disable react/jsx-no-useless-fragment */
 import { AvatarImage } from '@radix-ui/react-avatar';
-import { NavLink } from 'react-router-dom';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { BellIcon, PersonIcon, ImageIcon } from '@radix-ui/react-icons';
+import { NavLink, useNavigate } from 'react-router-dom';
 
-import {
-  VideoHomeActiveIcon,
-  VideoHomeIcon,
-  LiveStream1Icon,
-  LiveStream1ActiveIcon,
-  LogoutIcon,
-} from '@/components/ui/icons/svg-icons';
-import LiveStream2Icon from '@/assets/live-stream-2.png';
-import LiveStream2ActiveIcon from '@/assets/live-stream2-active.png';
-import ChatBubble1Icon from '@/assets/chat-bubble1.png';
+import { Badge } from '../ui/badge';
+
 import ChatBubble1ActiveIcon from '@/assets/chat-bubble1-active.png';
-import {
-  BellIcon,
-  DotsHorizontalIcon,
-  PersonIcon,
-} from '@radix-ui/react-icons';
+import ChatBubble1Icon from '@/assets/chat-bubble1.png';
+import DocumentIcon from '@/assets/document.png';
+import FolderIcon from '@/assets/folder.png';
+import InfoCircleIcon from '@/assets/infocircle.png';
+import VersionIcon from '@/assets/v.png';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -33,11 +27,20 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Badge } from '../ui/badge';
+import {
+  VideoHomeActiveIcon,
+  VideoHomeIcon,
+  LiveStream1Icon,
+  LiveStream1ActiveIcon,
+  LogoutIcon,
+  SettingsIcon,
+} from '@/components/ui/icons/svg-icons';
 
 export function DesktopMenu() {
+  const navigate = useNavigate();
+
   return (
-    <div className="block w-[30vh] py-4">
+    <div className="block w-[15vw] py-4">
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <h2 className="mb-4 text-lg font-semibold tracking-tight">
@@ -90,12 +93,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 text-lg font-semibold hover:bg-primary/10">
-                      <img src={LiveStream2ActiveIcon} />
+                      <ImageIcon className="h-8 w-8" />
                       <span>Feeds</span>
                     </p>
                   ) : (
                     <p className="flex items-center gap-4 rounded-full px-2 py-1 text-lg font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <img src={LiveStream2Icon} />
+                      <ImageIcon className="h-8 w-8" />
                       <span>Feeds</span>
                     </p>
                   )}
@@ -108,12 +111,15 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 text-lg font-semibold hover:bg-primary/10">
-                      <img src={ChatBubble1ActiveIcon} />
+                      <img
+                        src={ChatBubble1ActiveIcon}
+                        alt="chat-bubble-active"
+                      />
                       <span>Chats</span>
                     </p>
                   ) : (
                     <p className="flex items-center gap-4 rounded-full px-2 py-1 text-lg font-semibold text-secondary hover:bg-primary/10">
-                      <img src={ChatBubble1Icon} />
+                      <img src={ChatBubble1Icon} alt="chat bubble" />
                       <span>Chats</span>
                     </p>
                   )}
@@ -121,7 +127,7 @@ export function DesktopMenu() {
               )}
             </NavLink>
 
-            <NavLink to="/app/home/live-feeds">
+            <NavLink to="/app/home/notifications">
               {({ isActive }) => (
                 <>
                   {isActive ? (
@@ -139,7 +145,7 @@ export function DesktopMenu() {
               )}
             </NavLink>
 
-            <NavLink to="/app/my-profile">
+            <NavLink to="/app/home/my-profile-detailed">
               {({ isActive }) => (
                 <>
                   {isActive ? (
@@ -158,16 +164,16 @@ export function DesktopMenu() {
             </NavLink>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button className="flex items-center gap-4 rounded-full px-0 px-2 py-1 text-lg font-semibold font-semibold">
-                  <DotsHorizontalIcon className="h-8 w-8" />
-                  <span>More</span>
+                <Button
+                  className="flex items-center gap-4 rounded-full px-2  py-1 text-lg text-lg font-semibold font-semibold text-secondary hover:bg-primary/10"
+                  onClick={(event) => event.stopPropagation()}>
+                  More
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent
                 side="top"
-                sideOffset={-200}
-                avoidCollisions={false}
-                align="end"
+                sideOffset={-150}
+                avoidCollisions
                 className="w-56">
                 <DropdownMenuLabel>
                   <div className="user-info relative inline-flex p-1">
@@ -176,7 +182,7 @@ export function DesktopMenu() {
                         src="/images/chat-user.png"
                         alt="chat user"
                       />
-                      <AvatarFallback>{'Chat User'}</AvatarFallback>
+                      <AvatarFallback>Chat User</AvatarFallback>
                     </Avatar>
                     <div className="absolute bottom-3 right-2 h-2 w-2 rounded-full bg-green-400 ring-1 ring-white ring-offset-2" />
                   </div>
@@ -223,64 +229,94 @@ export function DesktopMenu() {
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup className="py-2">
                   <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                    <PersonIcon className="h-5 w-5" />
-                    <span>My Profile</span>
+                    <span>Nearby</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                    <PersonIcon className="h-5 w-5" />
-                    <span>My Profile</span>
+                    <span>Popular</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                    <PersonIcon className="h-5 w-5" />
-                    <span>My Profile</span>
+                    <span>Nearby Lives</span>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup className="py-2">
-                  <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                    <PersonIcon className="h-5 w-5" />
-                    <span>My Profile</span>
+                  <DropdownMenuItem
+                    className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10"
+                    onClick={() => navigate('/app/home/wallet')}>
+                    <img
+                      src="/images/rupee.png"
+                      alt="Rupee"
+                      className="h-5 w-5"
+                    />
+                    <span>My Wallet</span>
                   </DropdownMenuItem>
                   <DropdownMenuSub>
-                    <DropdownMenuSubTrigger className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10 hover:text-primary">
-                      <PersonIcon className="h-5 w-5" />
-                      <span>My Profile</span>
+                    <DropdownMenuSubTrigger
+                      className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10 hover:text-primary"
+                      onClick={() => navigate('/app/home/settings')}>
+                      <SettingsIcon className="h-5 w-5" />
+                      <span>Settings</span>
                     </DropdownMenuSubTrigger>
                     <DropdownMenuPortal>
                       <DropdownMenuSubContent>
-                        <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                          <PersonIcon className="h-5 w-5" />
-                          <span>My Profile</span>
+                        <DropdownMenuItem
+                          className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10"
+                          onClick={() =>
+                            navigate('/app/home/settings/privacy-policy')
+                          }>
+                          <img
+                            src={DocumentIcon}
+                            className="h-5 w-5"
+                            alt="document"
+                          />
+                          <span>Privacy Policy</span>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem
+                          className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10"
+                          onClick={() =>
+                            navigate('/app/home/settings/about-us')
+                          }>
+                          <img
+                            src={InfoCircleIcon}
+                            className="inline-flex h-5 w-5"
+                            alt="About us"
+                          />
+                          <span>About Us</span>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem
+                          className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10"
+                          onClick={() =>
+                            navigate('/app/home/settings/user-agreement')
+                          }>
+                          <img
+                            src={FolderIcon}
+                            className="inline-flex h-5 w-5"
+                            alt="folder"
+                          />
+
+                          <span>User Agreement</span>
                         </DropdownMenuItem>
                         <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                          <PersonIcon className="h-5 w-5" />
-                          <span>My Profile</span>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                          <PersonIcon className="h-5 w-5" />
-                          <span>My Profile</span>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                          <PersonIcon className="h-5 w-5" />
-                          <span>My Profile</span>
+                          <img
+                            src={VersionIcon}
+                            className="inline-flex h-5 w-5"
+                            alt="version"
+                          />
+
+                          <span>Version</span>
                         </DropdownMenuItem>
                       </DropdownMenuSubContent>
                     </DropdownMenuPortal>
                   </DropdownMenuSub>
-                  <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
+                  <DropdownMenuItem
+                    className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10"
+                    onClick={() =>
+                      navigate('/app/home/settings/invite-friends')
+                    }>
                     <PersonIcon className="h-5 w-5" />
-                    <span>My Profile</span>
+                    <span>Refer a Friend</span>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                  <PersonIcon className="h-5 w-5" />
-                  <span>My Profile</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="text-md my-1 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
-                  <PersonIcon className="h-5 w-5" />
-                  <span>My Profile</span>
-                </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem className="text-md my-3 flex items-center gap-4  rounded-full px-2 py-1 text-lg font-semibold font-semibold text-secondary hover:bg-primary/10">
                   <LogoutIcon className="h-6 w-6" />

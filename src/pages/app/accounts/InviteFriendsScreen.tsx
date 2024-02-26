@@ -26,7 +26,7 @@ export function InviteFriendsScreen() {
       />
 
       <ScrollArea className="">
-        <div className="flex h-[10vh] w-2/3 items-center justify-between py-2 md:w-[55%]">
+        <div className="flex h-[10vh] w-2/3 items-center justify-between py-2">
           <div className="back-button">
             <Button variant="link" onClick={() => navigate(-1)}>
               <ChevronLeftWhiteIcon className="stroke-white" />
@@ -36,18 +36,19 @@ export function InviteFriendsScreen() {
             <p className="text-2xl font-medium text-white">Invite Friends</p>
           </div>
         </div>
-        <div className="content flex h-[90vh] flex-col justify-between md:items-center md:justify-start">
+        <div className="content flex h-[90vh] flex-col justify-between md:w-full md:items-center md:justify-start">
           <div className="invite-image flex flex-col items-center gap-4">
             <img
               src="/images/invite-box.png"
               className="h-96 w-auto object-contain"
+              alt="invite-box"
             />
             <p className="text-3xl font-bold tracking-wide text-white">
               {' '}
               Invite Friends!
             </p>
           </div>
-          <div className="flex flex-col justify-end rounded-t-3xl border-t-2 bg-white px-6 py-8 md:w-1/2 md:rounded-xl">
+          <div className="flex flex-col justify-end rounded-t-3xl border-t-2 bg-white px-6 py-8">
             <p className="mb-4 text-xl font-medium text-black">
               Share your invite link
             </p>

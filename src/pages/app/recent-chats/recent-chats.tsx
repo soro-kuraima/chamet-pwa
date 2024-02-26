@@ -12,11 +12,11 @@ export function RecentChats() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   const navigationPath = isDesktop
-    ? '/app/home/recent-chat'
+    ? '/app/home/recent-chats'
     : '/app/recent-chat';
 
   return (
-    <div className="recent-chats md:ml-2">
+    <div className="recent-chats md:ml-2 md:block">
       <div className="search-box-container px-2 md:w-full">
         <SearchInput placeholder="Recent Chats" />
       </div>
@@ -28,6 +28,102 @@ export function RecentChats() {
       <div className="flex items-center justify-center p-0">
         <div className="recent-chats-scroll-container h-full w-full p-0">
           <ScrollArea className="h-full w-full">
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="18:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="16:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="10:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="18:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="16:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="10:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="18:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="16:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="10:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="18:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="16:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
+            <RecentChatsCard
+              userName="Lorem Ipsum"
+              userImage="/images/chat-user.png"
+              lastMessage="Please take a look at the image"
+              lastMessageTime="10:00"
+              unreadMessageCount={5}
+              onTap={() => navigate(navigationPath)}
+            />
             <RecentChatsCard
               userName="Lorem Ipsum"
               userImage="/images/chat-user.png"

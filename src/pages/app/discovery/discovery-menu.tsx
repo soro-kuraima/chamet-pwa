@@ -5,7 +5,7 @@ import { MenuIcon } from '@/components/ui/icons/svg-icons';
 
 export function DiscoveryMenu() {
   return (
-    <nav className="flex min-w-full items-center justify-between bg-background px-4 py-8">
+    <nav className="flex min-w-full items-center justify-between bg-background px-4 py-8 md:min-w-[30vw]">
       <ul className="flex items-center justify-between gap-4">
         <li>
           <NavLink to="/app/home/discovery/discover">
