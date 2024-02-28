@@ -1,4 +1,6 @@
 // eslint-disable-next-line import/extensions
+import { useMediaQuery } from 'react-responsive';
+
 import womanProfile from '@/assets/woman-profile.png';
 import { Button } from '@/components/ui/button';
 import {
@@ -9,10 +11,12 @@ import {
 } from '@/components/ui/icons/svg-icons';
 
 export function VideoCallScreen() {
+  const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
   return (
     <div>
       <div
-        className="login-screen flex min-h-screen flex-col items-center justify-between bg-cover bg-center md:w-screen md:gap-8 md:rounded-none md:bg-top md:bg-no-repeat"
+        className="flex min-h-screen flex-col items-center justify-between bg-cover bg-center md:w-screen md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
         style={{
           backgroundImage: `url(${womanProfile})`,
         }}>
@@ -31,9 +35,11 @@ export function VideoCallScreen() {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-col items-center justify-between rounded-t-3xl bg-white/10 px-0 pb-8 md:w-screen md:items-center md:rounded-none md:rounded-xl">
-          <div className="mb-8 mt-4 h-1 w-16 rounded-md bg-secondary/30 md:m-0" />
-          <div className="action-buttons-I flex w-full items-center justify-between px-2 py-2 md:w-1/3 md:py-4">
+        <div className="flex w-full flex-col items-center justify-between rounded-t-3xl bg-white/10 px-0 pb-8 md:w-screen md:items-center md:rounded-t-none">
+          <div className="mb-8 mt-4 h-1 w-16 rounded-md bg-secondary/30 md:m-0 md:rounded-none" />
+          <div className="action-buttons-I flex w-full items-center justify-between px-2 py-2 md:w-1/4 md:py-4">
+            {
+            !isDesktop && (
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-secondary/30">
                 {' '}
@@ -41,6 +47,8 @@ export function VideoCallScreen() {
               </Button>
               <span className="text-white">Effects</span>
             </div>
+            )
+           }
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-secondary/30">
                 {' '}
@@ -48,6 +56,8 @@ export function VideoCallScreen() {
               </Button>
               <span className="text-white">Mute</span>
             </div>
+            {
+            !isDesktop && (
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-secondary/30">
                 {' '}
@@ -55,6 +65,8 @@ export function VideoCallScreen() {
               </Button>
               <span className="text-white">Flip</span>
             </div>
+            )
+           }
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-red-600">
                 {' '}

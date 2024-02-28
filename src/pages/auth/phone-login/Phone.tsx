@@ -13,13 +13,13 @@ export function Phone() {
   const phoneNumberRef = useRef<HTMLInputElement>(null);
 
   return (
-    <div className="phone px-6 md:w-11/12">
+    <div className="phone px-2">
       <h1 className="heading text-2xl font-semibold text-black">Welcome</h1>
-      <div className="phone py-4">
+      <div className="phone py-4 md:py-0 md:pl-0">
         <p className="my-4 text-xl font-medium text-black">
           Enter Your Mobile Number
         </p>
-        <div className="mt-6 flex items-center">
+        <div className="mt-6 flex items-center bg-transparent">
           <Label
             htmlFor="country-input"
             className="flex items-center gap-2 rounded-l-full bg-secondary/30 px-2 focus:outline-primary">

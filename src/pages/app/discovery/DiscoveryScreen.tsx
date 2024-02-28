@@ -10,9 +10,9 @@ export function DiscoveryScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="discovery h-full w-full pb-16 md:flex">
+    <div className="discovery h-full w-full md:flex">
       {!isDesktop && <DiscoveryMenu />}
-      <div className="container relative overflow-auto p-0 md:mt-8 md:w-[32vw]">
+      <div className="container relative overflow-auto p-0 pb-16 md:mt-8">
         <Outlet />
       </div>
       {isDesktop && <ProfileScreen />}

@@ -19,7 +19,7 @@ export function MyProfileScreen() {
       style={{
         backgroundImage: `url(${profile})`,
       }}
-      className="bg-cover bg-center md:bg-no-repeat">
+      className="bg-cover bg-center md:bg-no-repeat w-full">
       <div className="back-button py-4">
         <Button variant="link" onClick={() => navigate(-1)}>
           <ChevronLeftIcon className="h-5 w-5 stroke-white" />

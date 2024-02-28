@@ -9,7 +9,7 @@ export function UserAgreementScreen() {
 
   return (
     <div className="user-agreement md:w-2/3">
-      <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4 md:w-[400px]">
+      <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
         <ul className="flex w-full items-center justify-between">
           <li>
             <Button variant="link" onClick={() => navigate(-1)}>

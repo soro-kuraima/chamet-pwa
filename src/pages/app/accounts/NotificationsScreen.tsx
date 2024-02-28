@@ -15,8 +15,8 @@ export function NotificationsScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="flex gap-8">
-      <div className="privacy policy md:w-[25vw]">
+    <div className="flex gap-8 md:pl-10">
+      <div className="privacy policy">
         <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
           <ul className="flex w-full items-center justify-between">
             <li>

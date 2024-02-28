@@ -1,6 +1,6 @@
 export function MyProfileScreenDetailed() {
   return (
-    <main className="h-full w-full">
+    <div className="h-full w-full md:pl-10">
       <div className="h-full w-full">
         <header className="flex flex-wrap items-center p-4 md:py-8">
           <div className="md:ml-16 md:w-3/12">
@@ -13,15 +13,15 @@ export function MyProfileScreenDetailed() {
             />
           </div>
           {/* profile meta */}
-          <div className="ml-4 w-8/12 md:w-7/12">
-            <div className="mb-4 md:flex md:flex-wrap md:items-center">
+          <div className="ml-4 w-8/12 md:7/12">
+            <div className="mb-1 md:flex md:flex-wrap md:items-center">
               <h2 className="mb-2 inline-block text-3xl font-light sm:mb-0 md:mr-2">
                 Username
               </h2>
               {/* badge */}
             </div>
             {/* post, following, followers list for medium screens */}
-            <ul className="mb-4 hidden space-x-8 text-black md:flex md:items-center">
+            <ul className="mb-1 hidden space-x-8 text-black md:flex md:items-center">
               <li>
                 <span className="mr-1 font-semibold">6</span>
                 posts
@@ -57,7 +57,7 @@ export function MyProfileScreenDetailed() {
         <div className="px-px md:px-3">
           {/* user following for mobile only */}
           <ul
-            className="flex justify-around space-x-8 border-t p-2
+            className="flex justify-around space-x-8 p-2
           text-center text-sm leading-snug text-gray-600 md:hidden">
             <li>
               <span className="mr-1 block font-semibold text-gray-800">6</span>
@@ -120,6 +120,6 @@ export function MyProfileScreenDetailed() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

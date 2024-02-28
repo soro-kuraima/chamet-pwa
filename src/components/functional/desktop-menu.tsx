@@ -40,7 +40,7 @@ export function DesktopMenu() {
   const navigate = useNavigate();
 
   return (
-    <div className="block w-[15vw] py-4">
+    <div className="block w-[20vw] py-4">
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <h2 className="mb-4 text-lg font-semibold tracking-tight">

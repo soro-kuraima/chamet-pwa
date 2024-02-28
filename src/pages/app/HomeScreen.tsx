@@ -14,9 +14,9 @@ export function HomeScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="home-screen flex min-h-screen items-center md:w-screen md:items-start md:justify-center md:px-0">
+    <div className="home-screen flex min-h-screen items-center md:w-screen md:items-start md:justify-start md:pl-10">
       {isDesktop ? <DesktopMenu /> : <MobileMenu />}
-      <div className="h-screen w-screen md:flex md:w-[60vw]">
+      <div id="home-screen-parent" className="h-screen w-screen md:flex">
         <Outlet />
       </div>
 

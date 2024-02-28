@@ -23,7 +23,7 @@ export function EnterOtp() {
   const otpDigit4Ref = useRef<HTMLInputElement>(null);
 
   return (
-    <div className="phone px-6 md:w-11/12">
+    <div className="phone px-2">
       <h1 className="heading text-2xl font-semibold text-black">Enter OTP</h1>
       <div className="phone py-2">
         <p className="py-1 text-xl font-medium text-black">
@@ -36,7 +36,7 @@ export function EnterOtp() {
           </Button>
         </p>
 
-        <div className="mt-6 flex items-center gap-8">
+        <div className="mt-6 flex items-center gap-8 md:gap-4">
           <Input
             className="rounded-2xl border-none bg-secondary/50 py-8 text-center text-xl tracking-widest text-black outline-[none] focus:border-none focus:outline-[none] "
             type="number"

@@ -16,7 +16,7 @@ export function AccountScreen() {
   const navigate = useNavigate();
 
   return (
-    <div className="account">
+    <div className="account w-full">
       <div
         className="absolute left-0 top-0 z-[-10] h-32 w-full overflow-hidden bg-cover bg-bottom md:h-48 md:w-[100vw]"
         style={{

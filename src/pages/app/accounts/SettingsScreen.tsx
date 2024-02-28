@@ -20,9 +20,9 @@ export function SettingsScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="md:flex md:gap-8">
+    <div className="md:flex md:gap-16 md:pl-10 w-full">
       <div className="settings">
-        <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4 md:w-[20vw]">
+        <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4 md:w-[29vw] xl:w-[20vw]">
           <ul className="flex w-full items-center justify-between">
             <li>
               <Button variant="link" onClick={() => navigate(-1)}>

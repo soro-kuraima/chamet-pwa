@@ -10,7 +10,7 @@ export function PhoneLoginScreen() {
   if (isDesktop) {
     return (
       <LoginScreenDesktop>
-        <div className="flex w-full flex-col items-center justify-end rounded-t-3xl bg-white px-0 py-4">
+        <div className="flex flex-col items-center justify-end rounded-t-3xl bg-white px-0 py-0 w-5/6">
           <Outlet />
         </div>
       </LoginScreenDesktop>

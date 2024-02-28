@@ -15,7 +15,7 @@ export function NotificationSettingsScreen() {
   const navigate = useNavigate();
 
   return (
-    <div className="privacy policy md:w-[25vw]">
+    <div className="privacy policy">
       <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
         <ul className="flex w-full items-center justify-between">
           <li>
@@ -24,7 +24,7 @@ export function NotificationSettingsScreen() {
             </Button>
           </li>
           <li>
-            <h1 className="text-center text-xl font-medium text-black">
+            <h1 className="text-center text-xl md:text-md font-medium text-black">
               Notification Settings
             </h1>
           </li>
