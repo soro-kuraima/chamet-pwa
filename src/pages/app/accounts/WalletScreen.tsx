@@ -17,7 +17,7 @@ export function WalletScreen() {
   const [showPaymentOptions, togglePaymentOptions] = useState<boolean>(false);
 
   return (
-    <div className="wallet-screen md:pl-10 w-full">
+    <div className="wallet-screen w-full md:pl-10">
       <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
         <ul className="flex w-full items-center justify-between">
           <li>

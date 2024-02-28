@@ -11,7 +11,8 @@ import { MobileMenu } from '@/components/functional/mobile-menu';
 import { useCallCardStore } from '@/stores/call-card-store';
 
 export function HomeScreen() {
-  const { callCardVisibility, toggleCallCardVisibility, audioCall } = useCallCardStore();
+  const { callCardVisibility, toggleCallCardVisibility, audioCall } =
+    useCallCardStore();
 
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
@@ -31,11 +32,11 @@ export function HomeScreen() {
           document.body
         )}
 
-      {
-          audioCall && createPortal(
-            <AudioCallScreen />,
-document.getElementById('root') as HTMLElement)
-        }
+      {audioCall &&
+        createPortal(
+          <AudioCallScreen />,
+          document.getElementById('root') as HTMLElement
+        )}
     </div>
   );
 }

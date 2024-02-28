@@ -24,7 +24,7 @@ export function NotificationSettingsScreen() {
             </Button>
           </li>
           <li>
-            <h1 className="text-center text-xl md:text-md font-medium text-black">
+            <h1 className="md:text-md text-center text-xl font-medium text-black">
               Notification Settings
             </h1>
           </li>

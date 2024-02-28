@@ -21,13 +21,13 @@ export function ProfileScreen() {
       style={{
         backgroundImage: `url(${profile})`,
       }}
-      className="border bg-cover bg-center md:bg-no-repeat flex flex-col">
+      className="flex flex-col border bg-cover bg-center md:bg-no-repeat">
       <div className="back-button py-4">
         <Button variant="link" onClick={() => navigate(-1)}>
           <ChevronLeftIcon className="h-5 w-5 stroke-white" />
         </Button>
       </div>
-      <div className="h-full flex flex-col justify-end bg-cover bg-center ">
+      <div className="flex h-full flex-col justify-end bg-cover bg-center ">
         <div className="flex w-full flex-col items-center justify-end rounded-t-3xl bg-white px-8 py-4">
           <div className="w-full py-8">
             <div className="user-info flex w-full items-center justify-between gap-4 py-1">
@@ -86,7 +86,7 @@ export function ProfileScreen() {
               View Profile
             </Button>
           </div>
-          <div className="action-buttons flex items-center justify-center gap-8 pt-24 md:py-12 md:flex-wrap">
+          <div className="action-buttons flex items-center justify-center gap-8 pt-24 md:flex-wrap md:py-12">
             <Button
               variant="outline"
               onClick={() => {}}

@@ -10,9 +10,9 @@ export function LiveFeedsScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="live-feeds h-full w-full md:overflow-hidden md:flex">
+    <div className="live-feeds h-full w-full md:flex md:overflow-hidden">
       {!isDesktop && <LiveFeedsMenu />}
-      <div className="container relative overflow-auto p-0 md:mt-8 pb-16">
+      <div className="container relative overflow-auto p-0 pb-16 md:mt-8">
         <Outlet />
       </div>
       {isDesktop && <ProfileScreen />}

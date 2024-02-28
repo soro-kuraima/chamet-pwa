@@ -7,6 +7,7 @@ type CallCardState = {
 
 type CallCardActions = {
   toggleCallCardVisibility: () => void;
+  toggleAudioCall: () => void;
 };
 
 const useCallCardStore = create<CallCardState & CallCardActions>((set) => ({

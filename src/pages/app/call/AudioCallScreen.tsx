@@ -13,7 +13,7 @@ export function AudioCallScreen() {
   const { toggleAudioCall } = useCallCardStore();
 
   return (
-    <div className="audio-call flex h-screen w-full flex-col items-center justify-between bg-primary md:absolute md:bottom-16 md:right-[74px] z-[100] md:h-[60vh] md:w-[330px] 2 md:rounded-xl">
+    <div className="audio-call 2 z-[100] flex h-screen w-full flex-col items-center justify-between bg-primary md:absolute md:bottom-16 md:right-[74px] md:h-[60vh] md:w-[330px] md:rounded-xl">
       <div className="mt-8">
         <p className="text-xl font-medium text-white">Dialing...</p>
       </div>

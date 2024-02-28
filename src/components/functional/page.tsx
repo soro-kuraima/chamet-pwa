@@ -5,10 +5,7 @@ import { Helmet } from 'react-helmet';
 type PageProps = {
   title?: string;
 };
-export function Page({
-  children,
-  title
-}: PropsWithChildren<PageProps>) {
+export function Page({ children, title }: PropsWithChildren<PageProps>) {
   return (
     <>
       <Helmet>

@@ -12,7 +12,7 @@ export function RecentChatsScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
-    <div className="overflow-hidden md:flex md:h-screen md:gap-8 md:w-full md:pl-10 xl:gap-16">
+    <div className="overflow-hidden md:flex md:h-screen md:w-full md:gap-8 md:pl-10 xl:gap-16">
       <div className="recent-chats overflow-auto pb-16">
         {!isDesktop && <RecentChatsMenu />}
         <div className="container relative px-1 py-4">

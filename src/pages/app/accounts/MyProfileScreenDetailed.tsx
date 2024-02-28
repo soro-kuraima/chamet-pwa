@@ -13,7 +13,7 @@ export function MyProfileScreenDetailed() {
             />
           </div>
           {/* profile meta */}
-          <div className="ml-4 w-8/12 md:7/12">
+          <div className="md:7/12 ml-4 w-8/12">
             <div className="mb-1 md:flex md:flex-wrap md:items-center">
               <h2 className="mb-2 inline-block text-3xl font-light sm:mb-0 md:mr-2">
                 Username
