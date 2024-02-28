@@ -16,6 +16,7 @@ import {
   CloseIcon,
   VideoHomeActiveIcon,
 } from '@/components/ui/icons/svg-icons';
+import { useCallCardStore } from '@/stores/call-card-store';
 
 type CallCardProps = {
   onCardClose: () => void;
@@ -26,6 +27,8 @@ const CallCard = React.forwardRef<HTMLDivElement, CallCardProps>(
     const navigate = useNavigate();
 
     const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
+    const { toggleAudioCall } = useCallCardStore();
 
     return (
       <div
@@ -68,10 +71,13 @@ const CallCard = React.forwardRef<HTMLDivElement, CallCardProps>(
                 <Button
                   size="icon"
                   onClick={() => {
-                    onCardClose();
-                    navigate(
-                      `/app/${isDesktop ? 'home/audio-call' : 'audio-call'}`
-                    );
+                    if (!isDesktop) {
+                      onCardClose();
+                      navigate('/app/audio-call');
+                    } else {
+                      onCardClose();
+                      toggleAudioCall();
+                    }
                   }}>
                   {' '}
                   <AudioCallIcon className="h-8 w-8" />{' '}
