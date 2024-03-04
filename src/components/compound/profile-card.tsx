@@ -82,7 +82,7 @@ const ProfileCardLarge = React.forwardRef<HTMLDivElement, profileCardProps>(
   ) => (
     <div
       ref={ref}
-      className="profile-card-large relative mb-4 flex h-full w-full flex-col items-center justify-center drop-shadow-xl sm:h-[85vh] sm:w-[40vw]">
+      className="profile-card-large relative mb-4 flex h-full w-full flex-col items-center justify-center drop-shadow-xl">
       <div className="live-lable absolute left-2 top-2 flex items-center justify-center">
         <VideoHomeActiveIcon className="h-6 w-6" />
         <span className="text-md px-1 font-semibold text-primary">Live</span>
