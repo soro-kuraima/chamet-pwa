@@ -27,3 +27,21 @@
     width: calc(80vw - 112px);
   }
 }
+
+/*# sourceMappingURL=App.css.map */
+.discover-desktop-container {
+  width: calc(80vw - 480px);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}

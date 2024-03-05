@@ -11,15 +11,13 @@ import {
   CloseIcon,
 } from '@/components/ui/icons/svg-icons';
 
-export function VideoCallPopup({ onClose }: {
-    onClose: () => void
-}) {
+export function VideoCallPopup({ onClose }: { onClose: () => void }) {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
 
   return (
     <div>
       <div
-        className="flex h-[60vh] w-full flex-col items-center justify-between bg-cover bg-center md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
+        className="flex h-[45vh] w-full flex-col items-center justify-between bg-cover bg-center md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
         style={{
           backgroundImage: `url(${womanProfile})`,
         }}>
@@ -38,9 +36,9 @@ export function VideoCallPopup({ onClose }: {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-col items-center justify-between rounded-t-3xl bg-white/10 px-0 pb-8 md:items-center md:rounded-t-none">
+        <div className="flex w-full flex-col items-center justify-between rounded-t-3xl bg-white/10 px-0 pb-8 md:mx-auto md:rounded-t-none">
           <div className="mb-8 mt-4 h-1 w-16 rounded-md bg-secondary/30 md:m-0 md:rounded-none" />
-          <div className="action-buttons-I flex w-full items-center justify-between px-2 py-2 md:w-1/4 md:py-4">
+          <div className="action-buttons-I flex w-full items-center justify-center gap-8 px-2 py-2 md:py-4 xl:w-1/4">
             {!isDesktop && (
               <div className="action-item flex flex-col items-center gap-2">
                 <Button size="icon" className="bg-secondary/30">

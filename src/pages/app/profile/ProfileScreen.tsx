@@ -21,7 +21,7 @@ export function ProfileScreen() {
       style={{
         backgroundImage: `url(${profile})`,
       }}
-      className="flex flex-col border bg-cover bg-center md:bg-no-repeat">
+      className="my-4 mt-12 flex flex-col border bg-cover bg-center md:bg-no-repeat">
       <div className="back-button py-4">
         <Button variant="link" onClick={() => navigate(-1)}>
           <ChevronLeftIcon className="h-5 w-5 stroke-white" />
