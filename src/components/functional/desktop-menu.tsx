@@ -171,7 +171,7 @@ export function DesktopMenu() {
               </ul>
             </span>
 
-            <NavLink to="/app/home/feeds">
+            <NavLink to="/app/home/collections">
               {({ isActive }) => (
                 <>
                   {isActive ? (

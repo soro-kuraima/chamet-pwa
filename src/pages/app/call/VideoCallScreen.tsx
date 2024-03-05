@@ -17,7 +17,7 @@ export function VideoCallScreen() {
   return (
     <div>
       <div
-        className="flex min-h-screen flex-col items-center justify-between bg-cover bg-center md:w-screen md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
+        className="flex min-h-screen w-screen flex-col items-center justify-between bg-cover bg-center md:w-screen md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
         style={{
           backgroundImage: `url(${womanProfile})`,
         }}>
