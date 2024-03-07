@@ -85,6 +85,8 @@ div,
 section {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
 }
 
 #phone-input:focus,

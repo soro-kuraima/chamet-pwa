@@ -17,7 +17,7 @@ export function VideoCallPopup({ onClose }: { onClose: () => void }) {
   return (
     <div>
       <div
-        className="flex h-[45vh] w-full flex-col items-center justify-between bg-cover bg-center md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
+        className="flex h-[50vh] w-full flex-col items-center justify-between bg-cover bg-center md:gap-8 md:rounded-none md:bg-center md:bg-no-repeat"
         style={{
           backgroundImage: `url(${womanProfile})`,
         }}>

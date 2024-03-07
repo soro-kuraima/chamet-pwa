@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { ChevronRightIcon } from '@radix-ui/react-icons';
 import { useNavigate } from 'react-router-dom';
 
-import { VideoCallPopup } from '../call/VideoCallPopup';
-
 import { ProfileCard } from '@/components/compound/profile-card';
 import { ProfileScreenMini } from '@/components/compound/profile-screen-mini';
 import { SendCoins } from '@/components/functional/send-coins';
 import { SendStickers } from '@/components/functional/send-stickers';
+import { VideoPreview } from '@/components/functional/video-preview';
+import { VideoCallPopup } from '@/components/functional/VideoCallPopup';
 import { Button } from '@/components/ui/button';
 import { CloseIcon } from '@/components/ui/icons/svg-icons';
 import { useCallCardStore } from '@/stores/call-card-store';
@@ -30,28 +30,11 @@ export function DiscoverDesktop() {
     <div className="relative flex h-full w-full items-start justify-center p-0">
       <div className="profiles-scroll-container discover-desktop-container h-full rounded-md p-0 px-4">
         <div className="rounded-md py-4">
-          <VideoCallPopup onClose={toggleDiscoverGoLive} />
-        </div>
-        <div className="flex items-center justify-center">
-          <Button
-            className={`custom-box-shadow relative mx-auto my-4 rounded-full
-       bg-green-600 bg-indigo-700 px-12 py-6 text-2xl font-bold text-white shadow-lg hover:bg-green-600/80 ${
-         shimmer ? 'shimmer' : ''
-       }`}
-            onClick={() => {
-              setShimmer(true);
-              setTimeout(() => {
-                setShimmer(false);
-              }, 1500);
-              toggleDiscoverGoLive();
-            }}>
-            {shimmer && (
-              <svg className="shimmer mr-2" viewBox="25 25 50 50">
-                <circle className="shimmer-circle" r="20" cy="50" cx="50" />
-              </svg>
-            )}{' '}
-            Go Live{' '}
-          </Button>
+          {
+            discoverGoLive ?
+              <VideoCallPopup onClose={toggleDiscoverGoLive} /> :
+              <VideoPreview onClose={toggleDiscoverGoLive} />
+}
         </div>
         <div className="neraby-profiles grid h-full w-full grid-cols-2 gap-4 py-4 xl:grid-cols-3">
           <ProfileCard
