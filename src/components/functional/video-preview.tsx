@@ -31,12 +31,13 @@ return (
             loop: true,
           }}>
           <CarouselContent className="h-full w-full">
-            <CarouselItem className="h-full w-full"><ReactPlayer
-              height="100%"
-              width="100%"
-              playing
-              loop
-              url="/videos/video-closeup-1.webm"
+            <CarouselItem className="h-full w-full">
+              <ReactPlayer
+                height="100%"
+                width="100%"
+                playing
+                loop
+                url="/videos/video-closeup-1.webm"
              />
             </CarouselItem>
             <CarouselItem><ReactPlayer
@@ -59,10 +60,10 @@ return (
         </Carousel>
 
       </div>
-      <div className="action-item absolute left-1/2 right-1/2 top-[45%] flex flex-col items-center gap-2">
-        <Button size="icon" className="bg-green-600 hover:bg-green-500 pulse h-20 w-20" onClick={onClose}>
+      <div className="action-item absolute top-0 left-0 right-0 z-[100] flex flex-col items-center justify-center gap-2 h-[50vh] backdrop-blur-sm w-[96%] xl:w-[98%]">
+        <Button size="icon" className="bg-green-600 hover:bg-green-500 pulse h-40 w-40" onClick={onClose}>
           {' '}
-          <span className="font-semibold text-lg">Go Live</span>
+          <span className="font-semibold text-xl">Go Live</span>
         </Button>
       </div>
     </div>

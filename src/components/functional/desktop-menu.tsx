@@ -2,10 +2,9 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import { AvatarImage } from '@radix-ui/react-avatar';
 import { PersonIcon, ImageIcon } from '@radix-ui/react-icons';
-import { BadgeDollarSign, Bookmark, Flame, HeartHandshake } from 'lucide-react';
+import { BadgeDollarSign, Bookmark, Flame, HeartHandshake, MessageCircle } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 
-import ChatBubble1ActiveIcon from '@/assets/chat-bubble1-active.png';
 import DocumentIcon from '@/assets/document.png';
 import FolderIcon from '@/assets/folder.png';
 import { Avatar } from '@/components/ui/avatar';
@@ -36,12 +35,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <VideoHomeActiveIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <VideoHomeActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Home</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
-                      <VideoHomeActiveIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <VideoHomeActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Home</span>
                     </p>
                   )}
@@ -53,12 +52,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <LiveStream1ActiveIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <LiveStream1ActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Live</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
-                      <LiveStream1ActiveIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <LiveStream1ActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Live</span>
                     </p>
                   )}
@@ -71,12 +70,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <ImageIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <ImageIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Feeds</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <ImageIcon className="h-8 w-8 stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <ImageIcon className="h-8 w-8 shadow-2xl stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Feeds</span>
                     </p>
                   )}
@@ -89,12 +88,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <Flame className="h-8 w-8 fill-red-500 stroke-red-500 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Flame className="h-8 w-8 shadow-2xl fill-red-500 stroke-red-500 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Suggestions</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <Flame className="h-8 w-8 fill-red-500 stroke-red-500 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Flame className="h-8 w-8 shadow-2xl fill-red-500 stroke-red-500 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Suggestions</span>
                     </p>
                   )}
@@ -107,20 +106,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <img
-                        src={ChatBubble1ActiveIcon}
-                        alt="chat-bubble-active"
-                        className="drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
-                      />
+                      <MessageCircle className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)] -scale-x-100" />
                       <span>Chats</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
-                      <img
-                        src={ChatBubble1ActiveIcon}
-                        alt="chat-bubble-active"
-                        className="drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
-                      />
+                      <MessageCircle className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)] -scale-x-100" />
                       <span>Chats</span>
                     </p>
                   )}
@@ -134,12 +125,12 @@ export function DesktopMenu() {
                   <>
                     {isActive ? (
                       <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                        <BadgeDollarSign className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <BadgeDollarSign className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>Subscription Details</span>
                       </p>
                     ) : (
                       <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                        <BadgeDollarSign className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <BadgeDollarSign className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>Subscription Details</span>
                       </p>
                     )}
@@ -176,12 +167,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <Bookmark className="h-8 w-8 fill-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Bookmark className="h-8 w-8 shadow-2xl fill-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Collections</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <Bookmark className="h-8 w-8 fill-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Bookmark className="h-8 w-8 shadow-2xl fill-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Collections</span>
                     </p>
                   )}
@@ -194,12 +185,12 @@ export function DesktopMenu() {
                   <>
                     {isActive ? (
                       <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                        <PersonIcon className="h-8 w-8 fill-primary stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <PersonIcon className="h-8 w-8 shadow-2xl fill-primary stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>My Profile</span>
                       </p>
                     ) : (
                       <p className="text-md text-md flex items-center gap-4  rounded-full px-2 py-1 font-semibold font-semibold text-secondary hover:bg-primary/10">
-                        <PersonIcon className="h-8 w-8 fill-primary stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <PersonIcon className="h-8 w-8 shadow-2xl fill-primary stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>My Profile</span>
                       </p>
                     )}
@@ -231,7 +222,7 @@ export function DesktopMenu() {
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
                       <img
                         src={DocumentIcon}
-                        className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
                         alt="document"
                       />
                       <span>Platform Privacy Policy</span>
@@ -240,7 +231,7 @@ export function DesktopMenu() {
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
                       <img
                         src={DocumentIcon}
-                        className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
                         alt="document"
                       />
                       <span>Platform Privacy Policy</span>
@@ -256,7 +247,7 @@ export function DesktopMenu() {
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
                       <img
                         src={FolderIcon}
-                        className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
                         alt="folder"
                       />
                       <span>Terms & Conditions</span>
@@ -266,7 +257,7 @@ export function DesktopMenu() {
                       <img
                         src={FolderIcon}
                         alt="folder"
-                        className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
                       />
                       <span>Terms & Conditions</span>
                     </p>
@@ -280,12 +271,12 @@ export function DesktopMenu() {
                   <>
                     {isActive ? (
                       <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                        <SettingsIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <SettingsIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>Settings</span>
                       </p>
                     ) : (
                       <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                        <SettingsIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <SettingsIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>Settings</span>
                       </p>
                     )}
@@ -314,12 +305,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <HeartHandshake className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <HeartHandshake className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Help & Support</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <HeartHandshake className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <HeartHandshake className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Help & Support</span>
                     </p>
                   )}
@@ -331,13 +322,13 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <LogoutIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <LogoutIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
 
                       <span>Sign Out</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <LogoutIcon className="h-8 w-8 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <LogoutIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
 
                       <span>Sign Out</span>
                     </p>
