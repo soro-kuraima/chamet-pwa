@@ -24,8 +24,6 @@ export function DiscoverDesktop() {
 
   const [sendCoins, setSendCoins] = useState(false);
 
-  const [shimmer, setShimmer] = useState(false);
-
   return (
     <div className="relative flex h-full w-full items-start justify-center p-0">
       <div className="profiles-scroll-container discover-desktop-container h-full rounded-md p-0 px-4">
