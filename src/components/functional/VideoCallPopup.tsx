@@ -67,7 +67,7 @@ export function VideoCallPopup({ onClose }: { onClose: () => void }) {
             <div className="action-item flex flex-col items-center gap-2">
               <Button size="icon" className="bg-red-600" onClick={onClose}>
                 {' '}
-                <CloseIcon className="h-12 w-12 fill-white" />{' '}
+                <CloseIcon className="h-10 w-10 fill-white" />{' '}
               </Button>
               <span className="text-white">Cancel</span>
             </div>

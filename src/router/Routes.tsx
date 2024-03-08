@@ -15,6 +15,7 @@ import { WalletScreen } from '@/pages/app/accounts/WalletScreen';
 import { AppLayout } from '@/pages/app/AppLayout';
 import { AudioCallScreen } from '@/pages/app/call/AudioCallScreen';
 import { VideoCallScreen } from '@/pages/app/call/VideoCallScreen';
+import { CollectionsScreen } from '@/pages/app/collections/CollectionsScreen';
 import { Discover } from '@/pages/app/discovery/Discover';
 import { DiscoveryScreen } from '@/pages/app/discovery/DiscoveryScreen';
 import { Nearby } from '@/pages/app/discovery/Nearby';
@@ -25,10 +26,12 @@ import { HomeScreen } from '@/pages/app/HomeScreen';
 import { LiveFeeds } from '@/pages/app/live-feeds/LiveFeeds';
 import { LiveFeedsScreen } from '@/pages/app/live-feeds/LiveFeedsScreen';
 import { Page404 } from '@/pages/app/misc/Page404';
+import { NearbyScreen } from '@/pages/app/nearby/NearbyScreen';
 import { ProfileScreen } from '@/pages/app/profile/ProfileScreen';
 import { ProfileScreenDetailed } from '@/pages/app/profile/ProfileScreenDetailed';
 import { RecentChatScreen } from '@/pages/app/recent-chat/RecentChatScreen';
 import { RecentChatsScreen } from '@/pages/app/recent-chats/RecentChatsScreen';
+import { SuggestionsScreen } from '@/pages/app/suggestions/SuggestionsScreen';
 import { AuthLayout } from '@/pages/auth/AuthLayout';
 import { LoginScreen } from '@/pages/auth/login/LoginScreen';
 import { OnboardScreen } from '@/pages/auth/onboard/OnboardScreen';
@@ -163,6 +166,30 @@ export const routes = createBrowserRouter([
                 element: <Nearby />,
               },
             ],
+          },
+          {
+            path: 'nearby',
+            element: (
+              <Page title="Nearby">
+                <NearbyScreen />
+              </Page>
+            ),
+          },
+          {
+            path: 'suggestions',
+            element: (
+              <Page title="Suggestions">
+                <SuggestionsScreen />
+              </Page>
+            )
+          },
+          {
+            path: 'collections',
+            element: (
+              <Page title="Collections">
+                <CollectionsScreen />
+              </Page>
+            )
           },
           {
             path: 'feeds',

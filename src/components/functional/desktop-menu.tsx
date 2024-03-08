@@ -2,22 +2,23 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import { AvatarImage } from '@radix-ui/react-avatar';
 import { PersonIcon, ImageIcon } from '@radix-ui/react-icons';
-import { BadgeDollarSign, Bookmark, Flame, HeartHandshake, MessageCircle } from 'lucide-react';
+import {
+  BadgeDollarSign,
+  Bookmark,
+  Flame,
+  HeartHandshake,
+  MessageCircle,
+} from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 
 import DocumentIcon from '@/assets/document.png';
 import FolderIcon from '@/assets/folder.png';
 import { Avatar } from '@/components/ui/avatar';
-import {
-  VideoHomeActiveIcon,
-  LiveStream1ActiveIcon,
-  LogoutIcon,
-  SettingsIcon,
-} from '@/components/ui/icons/svg-icons';
+import { LogoutIcon, SettingsIcon } from '@/components/ui/icons/svg-icons';
 
 export function DesktopMenu() {
   return (
-    <div className="block w-[20vw] py-4">
+    <div className="block h-screen w-[20vw] border border-gray-300 bg-background py-4 shadow-2xl md:pl-4">
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <h2 className="text-md mb-4 font-semibold tracking-tight">
@@ -35,13 +36,19 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <VideoHomeActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
-                      <span>Home</span>
+                      <img
+                        src="/assets/home-button.png"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
+                      <span className="text-black">Home</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
-                      <VideoHomeActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
-                      <span>Home</span>
+                      <img
+                        src="/assets/home-button.png"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
+                      <span className="text-black">Home</span>
                     </p>
                   )}
                 </>
@@ -51,14 +58,44 @@ export function DesktopMenu() {
               {({ isActive }) => (
                 <>
                   {isActive ? (
-                    <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <LiveStream1ActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                    <p className="text-md flex items-center gap-4 rounded-full bg-white px-2 py-1 font-semibold hover:bg-primary/10">
+                      <img
+                        src="/assets/live-tv.png"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
                       <span>Live</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
-                      <LiveStream1ActiveIcon className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <img
+                        src="/assets/live-tv.png"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
                       <span>Live</span>
+                    </p>
+                  )}
+                </>
+              )}
+            </NavLink>
+
+            <NavLink to="/app/home/nearby">
+              {({ isActive }) => (
+                <>
+                  {isActive ? (
+                    <p className="text-md flex items-center gap-4 rounded-full bg-white px-2 py-1 font-semibold hover:bg-primary/10">
+                      <img
+                        src="/assets/live-tv.png"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
+                      <span>Nearby</span>
+                    </p>
+                  ) : (
+                    <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
+                      <img
+                        src="/assets/live-tv.png"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
+                      <span>Nearby</span>
                     </p>
                   )}
                 </>
@@ -75,7 +112,7 @@ export function DesktopMenu() {
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <ImageIcon className="h-8 w-8 shadow-2xl stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <ImageIcon className="h-8 w-8 stroke-primary shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Feeds</span>
                     </p>
                   )}
@@ -88,12 +125,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <Flame className="h-8 w-8 shadow-2xl fill-red-500 stroke-red-500 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Flame className="h-8 w-8 fill-red-500 stroke-red-500 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Suggestions</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <Flame className="h-8 w-8 shadow-2xl fill-red-500 stroke-red-500 drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Flame className="h-8 w-8 fill-red-500 stroke-red-500 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Suggestions</span>
                     </p>
                   )}
@@ -106,12 +143,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <MessageCircle className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)] -scale-x-100" />
+                      <MessageCircle className="h-8 w-8 -scale-x-100 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Chats</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary hover:bg-primary/10">
-                      <MessageCircle className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)] -scale-x-100" />
+                      <MessageCircle className="h-8 w-8 -scale-x-100 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Chats</span>
                     </p>
                   )}
@@ -167,12 +204,12 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <Bookmark className="h-8 w-8 shadow-2xl fill-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Bookmark className="h-8 w-8 fill-primary shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Collections</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <Bookmark className="h-8 w-8 shadow-2xl fill-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <Bookmark className="h-8 w-8 fill-primary shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                       <span>Collections</span>
                     </p>
                   )}
@@ -185,12 +222,12 @@ export function DesktopMenu() {
                   <>
                     {isActive ? (
                       <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                        <PersonIcon className="h-8 w-8 shadow-2xl fill-primary stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <PersonIcon className="h-8 w-8 fill-primary stroke-primary shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>My Profile</span>
                       </p>
                     ) : (
                       <p className="text-md text-md flex items-center gap-4  rounded-full px-2 py-1 font-semibold font-semibold text-secondary hover:bg-primary/10">
-                        <PersonIcon className="h-8 w-8 shadow-2xl fill-primary stroke-primary drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                        <PersonIcon className="h-8 w-8 fill-primary stroke-primary shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
                         <span>My Profile</span>
                       </p>
                     )}

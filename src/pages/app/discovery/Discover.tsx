@@ -1,11 +1,10 @@
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 
-import { DiscoverDesktop } from './DiscoverDesktop';
-
 import { ProfileCardLarge } from '@/components/compound/profile-card';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { DiscoverDesktop } from '@/pages/app/discovery/DiscoverDesktop';
 import { useCallCardStore } from '@/stores/call-card-store';
 
 export function Discover() {

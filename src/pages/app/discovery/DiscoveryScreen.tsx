@@ -2,8 +2,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { Outlet } from 'react-router-dom';
 
-import { ProfileScreen } from '../profile/ProfileScreen';
-
+import { SuggestionsList } from '@/components/compound/SuggestionsList';
 import { DiscoveryMenu } from '@/pages/app/discovery/discovery-menu';
 import { useCallCardStore } from '@/stores/call-card-store';
 
@@ -17,7 +16,7 @@ export function DiscoveryScreen() {
       <div className="container relative overflow-auto p-0 pb-16 md:mt-8">
         <Outlet />
       </div>
-      {isDesktop && !discoverGoLive && <ProfileScreen />}
+      {isDesktop && !discoverGoLive && <SuggestionsList />}
     </div>
   );
 }

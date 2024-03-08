@@ -25,14 +25,14 @@ export function DiscoverDesktop() {
   const [sendCoins, setSendCoins] = useState(false);
 
   return (
-    <div className="relative flex h-full w-full items-start justify-center p-0">
+    <div className="relative flex h-full w-full items-start justify-center gap-4 p-0">
       <div className="profiles-scroll-container discover-desktop-container h-full rounded-md p-0 px-4">
         <div className="rounded-md py-4">
-          {
-            discoverGoLive ?
-              <VideoCallPopup onClose={toggleDiscoverGoLive} /> :
-              <VideoPreview onClose={toggleDiscoverGoLive} />
-}
+          {discoverGoLive ? (
+            <VideoCallPopup onClose={toggleDiscoverGoLive} />
+          ) : (
+            <VideoPreview onClose={toggleDiscoverGoLive} />
+          )}
         </div>
         <div className="neraby-profiles grid h-full w-full grid-cols-2 gap-4 py-4 xl:grid-cols-3">
           <ProfileCard
@@ -62,8 +62,8 @@ export function DiscoverDesktop() {
         </div>
       </div>
       {discoverGoLive && (
-        <div className="live-stream flex h-full w-[335px] flex-col gap-8 py-4">
-          <div className="h-[45vh] border-2">
+        <div className="live-stream ml-8 flex h-full w-[335px] flex-col gap-8 py-4">
+          <div className="h-[45vh] rounded-md border border-gray-300 shadow-2xl drop-shadow-2xl">
             <p className="mx-auto flex justify-center py-2 text-xl font-bold">
               {' '}
               Show support for Username
