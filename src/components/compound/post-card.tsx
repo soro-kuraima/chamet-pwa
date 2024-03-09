@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Bookmark } from 'lucide-react';
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import {
@@ -68,6 +70,11 @@ const PostCard = React.forwardRef<HTMLDivElement, PostCardProps>(
             <ChatBubbleRightIcon className="h-6 w-6 " />
           </Button>
           <span className="text-md font-medium text-black">{postComments}</span>
+        </div>
+        <div className="save flex flex-col items-center">
+          <Button variant="link" className="p-0">
+            <Bookmark className="h-8 w-8 " />
+          </Button>
         </div>
       </div>
       <div className="post-description px-4">

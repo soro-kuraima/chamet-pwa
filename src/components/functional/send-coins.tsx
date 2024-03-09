@@ -28,11 +28,11 @@ export function SendCoins() {
         defaultValue={value}
         step={10}
         onValueChange={(val) => setValue(val)}
-        className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4"
+        className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4 px-2"
         aria-label="coins"
       />
 
-      <div className="send-button mt-8 flex justify-center px-2">
+      <div className="send-button mt-8 flex justify-center px-2 mb-4">
         <Button
           size="lg"
           className="w-full rounded-full"

@@ -24,14 +24,13 @@
 
 @media screen and (min-width: 768px) {
   #home-screen-parent {
-    width: calc(80vw - 112px);
+    width: calc(80vw - 48px);
+  }
+  #home-live-stream-chat {
+    height: calc(50vh + 56px + 18rem);
   }
 }
 
-/*# sourceMappingURL=App.css.map */
-.discover-desktop-container {
-  width: calc(80vw - 480px);
-}
 
 video {
   object-fit: cover;

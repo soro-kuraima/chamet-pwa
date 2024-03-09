@@ -7,7 +7,7 @@ import { MenuIcon } from '@/components/ui/icons/svg-icons';
 
 export function FeedsMenu() {
   return (
-    <nav className="flex min-w-full items-center justify-between overflow-auto bg-background px-4 py-8 md:w-full">
+    <nav className="flex items-center justify-between overflow-auto bg-background px-4 py-8 md:w-[40vw] xl:w-[45vw]">
       <ul className="flex items-center justify-between gap-4">
         <li>
           <NavLink to="/app/home/feeds">
