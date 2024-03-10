@@ -1,26 +1,37 @@
-import { useNavigate } from 'react-router-dom';
 
+import { Camera, MoreHorizontal, Phone } from 'lucide-react';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { ChevronLeftIcon } from '@/components/ui/icons/svg-icons';
 
 export function RecentChatMenu() {
-  const navigate = useNavigate();
-
   return (
-    <nav className="flex min-w-full border-b bg-background px-0 pb-2 pt-4">
-      <ul className="flex w-full items-center justify-between">
-        <li>
-          <Button variant="link" onClick={() => navigate(-1)}>
-            <ChevronLeftIcon className="h-5 w-5 text-black" />
+    <div className="chat-title flex items-center justify-between px-4 md:pb-2 md:shadow-lg border-b border-gray-200">
+      <div className="user-info flex items-center gap-6">
+        <Avatar className="h-16 w-16">
+          <AvatarImage src="/images/chat-user.png" alt="userName" />
+          <AvatarFallback>Username</AvatarFallback>
+        </Avatar>
+        <div className="user-name">
+          <p className="font-semibold">Username</p>
+          <p>Online</p>
+        </div>
+      </div>
+      <div className="action-buttons flex items-center gap-2">
+        <div className="action-item flex flex-col items-center gap-2">
+          <Button size="icon" variant="ghost">
+            {' '}
+            <Phone className="h-6 w-6 fill-primary stroke-white" />{' '}
           </Button>
-        </li>
-        <li>
-          <h1 className="text-center text-xl font-medium text-black">
-            Recent Chats
-          </h1>
-        </li>
-        <li className="h-1 w-1/4" />
-      </ul>
-    </nav>
+        </div>
+        <div className="action-item flex flex-col items-center gap-2">
+          <Button size="icon" variant="ghost">
+            {' '}
+            <Camera className="h-6 w-6 fill-primary stroke-white" />{' '}
+          </Button>
+        </div>
+        <MoreHorizontal className="h-6 w-6 stroke-primary" />
+      </div>
+    </div>
   );
 }

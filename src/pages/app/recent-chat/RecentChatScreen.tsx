@@ -5,9 +5,9 @@ import { RecentChatMenu } from '@/pages/app/recent-chat/recent-chat-menu';
 
 export function RecentChatScreen() {
   return (
-    <div className="live-feeds pb-16 md:h-screen md:pb-0">
+    <div className="recent-chat overflow-auto pb-16 md:pt-8 md:basis-2/3 md:border-r md:border-gray-300">
       <RecentChatMenu />
-      <div className="container relative px-1 py-4 md:block md:bg-primary/10 md:px-0 md:pb-0">
+      <div className="relative px-1 py-4">
         <RecentChat />
       </div>
     </div>

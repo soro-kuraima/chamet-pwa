@@ -29,6 +29,10 @@
   #home-live-stream-chat {
     height: calc(50vh + 56px + 18rem);
   }
+
+  #chat-input {
+    width: calc(80vw - 29%)
+  }
 }
 
 video {

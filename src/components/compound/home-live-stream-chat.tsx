@@ -25,7 +25,7 @@ export function HomeLiveStreamChat() {
   return (
     <div
       id="home-live-stream-chat"
-      className="live-stream-chat relative ml-4 flex h-full w-[28vw] flex-col gap-8 py-4 xl:w-[24vw]">
+      className="live-stream-chat relative ml-4 flex h-full w-[28vw] flex-col gap-8 py-4 xl:w-[24vw] md:mt-8">
       <div className="h-full rounded-md border border-gray-300 bg-background shadow-2xl drop-shadow-2xl">
         <p className="mx-auto flex justify-center border-b border-gray-300 py-6 text-xl font-bold text-black">
           {' '}

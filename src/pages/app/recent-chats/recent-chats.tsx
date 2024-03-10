@@ -16,16 +16,19 @@ export function RecentChats() {
     : '/app/recent-chat';
 
   return (
-    <div className="recent-chats md:ml-2 md:block">
+    <div className="recent-chats md:ml-2">
       <div className="search-box-container px-2 md:w-full">
         <SearchInput placeholder="Recent Chats" />
       </div>
-      <div className="search-filter-buttons flex items-center gap-4 px-4 py-4">
-        <Button>All Chats</Button>
-        <Button className="bg-secondary/30 text-black">Latest</Button>
-        <Button className="bg-secondary/30 text-black">Oldest</Button>
-      </div>
-      <div className="flex items-center justify-center p-0">
+      {
+        false &&
+        <div className="search-filter-buttons flex items-center gap-4 px-4 py-4">
+          <Button>All Chats</Button>
+          <Button className="bg-secondary/30 text-black">Latest</Button>
+          <Button className="bg-secondary/30 text-black">Oldest</Button>
+        </div>
+}
+      <div className="flex items-center justify-center py-4 md:py-0">
         <div className="recent-chats-scroll-container h-full w-full p-0">
           <ScrollArea className="h-full w-full">
             <RecentChatsCard
