@@ -37,9 +37,9 @@ export function VideoCallPopup({ onClose }: { onClose: () => void }) {
             </div>
           </div>
         </div>
-        <div className="flex w-full flex-col items-center justify-between rounded-t-3xl px-0 pb-8 md:mx-auto md:rounded-t-none">
+        <div className="flex w-full flex-col items-center justify-between rounded-t-3xl px-0 pb-8 md:rounded-t-none">
           <div className="mb-8 mt-4 h-1 w-16 md:m-0 md:rounded-none" />
-          <div className="action-buttons-I flex w-full items-center justify-center gap-8 px-2 py-2 md:py-4 xl:w-1/4">
+          <div className="action-buttons-I flex w-full items-center justify-center gap-8 px-2 py-2 md:py-4">
             {!isDesktop && (
               <div className="action-item flex flex-col items-center gap-2">
                 <Button size="icon" className="bg-secondary/30">
