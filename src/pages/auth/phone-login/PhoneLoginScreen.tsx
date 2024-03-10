@@ -1,8 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
 import { Outlet } from 'react-router-dom';
 
-import { LoginScreenDesktop } from '../login/LoginScreenDesktop';
-import { LoginScreenMobile } from '../login/LoginScreenMobile';
+import { LoginScreenDesktop } from '@/pages/auth/login/LoginScreenDesktop';
+import { LoginScreenMobile } from '@/pages/auth/login/LoginScreenMobile';
 
 export function PhoneLoginScreen() {
   const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
@@ -10,7 +10,7 @@ export function PhoneLoginScreen() {
   if (isDesktop) {
     return (
       <LoginScreenDesktop>
-        <div className="flex w-5/6 flex-col items-center justify-end rounded-t-3xl bg-white px-0 py-0">
+        <div className="flex w-5/6 flex-col items-center justify-end rounded-t-3xl bg-background px-0 py-0">
           <Outlet />
         </div>
       </LoginScreenDesktop>

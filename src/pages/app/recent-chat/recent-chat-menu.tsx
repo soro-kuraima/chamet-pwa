@@ -12,7 +12,7 @@ export function RecentChatMenu() {
           <AvatarFallback>Username</AvatarFallback>
         </Avatar>
         <div className="user-name">
-          <p className="font-semibold">Username</p>
+          <p className="font-semibold text-black">Username</p>
           <p>Online</p>
         </div>
       </div>

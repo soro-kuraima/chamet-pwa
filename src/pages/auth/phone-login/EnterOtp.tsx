@@ -100,7 +100,7 @@ export function EnterOtp() {
         <div className="submit-button pt-6">
           <Button
             size="lg"
-            className="w-full rounded-full bg-indigo-700 bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-indigo-700/90"
+            className="w-full rounded-full bg-primary bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-primary/90"
             onClick={() => {
               setAccessToken(crypto.randomUUID());
               navigate('/app/home');

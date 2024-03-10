@@ -27,7 +27,7 @@
     width: calc(80vw - 48px);
   }
   #home-live-stream-chat {
-    height: calc(50vh + 56px + 18rem);
+    height: calc(100% - 18rem);
   }
 
   #chat-input {

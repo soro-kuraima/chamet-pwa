@@ -55,7 +55,7 @@ const PostCard = React.forwardRef<HTMLDivElement, PostCardProps>(
         <img
           src={postImage}
           alt={userName}
-          className="h-[55vh] w-full rounded-none object-cover"
+          className="h-full w-full rounded-none object-cover"
         />
       </div>
       <div className="post-buttons flex gap-4 px-4">

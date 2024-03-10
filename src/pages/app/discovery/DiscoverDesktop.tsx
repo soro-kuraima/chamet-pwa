@@ -13,7 +13,7 @@ export function DiscoverDesktop() {
 
   return (
     <div className="relative flex h-full w-full items-start justify-center gap-4 p-0">
-      <div className="profiles-scroll-container discover-desktop-container h-full rounded-md p-0 px-4">
+      <div className="h-full rounded-md p-0 px-4">
         <div className="rounded-md py-4">
           {discoverGoLive ? (
             <VideoCallPopup onClose={toggleDiscoverGoLive} />
@@ -21,7 +21,10 @@ export function DiscoverDesktop() {
             <VideoPreview onClose={toggleDiscoverGoLive} />
           )}
         </div>
-        <div className="neraby-profiles grid h-full w-full grid-cols-2 gap-4 py-4 xl:grid-cols-3">
+        <p className="px-2 pt-2 text-lg font-bold text-black">
+          Recent Interactions
+        </p>
+        <div className="neraby-profiles grid h-full w-full grid-cols-2 gap-4 pt-4 xl:grid-cols-3">
           <ProfileCard
             userName="UserName"
             userImage="/images/man-profile.png"

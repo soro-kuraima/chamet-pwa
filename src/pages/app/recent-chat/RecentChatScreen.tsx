@@ -7,7 +7,7 @@ export function RecentChatScreen() {
   return (
     <div className="recent-chat overflow-auto pb-16 md:basis-2/3 md:border-r md:border-gray-300 md:pt-8">
       <RecentChatMenu />
-      <div className="relative px-1 py-4">
+      <div className="relative py-4">
         <RecentChat />
       </div>
     </div>

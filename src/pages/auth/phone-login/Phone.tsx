@@ -47,7 +47,7 @@ export function Phone() {
         <div className="submit-button pt-6">
           <Button
             size="lg"
-            className="w-full rounded-full bg-indigo-700 bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-indigo-700/90"
+            className="w-full rounded-full bg-primary bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-primary/80"
             onClick={() => {
               navigate('/auth/login-using-phone/enter-otp');
             }}>

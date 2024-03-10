@@ -5,7 +5,7 @@ export function Feeds() {
   return (
     <div className="flex items-center justify-center p-0">
       <div className="posts-scroll-container h-full w-full p-0">
-        <ScrollArea className="h-full w-full md:w-[40vw] md:w-[45vw]">
+        <ScrollArea className="h-full w-full md:w-auto">
           <PostCard
             userName="Lorem Ipsum"
             userImage="/images/woman-post.png"

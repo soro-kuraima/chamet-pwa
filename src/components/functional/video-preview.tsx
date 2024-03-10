@@ -28,7 +28,7 @@ export function VideoPreview({ onClose }: { onClose: () => void }) {
 
   return (
     <div>
-      <div className="relative h-[50vh] w-full">
+      <div className="relative h-[45vh] w-full">
         <div className="video-container h-full w-full">
           <Carousel
             className="h-full w-full"
@@ -67,7 +67,7 @@ export function VideoPreview({ onClose }: { onClose: () => void }) {
             </CarouselContent>
           </Carousel>
         </div>
-        <div className="action-item absolute left-0 right-0 top-0 z-[100] flex h-[50vh] w-full flex-col items-center justify-center gap-2 backdrop-blur-sm">
+        <div className="action-item absolute left-0 right-0 top-0 z-[100] flex h-[45vh] w-full flex-col items-center justify-center gap-2 backdrop-blur-sm">
           <Button variant="link" size="icon" onClick={onClose}>
             {' '}
             <span className="text-xl font-semibold text-white">Go Live</span>

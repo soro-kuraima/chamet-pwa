@@ -22,7 +22,7 @@ export function LoginForm() {
         <div className="w-11/12 py-2">
           <Button
             size="lg"
-            className="w-full rounded-full bg-indigo-700 bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-indigo-700/90"
+            className="w-full rounded-full bg-primary py-6 shadow-lg drop-shadow-xl hover:bg-primary/80"
             onClick={() => {
               navigate('/auth/login-using-phone');
             }}>

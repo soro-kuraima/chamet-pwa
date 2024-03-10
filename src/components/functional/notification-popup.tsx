@@ -9,7 +9,7 @@ export function NotificationPopup() {
         <h1 className="title text-2xl font-bold text-black">Notifications</h1>
       </div>
       <div className="notification-filter-buttons flex gap-6 py-4">
-        <Button variant="secondary" className="rounded-2xl">
+        <Button variant="accent" className="rounded-2xl">
           All
         </Button>
         <Button variant="ghost" className="rounded-2xl">
@@ -99,7 +99,7 @@ export function NotificationPopup() {
         </div>
       </div>
       <div className="redirect-button w-full">
-        <Button variant="secondary" className="w-full font-semibold text-white">
+        <Button variant="accent" className="w-full font-semibold text-white">
           See All Notifications
         </Button>
       </div>

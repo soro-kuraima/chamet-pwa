@@ -3,11 +3,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 // eslint-disable-next-line import/extensions
 import AddBlackIcon from '@/assets/add.png';
-import { MenuIcon } from '@/components/ui/icons/svg-icons';
 
 export function FeedsMenu() {
   return (
-    <nav className="flex items-center justify-between overflow-auto bg-background px-4 py-8 md:w-[40vw] xl:w-[45vw]">
+    <nav className="flex items-center justify-between overflow-auto bg-background px-4 py-8 md:w-auto">
       <ul className="flex items-center justify-between gap-4">
         <li>
           <NavLink to="/app/home/feeds">
@@ -33,11 +32,6 @@ export function FeedsMenu() {
               className="h-10 w-10 fill-black"
               alt="add icon"
             />
-          </Link>
-        </li>
-        <li>
-          <Link to="/app/account">
-            <MenuIcon className="h-8 w-8" />
           </Link>
         </li>
       </ul>

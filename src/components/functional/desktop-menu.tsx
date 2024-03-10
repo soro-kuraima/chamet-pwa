@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { AvatarImage } from '@radix-ui/react-avatar';
-import { BadgeDollarSign, BellIcon } from 'lucide-react';
+import { BellIcon } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 
 import { NotificationPopup } from '@/components/functional/notification-popup';
@@ -195,12 +195,20 @@ export function DesktopMenu() {
                 <>
                   {isActive ? (
                     <p className="text-md flex items-center gap-4 rounded-full bg-primary/20 px-2 py-1 font-semibold hover:bg-primary/10">
-                      <BadgeDollarSign className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <img
+                        src="/funclub-logo.png"
+                        alt="funclub logo"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
                       <span className="text-black">Subscription Details</span>
                     </p>
                   ) : (
                     <p className="text-md flex items-center gap-4 rounded-full px-2 py-1 font-semibold text-secondary text-secondary hover:bg-primary/10">
-                      <BadgeDollarSign className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]" />
+                      <img
+                        src="/funclub-logo.png"
+                        alt="funclub logo"
+                        className="h-8 w-8 shadow-2xl drop-shadow-[0_85px_85px_rgba(248,250,252,1)]"
+                      />
                       <span className="text-black">Subscription Details</span>
                     </p>
                   )}
@@ -449,7 +457,7 @@ export function DesktopMenu() {
         </div>
       </div>
       {isNotificationVisible && (
-        <div className="notifications-parent absolute left-[19vw] top-16 z-[100]">
+        <div className="notifications-parent absolute left-[19vw] top-16 z-[150]">
           <NotificationPopup />
         </div>
       )}
