@@ -3,7 +3,13 @@ import { useState } from 'react';
 import { ChevronRightIcon } from '@radix-ui/react-icons';
 import { Gift } from 'lucide-react';
 
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '../ui/carousel';
 
 import { SendCoins } from '@/components/functional/send-coins';
 import { SendStickers } from '@/components/functional/send-stickers';
@@ -27,7 +33,7 @@ export function HomeLiveStreamChat() {
   return (
     <div
       id="home-live-stream-chat"
-      className="live-stream-chat relative ml-4 flex h-full w-[28vw] flex-col gap-8 py-4 xl:w-[24vw] md:mt-8">
+      className="live-stream-chat relative ml-4 flex h-full w-[28vw] flex-col gap-8 py-4 md:mt-8 xl:w-[24vw]">
       <div className="h-full rounded-md border border-gray-300 bg-background shadow-2xl drop-shadow-2xl">
         <p className="mx-auto flex justify-center border-b border-gray-300 py-6 text-xl font-bold text-black">
           {' '}
@@ -163,43 +169,43 @@ export function HomeLiveStreamChat() {
               <Carousel
                 className="h-full w-full"
                 opts={{
-                      loop: true,
-                    }}>
+                  loop: true,
+                }}>
                 <CarouselContent className="">
                   <CarouselItem className="basis-full">
                     <img
                       src="/images/hot-woman-1.jpg"
                       alt="hot-woman 1"
                       className="h-[40vh] w-full object-cover"
-                        />
+                    />
                   </CarouselItem>
                   <CarouselItem className="basis-full">
                     <img
                       src="/images/hot-woman-2.jpg"
                       alt="hot-woman 2"
                       className="h-full w-full object-cover"
-                        />
+                    />
                   </CarouselItem>
                   <CarouselItem className="basis-full">
                     <img
                       src="/images/hot-woman-3.jpg"
                       alt="hot-woman 3"
                       className="h-full w-full object-cover"
-                        />
+                    />
                   </CarouselItem>
                   <CarouselItem className="basis-full">
                     <img
                       src="/images/hot-woman-4.jpg"
                       alt="hot-woman 4"
                       className="h-full w-full object-cover"
-                        />
+                    />
                   </CarouselItem>
                   <CarouselItem className="basis-full">
                     <img
                       src="/images/hot-woman-5.jpg"
                       alt="hot-woman 5"
                       className="h-full w-full object-cover"
-                        />
+                    />
                   </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />

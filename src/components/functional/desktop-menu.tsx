@@ -1,15 +1,20 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-no-useless-fragment */
+import { useState } from 'react';
+
 import { AvatarImage } from '@radix-ui/react-avatar';
 import { BadgeDollarSign, BellIcon } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 
+import { NotificationPopup } from '@/components/functional/notification-popup';
 import { Avatar } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 
 export function DesktopMenu() {
+  const [isNotificationVisible, setNotificationVisible] = useState(false);
+
   return (
-    <div className="block h-screen w-[20vw] border border-gray-300 bg-background py-4 shadow-2xl md:pl-4">
+    <div className="relative block h-screen w-[20vw] border border-gray-300 bg-background py-4 shadow-2xl md:pl-4">
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <div className="mb-4 flex items-center justify-between">
@@ -22,7 +27,10 @@ export function DesktopMenu() {
                 />
               </Avatar>
             </h2>
-            <Button size="icon" className="p-3">
+            <Button
+              size="icon"
+              className="p-3"
+              onClick={() => setNotificationVisible((prev) => !prev)}>
               <BellIcon className="h-5 w-5" />
             </Button>
           </div>
@@ -445,6 +453,11 @@ export function DesktopMenu() {
             </NavLink>
           </div>
         </div>
+        {isNotificationVisible && (
+          <div className="notifications-parent absolute left-[19vw] top-16 z-[100]">
+            <NotificationPopup />
+          </div>
+        )}
       </div>
     </div>
   );
