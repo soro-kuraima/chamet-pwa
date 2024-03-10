@@ -5,7 +5,7 @@ import { AddWhiteIcon } from '@/components/ui/icons/svg-icons';
 
 export function ProfileScreen2() {
   return (
-    <div className="flex ml-4 w-2/5 bg-background flex-col border-t border-gray-300 drop-shadow-xl shadow-xl my-4 mt-12 flex flex-col shadow-2xl drop-shadow-xl rounded-md border border-gray-300">
+    <div className="my-4 ml-4 mt-12 flex w-2/5 flex-col flex-col rounded-md border border-t border-gray-300 border-gray-300 bg-background shadow-2xl shadow-xl drop-shadow-xl drop-shadow-xl">
       <div className="flex w-full flex-col items-center justify-end px-4 py-4">
         <div className="w-full py-2">
           <div className="user-info flex w-full items-center justify-between gap-4 py-1">
@@ -56,7 +56,7 @@ export function ProfileScreen2() {
           </div>
         </div>
 
-        <div className="-mx-px flex flex-wrap py-6 px-1 border-t-2 md:-mx-3">
+        <div className="-mx-px flex flex-wrap border-t-2 px-1 py-6 md:-mx-3">
           {/* column */}
           <div className="w-1/2 p-px">
             {/* post 1 */}
@@ -66,14 +66,14 @@ export function ProfileScreen2() {
               className="h-[15vh] w-full object-cover"
               src="/images/scenery-1.png"
               alt="scenery-1"
-              />
+            />
           </div>
           <div className="w-1/2 p-px">
             <img
               className="h-[15vh] w-full object-cover"
               src="/images/woman-post.png"
               alt="woman-post"
-              />
+            />
             {/* overlay */}
           </div>
           <div className="w-1/2 p-px">
@@ -81,7 +81,7 @@ export function ProfileScreen2() {
               className="h-[15vh] w-full object-cover"
               src="/images/man-profile.png"
               alt="man-profile"
-              />
+            />
             {/* overlay */}
           </div>
           <div className="w-1/2 p-px">
@@ -89,17 +89,16 @@ export function ProfileScreen2() {
               className="h-[15vh] w-full object-cover"
               src="/images/scenery-3.png"
               alt="scenery-3"
-              />
+            />
           </div>
           <div className="w-1/2 p-px">
             <img
               className="h-[15vh] w-full object-cover"
               src="/images/scenery-2.png"
               alt="/scenery-2"
-              />
+            />
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -16,7 +16,6 @@ export function NearbyScreen() {
   return (
     <div className="nearby h-full w-full md:flex md:overflow-hidden">
       <div className="container relative overflow-auto p-0 pb-16 md:mt-8">
-
         <div className="flex h-full w-full items-center justify-center p-0">
           <div className="profiles-scroll-container h-full w-full p-0">
             <ScrollArea className="h-full w-full rounded-md px-4 py-4">
@@ -28,7 +27,7 @@ export function NearbyScreen() {
                   userLocationName="IND"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/man-profile.png"
@@ -36,7 +35,7 @@ export function NearbyScreen() {
                   userLocationName="USA"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/woman-profile.png"
@@ -44,7 +43,7 @@ export function NearbyScreen() {
                   userLocationName="IND"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/man-profile.png"
@@ -52,7 +51,7 @@ export function NearbyScreen() {
                   userLocationName="USA"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/woman-profile.png"
@@ -60,7 +59,7 @@ export function NearbyScreen() {
                   userLocationName="IND"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/man-profile.png"
@@ -68,7 +67,7 @@ export function NearbyScreen() {
                   userLocationName="USA"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/woman-profile.png"
@@ -76,7 +75,7 @@ export function NearbyScreen() {
                   userLocationName="IND"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/man-profile.png"
@@ -84,7 +83,7 @@ export function NearbyScreen() {
                   userLocationName="USA"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/woman-profile.png"
@@ -92,7 +91,7 @@ export function NearbyScreen() {
                   userLocationName="IND"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/man-profile.png"
@@ -100,7 +99,7 @@ export function NearbyScreen() {
                   userLocationName="USA"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/woman-profile.png"
@@ -108,7 +107,7 @@ export function NearbyScreen() {
                   userLocationName="IND"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
                 <ProfileCard
                   userName="UserName"
                   userImage="/images/man-profile.png"
@@ -116,7 +115,7 @@ export function NearbyScreen() {
                   userLocationName="USA"
                   onCallActionTap={toggleCallCardVisibility}
                   onUserNameTap={() => navigate('/app/profile')}
-                  />
+                />
               </div>
             </ScrollArea>
           </div>

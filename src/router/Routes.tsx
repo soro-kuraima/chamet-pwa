@@ -181,7 +181,7 @@ export const routes = createBrowserRouter([
               <Page title="Suggestions">
                 <SuggestionsScreen />
               </Page>
-            )
+            ),
           },
           {
             path: 'collections',
@@ -189,7 +189,7 @@ export const routes = createBrowserRouter([
               <Page title="Collections">
                 <CollectionsScreen />
               </Page>
-            )
+            ),
           },
           {
             path: 'feeds',
