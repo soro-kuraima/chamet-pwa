@@ -21,26 +21,26 @@ export function LoginScreenDesktop({ children }: DeskTopLoginScreenProps) {
           Fun Club
         </div>
       </div>
-      <div className="lg:p-8">
-        <div
-          className="mx-auto flex w-4/5 flex-col items-center justify-center space-y-6 pb-10 pl-20 pt-12 md:border-b md:border-l-[0.4rem] md:border-r md:border-t md:border-primary md:shadow-2xl md:drop-shadow-xl xl:w-2/3"
-          style={{
+
+      <div
+        className="mx-auto flex w-4/5 flex-col items-center justify-center space-y-6 pb-12 pl-20 pt-10 md:border-b md:border-l-[0.4rem] md:border-r md:border-t md:border-primary md:shadow-2xl md:drop-shadow-xl xl:w-2/3"
+        style={{
             borderRadius: '100% 0% 60% 40% / 47% 100% 0% 53% ',
           }}>
-          <div className="relative z-20 flex items-center text-lg font-medium">
-            <img
-              src="/funclub-logo.png"
-              alt="Fun Club"
-              className="mr-2 h-56 w-56 2xl:h-72 2xl:h-72"
+        <div className="relative z-20 flex items-center text-lg font-medium">
+          <img
+            src="/funclub-logo.png"
+            alt="Fun Club"
+            className="mr-2 h-48 w-48 2xl:h-64 2xl:h-64"
             />
-          </div>
-          <h1 className="text-3xl font-semibold tracking-tight">
-            Create an account
-          </h1>
-
-          {children}
         </div>
+        <h1 className="text-3xl font-semibold tracking-tight">
+          Create an account
+        </h1>
+
+        {children}
       </div>
+
     </div>
   );
 }

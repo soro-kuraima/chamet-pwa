@@ -36,7 +36,7 @@ export function EnterOtp() {
           </Button>
         </p>
 
-        <div className="mt-6 flex items-center gap-8 md:gap-4">
+        <div className="mt-6 flex items-center  gap-8 md:gap-4">
           <Input
             className="rounded-2xl border-none bg-secondary/50 py-8 text-center text-xl tracking-widest text-black outline-[none] focus:border-none focus:outline-[none] "
             type="number"
@@ -97,7 +97,7 @@ export function EnterOtp() {
             Resend
           </Button>
         </div>
-        <div className="submit-button pt-6">
+        <div className="submit-button pt-6 px-0 bg-background">
           <Button
             size="lg"
             className="w-full rounded-full bg-primary bg-opacity-90 py-6 shadow-lg drop-shadow-xl hover:bg-primary/90"
